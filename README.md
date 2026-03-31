@@ -1,10 +1,14 @@
-📘 London Underground Simulator – README
-🚇 Overview
+📘 London Underground Simulator – README  
+
+🚇 Overview  
 London Underground Simulator is a custom-built C#/.NET 8 simulation engine that models train movement, dwell behaviour, delays, geometry interpolation, and real-time arrival predictions along a track.
 This project was designed as a portfolio-quality demonstration of clean architecture, deterministic simulation logic, and comprehensive automated testing.
 The engine updates train position, rotation, carriage geometry, dwell timing, and arrival timestamps in real time, using a modular and testable architecture.
-[Watch the demo](https://github.com/mwenya-mwenya/LondonUndergroundSimulator/blob/main/LondonUndergroundSimulator_DEMO.mp4)
-✨ Features
+
+![Demo](https://github.com/mwenya-mwenya/LondonUndergroundSimulator/blob/main/LondonUndergroundSimulatorDemo.gif)
+
+✨ Features  
+
 🚆 Train Movement Engine
 - Progress-based movement along a track
 - Direction-aware interpolation
@@ -37,3 +41,67 @@ The engine updates train position, rotation, carriage geometry, dwell timing, an
 - Vector2 geometry (System.Numerics)
 - Clean, modular architecture
 - Visual Studio 2022
+
+Folder Structure
+
+```markdown
+```text
+LondonUndergroundSimulator
+├─ LondonUndergroundSimulator.sln
+│
+├─ LondonUndergroundSimulator.Engine/
+│  ├─ Data/
+│  │   ├─ lines.json
+│  │   └─ TrainConfig.cs
+│  └─ DelayServices/
+│  │   └─ SifnalFailureRule.cs
+│  ├─ Models/
+│  │   ├─ Line.cs
+│  │   ├─ Station.cs
+│  │   ├─ TimeTableEntry.cs
+│  │   ├─ Track.cs
+│  │   └─ Train.cs  
+│  ├─ Services/
+│  │   ├─ FailureRuleEngine.cs
+│  │   ├─ MapLoader.cs
+│  │   ├─ SimulationEngine.cs
+│  │   ├─ TimeTableService.cs
+│  │   ├─ TrainDelayService.cs
+│  │   ├─ TrainMovementService.cs
+│  │   └─ Trains.cs   
+│  └─ Interfaces/
+│      ├─ IFailure.cs
+│      ├─ IFailureRuleEngine.cs
+│      ├─ ISimulationContext.cs
+│      ├─ ITrainDelayService.cs
+│      └─ ITrainMovementService.cs
+├─ LondonUndergroundSimulator.Tests/
+│  ├─ Movement/
+│  ├─ Timing/
+│  ├─ TestHelpers/
+│  ├─ TestDoubles/
+│  └─ TrainMovement_TimestampTests.cs
+│
+└─ LondonUndergroundSimulator.UI/
+   ├─ Assets/
+   ├─ Colours/
+   ├─ Rendering/
+   │  ├─ MapRenderer.cs
+   │  └─ TrainRenderer.cs
+   ├─ Services/
+   │  └─ MapTransformService.cs
+   ├─ ViewModels/
+   │  ├─ MainViewModel.cs
+   │  ├─ MapViewModel.cs
+   │  └─ TrainViewModel.cs
+   ├─ Views/
+   │  ├─ MapView.xaml
+   │  ├─ MapView.xaml.cs
+   │  ├─ TrainListView.xaml
+   │  └─ TrainListView.xaml.cs
+   ├─ App.xaml
+   ├─ App.xaml.cs
+   ├─ MainWindow.xaml
+   ├─ MainWindow.xaml.cs
+   ├─ LondonUndergroundSimulator.UI.csproj
+   └─ app.manifest
