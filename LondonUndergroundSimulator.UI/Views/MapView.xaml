@@ -1,0 +1,43 @@
+<Page
+    x:Class="LondonUndergroundSimulator.Views.MapView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:canvas="using:Microsoft.Graphics.Canvas.UI.Xaml">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!-- Top control bar -->
+        <StackPanel Orientation="Horizontal"
+                    Spacing="12"
+                    Margin="12"
+                    Grid.Row="0">
+            <TextBlock Text="Speed:"
+                       VerticalAlignment="Center"
+                       FontSize="14"/>
+
+            <Slider x:Name="SpeedSlider"
+                    Minimum="0"
+                    Maximum="10"
+                    Value="4"
+                    Width="200"
+                    TickFrequency="0.1"
+                    ValueChanged="SpeedSlider_ValueChanged"/>
+
+            <TextBlock x:Name="SpeedStatusText"
+               Text="Drag left or right to adjust sim speed"
+               VerticalAlignment="Center"
+               Margin="8,0,0,0"/>
+
+        </StackPanel>
+
+        <!-- Canvas fills the rest -->
+        <canvas:CanvasControl x:Name="MapCanvas"
+                              Grid.Row="1"
+                              Draw="MapCanvas_Draw" />
+    </Grid>
+
+</Page>

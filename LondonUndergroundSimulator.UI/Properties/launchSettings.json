@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "LondonUndergroundSimulator (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "LondonUndergroundSimulator (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}

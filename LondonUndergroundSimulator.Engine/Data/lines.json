@@ -1,0 +1,626 @@
+[
+  {
+    "name": "Piccadilly",
+    "colorHex": "#0019A8",
+    "numberOfTrains": 2,
+    "stations": [
+      {
+        "name": "Cockfosters",
+        "x": 0,
+        "y": 0
+      },
+      {
+        "name": "Oakwood",
+        "x": 20,
+        "y": 20
+      },
+      {
+        "name": "Southgate",
+        "x": 40,
+        "y": 40
+      },
+      {
+        "name": "Arnos Grove",
+        "x": 60,
+        "y": 60
+      },
+      {
+        "name": "Bounds Green",
+        "x": 80,
+        "y": 80
+      },
+      {
+        "name": "Wood Green",
+        "x": 100,
+        "y": 100
+      },
+      {
+        "name": "Turnpike Lane",
+        "x": 120,
+        "y": 120
+      },
+      {
+        "name": "Manor House",
+        "x": 140,
+        "y": 140
+      },
+      {
+        "name": "Finsbury Park",
+        "x": 160,
+        "y": 160
+      },
+      {
+        "name": "Arsenal",
+        "x": 180,
+        "y": 180
+      },
+      {
+        "name": "Holloway Road",
+        "x": 200,
+        "y": 200
+      },
+      {
+        "name": "Caledonian Road",
+        "x": 220,
+        "y": 220
+      },
+      {
+        "name": "King's Cross St Pancras",
+        "x": 240,
+        "y": 240
+      },
+      {
+        "name": "Russell Square",
+        "x": 260,
+        "y": 260
+      },
+      {
+        "name": "Holborn",
+        "x": 280,
+        "y": 280
+      },
+      {
+        "name": "Covent Garden",
+        "x": 300,
+        "y": 300
+      },
+      {
+        "name": "Leicester Square",
+        "x": 320,
+        "y": 320
+      },
+      {
+        "name": "Piccadilly Circus",
+        "x": 340,
+        "y": 340
+      },
+      {
+        "name": "Green Park",
+        "x": 360,
+        "y": 360
+      },
+      {
+        "name": "Hyde Park Corner",
+        "x": 380,
+        "y": 380
+      },
+      {
+        "name": "Knightsbridge",
+        "x": 400,
+        "y": 400
+      },
+      {
+        "name": "South Kensington",
+        "x": 420,
+        "y": 420
+      },
+      {
+        "name": "Gloucester Road",
+        "x": 440,
+        "y": 440
+      },
+      {
+        "name": "Earl's Court",
+        "x": 460,
+        "y": 460
+      },
+      {
+        "name": "Barons Court",
+        "x": 480,
+        "y": 480
+      },
+      {
+        "name": "Hammersmith",
+        "x": 500,
+        "y": 500
+      }
+    ]
+  },
+
+  {
+    "name": "Central",
+    "colorHex": "#DC241F",
+    "numberOfTrains": 2,
+    "stations": [
+      {
+        "name": "West Ruislip",
+        "x": 0,
+        "y": 200
+      },
+      {
+        "name": "Ruislip Gardens",
+        "x": 20,
+        "y": 200
+      },
+      {
+        "name": "South Ruislip",
+        "x": 40,
+        "y": 200
+      },
+      {
+        "name": "Northolt",
+        "x": 60,
+        "y": 200
+      },
+      {
+        "name": "Greenford",
+        "x": 80,
+        "y": 200
+      },
+      {
+        "name": "Perivale",
+        "x": 100,
+        "y": 200
+      },
+      {
+        "name": "Hanger Lane",
+        "x": 120,
+        "y": 200
+      },
+      {
+        "name": "Ealing Broadway",
+        "x": 140,
+        "y": 200
+      },
+      {
+        "name": "West Acton",
+        "x": 160,
+        "y": 200
+      },
+      {
+        "name": "North Acton",
+        "x": 180,
+        "y": 200
+      },
+      {
+        "name": "East Acton",
+        "x": 200,
+        "y": 200
+      },
+      {
+        "name": "White City",
+        "x": 220,
+        "y": 200
+      },
+      {
+        "name": "Shepherd's Bush",
+        "x": 240,
+        "y": 200
+      },
+      {
+        "name": "Holland Park",
+        "x": 260,
+        "y": 200
+      },
+      {
+        "name": "Notting Hill Gate",
+        "x": 280,
+        "y": 200
+      },
+      {
+        "name": "Queensway",
+        "x": 300,
+        "y": 200
+      },
+      {
+        "name": "Lancaster Gate",
+        "x": 320,
+        "y": 200
+      },
+      {
+        "name": "Marble Arch",
+        "x": 340,
+        "y": 200
+      },
+      {
+        "name": "Bond Street",
+        "x": 360,
+        "y": 200
+      },
+      {
+        "name": "Oxford Circus",
+        "x": 380,
+        "y": 200
+      },
+      {
+        "name": "Tottenham Court Road",
+        "x": 400,
+        "y": 200
+      },
+      {
+        "name": "Holborn",
+        "x": 420,
+        "y": 200
+      },
+      {
+        "name": "Chancery Lane",
+        "x": 440,
+        "y": 200
+      },
+      {
+        "name": "St Paul's",
+        "x": 460,
+        "y": 200
+      },
+      {
+        "name": "Bank",
+        "x": 480,
+        "y": 200
+      },
+      {
+        "name": "Liverpool Street",
+        "x": 500,
+        "y": 200
+      }
+    ]
+  },
+
+  {
+    "name": "Victoria",
+    "colorHex": "#0098D4",
+    "numberOfTrains": 2,
+    "stations": [
+      {
+        "name": "Walthamstow Central",
+        "x": 240,
+        "y": 0
+      },
+      {
+        "name": "Blackhorse Road",
+        "x": 240,
+        "y": 20
+      },
+      {
+        "name": "Tottenham Hale",
+        "x": 240,
+        "y": 40
+      },
+      {
+        "name": "Seven Sisters",
+        "x": 240,
+        "y": 60
+      },
+      {
+        "name": "Finsbury Park",
+        "x": 240,
+        "y": 160
+      },
+      {
+        "name": "Highbury & Islington",
+        "x": 240,
+        "y": 180
+      },
+      {
+        "name": "King's Cross St Pancras",
+        "x": 240,
+        "y": 240
+      },
+      {
+        "name": "Euston",
+        "x": 240,
+        "y": 260
+      },
+      {
+        "name": "Warren Street",
+        "x": 240,
+        "y": 280
+      },
+      {
+        "name": "Oxford Circus",
+        "x": 380,
+        "y": 200
+      },
+      {
+        "name": "Green Park",
+        "x": 360,
+        "y": 360
+      },
+      {
+        "name": "Victoria",
+        "x": 340,
+        "y": 380
+      },
+      {
+        "name": "Pimlico",
+        "x": 340,
+        "y": 400
+      },
+      {
+        "name": "Vauxhall",
+        "x": 340,
+        "y": 420
+      },
+      {
+        "name": "Stockwell",
+        "x": 340,
+        "y": 440
+      },
+      {
+        "name": "Brixton",
+        "x": 340,
+        "y": 460
+      }
+    ]
+  },
+
+  {
+    "name": "Jubilee",
+    "colorHex": "#A0A5A9",
+    "numberOfTrains": 2,
+    "stations": [
+      {
+        "name": "Stanmore",
+        "x": 0,
+        "y": -100
+      },
+      {
+        "name": "Canons Park",
+        "x": 20,
+        "y": -80
+      },
+      {
+        "name": "Queensbury",
+        "x": 40,
+        "y": -60
+      },
+      {
+        "name": "Kingsbury",
+        "x": 60,
+        "y": -40
+      },
+      {
+        "name": "Wembley Park",
+        "x": 80,
+        "y": -20
+      },
+      {
+        "name": "Neasden",
+        "x": 100,
+        "y": 0
+      },
+      {
+        "name": "Dollis Hill",
+        "x": 120,
+        "y": 20
+      },
+      {
+        "name": "Willesden Green",
+        "x": 140,
+        "y": 40
+      },
+      {
+        "name": "Kilburn",
+        "x": 160,
+        "y": 60
+      },
+      {
+        "name": "West Hampstead",
+        "x": 180,
+        "y": 80
+      },
+      {
+        "name": "Finchley Road",
+        "x": 200,
+        "y": 100
+      },
+      {
+        "name": "Swiss Cottage",
+        "x": 220,
+        "y": 120
+      },
+      {
+        "name": "St John's Wood",
+        "x": 240,
+        "y": 140
+      },
+      {
+        "name": "Baker Street",
+        "x": 260,
+        "y": 160
+      },
+      {
+        "name": "Bond Street",
+        "x": 360,
+        "y": 200
+      },
+      {
+        "name": "Green Park",
+        "x": 360,
+        "y": 360
+      },
+      {
+        "name": "Westminster",
+        "x": 360,
+        "y": 380
+      },
+      {
+        "name": "Waterloo",
+        "x": 360,
+        "y": 400
+      },
+      {
+        "name": "Southwark",
+        "x": 360,
+        "y": 420
+      },
+      {
+        "name": "London Bridge",
+        "x": 360,
+        "y": 440
+      },
+      {
+        "name": "Bermondsey",
+        "x": 360,
+        "y": 460
+      },
+      {
+        "name": "Canada Water",
+        "x": 360,
+        "y": 480
+      },
+      {
+        "name": "Canary Wharf",
+        "x": 360,
+        "y": 500
+      },
+      {
+        "name": "North Greenwich",
+        "x": 360,
+        "y": 520
+      }
+    ]
+  },
+
+  {
+    "name": "Bakerloo",
+    "colorHex": "#B36305",
+    "numberOfTrains": 2,
+    "stations": [
+      {
+        "name": "Harrow & Wealdstone",
+        "x": -40,
+        "y": -70
+      },
+      {
+        "name": "Kenton",
+        "x": -20,
+        "y": -50
+      },
+      {
+        "name": "South Kenton",
+        "x": 0,
+        "y": -30
+      },
+      {
+        "name": "North Wembley",
+        "x": 20,
+        "y": -10
+      },
+      {
+        "name": "Wembley Central",
+        "x": 40,
+        "y": 10
+      },
+      {
+        "name": "Stonebridge Park",
+        "x": 60,
+        "y": 30
+      },
+      {
+        "name": "Harlesden",
+        "x": 80,
+        "y": 50
+      },
+      {
+        "name": "Willesden Junction",
+        "x": 100,
+        "y": 70
+      },
+      {
+        "name": "Kensal Green",
+        "x": 120,
+        "y": 90
+      },
+      {
+        "name": "Queen's Park",
+        "x": 140,
+        "y": 110
+      },
+      {
+        "name": "Kilburn Park",
+        "x": 160,
+        "y": 130
+      },
+      {
+        "name": "Maida Vale",
+        "x": 180,
+        "y": 150
+      },
+      {
+        "name": "Warwick Avenue",
+        "x": 200,
+        "y": 170
+      },
+      {
+        "name": "Paddington",
+        "x": 220,
+        "y": 190
+      },
+      {
+        "name": "Edgware Road",
+        "x": 240,
+        "y": 210
+      },
+      {
+        "name": "Marylebone",
+        "x": 260,
+        "y": 230
+      },
+      {
+        "name": "Baker Street",
+        "x": 260,
+        "y": 160
+      },
+      {
+        "name": "Regent's Park",
+        "x": 260,
+        "y": 180
+      },
+      {
+        "name": "Oxford Circus",
+        "x": 380,
+        "y": 200
+      },
+      {
+        "name": "Piccadilly Circus",
+        "x": 340,
+        "y": 340
+      },
+      {
+        "name": "Charing Cross",
+        "x": 340,
+        "y": 360
+      },
+      {
+        "name": "Embankment",
+        "x": 340,
+        "y": 380
+      },
+      {
+        "name": "Waterloo",
+        "x": 360,
+        "y": 400
+      },
+      {
+        "name": "Lambeth North",
+        "x": 380,
+        "y": 420
+      },
+      {
+        "name": "Elephant & Castle",
+        "x": 380,
+        "y": 440
+      }
+    ]
+  }
+]
