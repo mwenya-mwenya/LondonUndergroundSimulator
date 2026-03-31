@@ -105,3 +105,38 @@ LondonUndergroundSimulator
    ├─ MainWindow.xaml.cs
    ├─ LondonUndergroundSimulator.UI.csproj
    └─ app.manifest
+
+🚀 Installation & Setup
+
+📦 Prerequisites
+Make sure you have the following installed:
+- .NET 8.0 SDK
+- Visual Studio 2022 (17.8 or later) with:
+- Desktop development with C++ (WinUI requirement)
+- .NET Desktop Development
+- Windows 10/11 with WinUI 3 support
+- (Optional) xUnit Test Runner in Visual Studio
+
+📥 Clone the Repository
+git clone https://github.com/<your-username>/<your-repo>.git
+cd <your-repo>
+
+🛠️ Build the Solution
+Using the .NET CLI:
+dotnet build
+Or in Visual Studio:
+- Open the solution .sln
+- Select Build → Build Solution
+
+▶️ Run the Simulator (WinUI App)
+From the command line:
+dotnet run --project src/YourWinUIProjectName
+
+Or in Visual Studio:
+- Set the WinUI project as the Startup Project
+- Press F5 to run with debugging
+or Ctrl+F5 to run without debugging
+
+🧪 Run the xUnit Test Suite
+dotnet test
+This will execute all simulation engine tests and display results in the console.
