@@ -3,7 +3,7 @@
 London Underground Simulator is a custom-built C#/.NET 8 simulation engine that models train movement, dwell behaviour, delays, geometry interpolation, and real-time arrival predictions along a track.
 This project was designed as a portfolio-quality demonstration of clean architecture, deterministic simulation logic, and comprehensive automated testing.
 The engine updates train position, rotation, carriage geometry, dwell timing, and arrival timestamps in real time, using a modular and testable architecture.
-
+[Watch the demo](https://github.com/mwenya-mwenya/LondonUndergroundSimulator/blob/main/LondonUndergroundSimulator_DEMO.mp4)
 ✨ Features
 🚆 Train Movement Engine
 - Progress-based movement along a track
