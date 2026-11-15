@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DataPipeLine\DataPipeLine.csproj" />
+    <ProjectReference Include="..\LondonUndergroundSimulator.Engine\LondonUndergroundSimulator.Engine.csproj" />
+  </ItemGroup>
+
+</Project>
