@@ -5,110 +5,234 @@ London Underground Simulator is a custom-built C#/.NET 8 simulation engine that 
 This project was designed as a portfolio-quality demonstration of clean architecture, deterministic simulation logic, and comprehensive automated testing.
 The engine updates train position, rotation, carriage geometry, dwell timing, and arrival timestamps in real time, using a modular and testable architecture.
 
-![Demo](https://github.com/mwenya-mwenya/LondonUndergroundSimulator/blob/main/LondonUndergroundSimulatorDemo.gif)
+[LondonUndergroundSimulatorDemo.webm](https://github.com/user-attachments/assets/2d44c530-c364-4b53-adc4-83ddde487708)
 
-✨ Features  
+# 🚇 Project Evolution
 
-🚆 Train Movement Engine
-- Progress-based movement along a track
-- Direction-aware interpolation
-- Looping behaviour at end-of-line
-- Accurate travel time calculation based on distance and speed
-⏱️ Timing & Scheduling
-- Scheduled arrival time calculation
-- Expected arrival time including delays
-- Per-station arrival timestamps
-- Deterministic clock for testing
-🕒 Dwell & Delay Logic
-- Automatic dwell at stations
-- Configurable dwell duration
-- Delay accumulation and cooldown
-- Delay reasons tracking
-📐 Geometry System
-- Smooth position interpolation along track points
-- Rotation based on forward vector
-- Carriage spacing and angle calculation
-- Support for offset and reversed tracks
-🧪 Automated Test Suite
-- xUnit-based deterministic tests
-- Fake engine for time-freezing
-- Test helpers for tracks, lines, and trains
-- Movement, timing, and arrival timestamp tests
+The London Underground Simulator began as a simple WinUI train-rendering experiment and gradually evolved into a machine-learning-enabled transport simulation platform.
 
-🛠️ Technologies Used
-- C# / .NET 8
-- xUnit for testing
-- Vector2 geometry (System.Numerics)
-- Clean, modular architecture
-- Visual Studio 2022
+---
 
-Folder Structure
+# 🎨 Phase 1: Visual Simulator
 
-```markdown
+### 🎯 Objective
+Build a visual representation of trains moving across a map.
+
+### ✅ Features Implemented
+
+- 🚆 WinUI desktop application
+- 🎞️ Train rendering and animations
+- 🗺️ Underground map visualisation
+- ⏱️ Real-time train movement between stations
+- ⚙️ Configurable simulation speed controls
+- 📍 Early route and station models
+
+### 🧠 Skills Learned
+
+- C#
+- WinUI 3
+- XAML
+- Data Binding
+- Animation techniques
+- Object-Oriented Programming (OOP)
+
+---
+
+# 🚉 Phase 2: Operational Railway Simulation
+
+### 🎯 Objective
+Transform the visual demo into a functioning transport simulation.
+
+### ✅ Features Implemented
+
+- 🏙️ Station network modelling
+- 🚇 Underground line definitions
+- 🚆 Multi-train support
+- 👥 Passenger generation system
+- 🚪 Passenger boarding and alighting
+- 📦 Train capacity management
+- 🗺️ Journey planning
+- 🔀 Interchange stations
+- 📅 Service schedules
+- 🌅 Time-of-day demand modelling
+- 🚦 Service activation and operational rules
+
+### 🧠 Skills Learned
+
+- Domain modelling
+- Simulation programming
+- State management
+- Data structures and collections
+- Route planning algorithms
+- Event-driven programming
+- Real-world transport operations modelling
+
+---
+
+# 🏗️ Phase 3: Software Engineering & Architecture
+
+### 🎯 Objective
+Refactor the simulator into a scalable and maintainable software platform.
+
+### ✅ Features Implemented
+
+- 🏛️ MVVM architecture
+- 🔌 Dependency Injection
+- 🧩 Service-oriented architecture
+- 🔄 Simulation host abstraction
+- 📐 Interface-driven design
+- 📝 Centralised logging
+- 🔍 Diagnostics and monitoring
+- 📊 Simulation analytics dashboard
+- 🗃️ Modular subsystems
+- 💾 User data persistence
+
+### 🧠 Skills Learned
+
+- SOLID Principles
+- Software Architecture
+- Design Patterns
+- Dependency Injection
+- Separation of Concerns
+- Advanced Debugging
+- Application Scalability
+
+---
+
+# 🤖 Phase 4: AI & Machine Learning Platform
+
+### 🎯 Objective
+Enable the simulator to learn from operational data and make predictions.
+
+### ✅ Features Implemented
+
+- 📈 Simulation data collection pipeline
+- 📄 CSV export infrastructure
+- 🐍 Python machine learning integration
+- ⚡ gRPC communication layer
+- 🧠 Inference engine
+- 🔮 Train frequency prediction models
+- 🏋️ Automated model training
+- ❤️ Model health monitoring
+- 📋 Training status management
+- 🔄 Manual retraining workflows
+- 📊 Prediction analytics dashboard
+- 📦 Model lifecycle management
+
+### 🧠 Skills Learned
+
+- Machine Learning fundamentals
+- Python and .NET integration
+- gRPC services
+- Data Engineering
+- Feature Engineering
+- Model Training Pipelines
+- AI-powered Simulation Systems
+
+---
+
+# 🛠️ Current Technology Stack
+
+```text
+🚇 Frontend
+├── WinUI 3
+├── XAML
+└── MVVM
+
+⚙️ Core Simulation
+├── .NET
+├── C#
+├── OOP
+├── Event-Driven Architecture
+└── Service-Based Design
+
+🤖 Machine Learning
+├── Python
+├── Gradient Boosting Models
+├── CSV Data Pipelines
+└── Model Retraining
+
+🔗 Communication
+└── gRPC
+
+💾 Data Storage
+├── JSON
+├── CSV
+└── Local User Data
+```
+
+### Folder Structure
+
+# 📁 Solution Structure
+
 ```text
 LondonUndergroundSimulator
-├─ LondonUndergroundSimulator.sln
 │
-├─ LondonUndergroundSimulator.Engine/
-│  ├─ Data/
-│  │   ├─ lines.json
-│  │   └─ TrainConfig.cs
-│  └─ DelayServices/
-│  │   └─ SifnalFailureRule.cs
-│  ├─ Models/
-│  │   ├─ Line.cs
-│  │   ├─ Station.cs
-│  │   ├─ TimeTableEntry.cs
-│  │   ├─ Track.cs
-│  │   └─ Train.cs  
-│  ├─ Services/
-│  │   ├─ FailureRuleEngine.cs
-│  │   ├─ MapLoader.cs
-│  │   ├─ SimulationEngine.cs
-│  │   ├─ TimeTableService.cs
-│  │   ├─ TrainDelayService.cs
-│  │   ├─ TrainMovementService.cs
-│  │   └─ Trains.cs   
-│  └─ Interfaces/
-│      ├─ IFailure.cs
-│      ├─ IFailureRuleEngine.cs
-│      ├─ ISimulationContext.cs
-│      ├─ ITrainDelayService.cs
-│      └─ ITrainMovementService.cs
-├─ LondonUndergroundSimulator.Tests/
-│  ├─ Movement/
-│  ├─ Timing/
-│  ├─ TestHelpers/
-│  ├─ TestDoubles/
-│  └─ TrainMovement_TimestampTests.cs
+├── 🚇 LondonUndergroundSimulator.UI
+│   ├── Views
+│   ├── ViewModels
+│   ├── Rendering
+│   ├── Services
+│   └── Colours
 │
-└─ LondonUndergroundSimulator.UI/
-   ├─ Assets/
-   ├─ Colours/
-   ├─ Rendering/
-   │  ├─ MapRenderer.cs
-   │  └─ TrainRenderer.cs
-   ├─ Services/
-   │  └─ MapTransformService.cs
-   ├─ ViewModels/
-   │  ├─ MainViewModel.cs
-   │  ├─ MapViewModel.cs
-   │  └─ TrainViewModel.cs
-   ├─ Views/
-   │  ├─ MapView.xaml
-   │  ├─ MapView.xaml.cs
-   │  ├─ TrainListView.xaml
-   │  └─ TrainListView.xaml.cs
-   ├─ App.xaml
-   ├─ App.xaml.cs
-   ├─ MainWindow.xaml
-   ├─ MainWindow.xaml.cs
-   ├─ LondonUndergroundSimulator.UI.csproj
-   └─ app.manifest
+├── ⚙️ LondonUndergroundSimulator.Engine
+│   ├── Models
+│   ├── Services
+│   ├── Interfaces
+│   ├── DelayServices
+│   ├── Logging
+│   └── SimulationData
+│
+├── 🏗️ LondonUndergroundSimulator.App
+│   ├── Services
+│   ├── Interfaces
+│   └── Models
+│
+├── 🔧 LondonUndergroundSimulator.Infrastructure
+│   ├── Interfaces
+│   └── Services
+│
+├── 📊 DataPipeline
+│   ├── Aggregators
+│   ├── Readers
+│   ├── Export
+│   ├── Models
+│   └── Services
+│
+├── ▶️ DataPipelineRunner
+│   └── Services
+│
+├── 🤖 MLInferenceEngine
+│   ├── Proto
+│   └── Services
+│
+├── 🧠 MLInferenceEngine.Abstractions
+│   ├── Interfaces
+│   └── Models
+│
+├── 🔮 MLInferenceEngine.Orchestration
+│   └── Services
+│
+├── 🏋️ LondonUndergroundSimulator.Training
+│   ├── Data
+│   ├── Services
+│   └── TrainingModels
+│
+├── 🐍 PythonInferenceService
+│   ├── app
+│   ├── generated
+│   └── models
+│
+├── 📈 Data
+    ├── lines.json
+    ├── trains.json
+    ├── simulation_log.csv
+    ├── model_status.json
+    └── TrainingModels
+```
+###🚀 Installation & Setup
 
-🚀 Installation & Setup
-
-📦 Prerequisites
+#📦 Prerequisites
 Make sure you have the following installed:
 - .NET 8.0 SDK
 - Visual Studio 2022 (17.8 or later) with:
@@ -117,18 +241,18 @@ Make sure you have the following installed:
 - Windows 10/11 with WinUI 3 support
 - (Optional) xUnit Test Runner in Visual Studio
 
-📥 Clone the Repository
+#📥 Clone the Repository
 git clone https://github.com/<your-username>/<your-repo>.git
 cd <your-repo>
 
-🛠️ Build the Solution
+#🛠️ Build the Solution
 Using the .NET CLI:
 dotnet build
 Or in Visual Studio:
 - Open the solution .sln
 - Select Build → Build Solution
 
-▶️ Run the Simulator (WinUI App)
+#▶️ Run the Simulator (WinUI App)
 From the command line:
 dotnet run --project src/YourWinUIProjectName
 
@@ -137,6 +261,5 @@ Or in Visual Studio:
 - Press F5 to run with debugging
 or Ctrl+F5 to run without debugging
 
-🧪 Run the xUnit Test Suite
-dotnet test
-This will execute all simulation engine tests and display results in the console.
+
+
