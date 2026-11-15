@@ -1,0 +1,55 @@
+syntax = "proto3";
+
+package inference;
+
+service FrequencyPredictor {
+  rpc Predict (SnapshotRequest) returns (SnapshotResponse);
+  rpc Ping (PingRequest) returns (PingResponse);
+  rpc Shutdown(PingRequest) returns (PingResponse);
+
+}
+
+message SnapshotRequest {
+  // Operational metrics
+  double avg_waiting = 1;
+  double max_waiting = 2;
+  double avg_load_factor = 3;
+  double current_train_count = 4;
+
+  // Raw time-of-day
+  int32 day_of_week = 5;
+  int32 hour = 6;
+  int32 minute = 7;
+  int32 time_minutes = 8;
+
+  // Cyclical time encoding
+  double hour_sin = 9;
+  double hour_cos = 10;
+  double minute_sin = 11;
+  double minute_cos = 12;
+  double day_sin = 13;
+  double day_cos = 14;
+
+  // Peak/off‑peak flags
+  bool is_morning_peak = 15;
+  bool is_lunch_peak = 16;
+  bool is_evening_peak = 17;
+  bool is_weekend = 18;
+
+  // Trend features
+  double delta_waiting = 19;
+  double delta_load_factor = 20;
+
+  // Simulator-derived demand multiplier
+  double expected_demand_multiplier = 21;
+}
+
+message SnapshotResponse {
+  double recommended_frequency = 1;
+}
+
+message PingRequest {}
+
+message PingResponse {
+  bool isHealthy = 1;
+}
