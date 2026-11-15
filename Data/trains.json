@@ -1,0 +1,52 @@
+﻿[
+  {
+    "Id": "1001",
+    "LineId": 1,
+    "InitialPosition": 0
+  },
+  {
+    "Id": "1002",
+    "LineId": 1,
+    "InitialPosition": 200
+  },
+  {
+    "Id": "2001",
+    "LineId": 2,
+    "InitialPosition": 0
+  },
+  {
+    "Id": "2002",
+    "LineId": 2,
+    "InitialPosition": 200
+  },
+  {
+    "Id": "3001",
+    "LineId": 3,
+    "InitialPosition": 0
+  },
+  {
+    "Id": "3002",
+    "LineId": 3,
+    "InitialPosition": 200
+  },
+  {
+    "Id": "4001",
+    "LineId": 4,
+    "InitialPosition": 0
+  },
+  {
+    "Id": "4002",
+    "LineId": 4,
+    "InitialPosition": 200
+  },
+  {
+    "Id": "5001",
+    "LineId": 5,
+    "InitialPosition": 0
+  },
+  {
+    "Id": "5002",
+    "LineId": 5,
+    "InitialPosition": 200
+  }
+]
