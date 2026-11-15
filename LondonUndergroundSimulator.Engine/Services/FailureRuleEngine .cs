@@ -1,8 +1,8 @@
 ﻿using LondonUndergroundSimulator.Engine.Interfaces;
 using LondonUndergroundSimulator.Engine.Models;
-using LondonUndergroundSimulator.Engine.Interfaces;
-using LondonUndergroundSimulator.Engine.Models;
+using LondonUndergroundSimulator.Engine.Services;
 using System.Collections.Generic;
+
 
 namespace LondonUndergroundSimulator.Services
 {
@@ -13,7 +13,12 @@ namespace LondonUndergroundSimulator.Services
     public class FailureRuleEngine : IFailureRuleEngine
     {
         private readonly List<IFailureRule> _rules = new();
+        private IHeadwayService _headwayService;
 
+        public FailureRuleEngine(IHeadwayService headwayService)
+        {
+            _headwayService = headwayService;
+        }
         public void AddRule(IFailureRule rule)
         {
             _rules.Add(rule);
@@ -25,9 +30,10 @@ namespace LondonUndergroundSimulator.Services
         /// </summary>
         public IFailureRule? Evaluate(Train train, float dt)
         {
+            var ahead = _headwayService.GetTrainAhead(train);
             foreach (var rule in _rules)
             {
-                if (rule.ShouldTrigger(dt))
+                if (rule.ShouldTrigger(dt, train, ahead ))
                     return rule;
             }
 

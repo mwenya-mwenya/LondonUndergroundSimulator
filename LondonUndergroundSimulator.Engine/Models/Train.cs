@@ -43,5 +43,11 @@ namespace LondonUndergroundSimulator.Engine.Models
         public TimeSpan ScheduledArrivalTime { get; set; }
 
         public TimeSpan[] ArrivalTimestamps { get; set; }
+
+        public int CurrentPassengers { get; set; }
+        public int MaxCapacity { get; set; }
+
+        public bool HasProcessedDwell { get; set; }
+
     }
 }

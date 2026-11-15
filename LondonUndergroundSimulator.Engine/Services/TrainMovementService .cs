@@ -12,9 +12,12 @@ namespace LondonUndergroundSimulator.Engine.Services
 
         private readonly SimulationEngine _engine;
 
-        public TrainMovementService(SimulationEngine engine)
+        private readonly ITerminalLoopService _terminalLoopService;
+
+        public TrainMovementService(SimulationEngine engine, ITerminalLoopService terminalLoopService)
         {
             _engine = engine;
+            _terminalLoopService = terminalLoopService;
         }
 
 
@@ -24,9 +27,14 @@ namespace LondonUndergroundSimulator.Engine.Services
         // ---------------------------------------------------------
         public void UpdateMovement(Train train, float dt)
         {
+            
+
             var track = train.Track;
             var line = train.Line;
             int lastIndex = line.Stations.Count - 1;
+            var checkWaitingStationPassengers = line.Stations.Aggregate(false, (acc, station) => acc || station.WaitingPassengers > 0);
+            if (train.Line.IsServiceActive != true)
+                return;
 
             // -----------------------------
             // DWELL HANDLING
@@ -54,6 +62,51 @@ namespace LondonUndergroundSimulator.Engine.Services
             float endDist = track.StationDistances[nextIndexActual];
             float segmentLength = MathF.Abs(endDist - startDist);
 
+            //// 🚨 Guard against bad geometry or speed
+            //if (segmentLength < 0.5f || train.Speed <= 0f)
+            //{
+            //    // Don’t advance progress on a degenerate segment
+            //    // You can log this to find bad data:
+            //    Debug.WriteLine($"[Movement] Degenerate segment for {train.Id}: " +
+            //                    $"startDist={startDist}, endDist={endDist}, segmentLength={segmentLength}");
+            //    return;
+            //}
+
+            bool degenerateSegment = segmentLength < 0.5f || train.Speed <= 0f;
+
+            // Compute p BEFORE deciding what to do
+            float p = train.Progress;
+            if (train.Direction == -1)
+                p = 1f - p;
+
+            // If at terminal, let loop logic handle it
+            bool atTerminal =
+                (train.Direction == 1 && train.CurrentStationIndex == lastIndex) ||
+                (train.Direction == -1 && train.CurrentStationIndex == 0);
+
+            if (degenerateSegment)
+            {
+                if (atTerminal)
+                {
+                    p = (train.Direction == 1) ? 1f : 0f;
+
+                    if (train.Direction == 1 && p >= 1f - EPSILON)
+                    {
+                        _terminalLoopService.HandleLoop(train);
+                        return;
+                    }
+                    if (train.Direction == -1 && p <= EPSILON)
+                    {
+                        _terminalLoopService.HandleLoop(train);
+                        return;
+                    }
+                }
+
+                return;
+            }
+
+
+
             float travelSeconds = segmentLength / train.Speed;
             float progressPerSecond = 1f / travelSeconds;
 
@@ -62,7 +115,7 @@ namespace LondonUndergroundSimulator.Engine.Services
             // -----------------------------
             // DIRECTION-AGNOSTIC PROGRESS p
             // -----------------------------
-            float p = train.Progress;
+            p = train.Progress;
             if (train.Direction == -1)
                 p = 1f - p;
 
@@ -73,15 +126,20 @@ namespace LondonUndergroundSimulator.Engine.Services
                 train.CurrentStationIndex == lastIndex &&
                 p >= 1f - EPSILON)
             {
-                train.CurrentStationIndex = 0;
-                p = 0f;
+                //train.CurrentStationIndex = 0;
+                //p = 0f;
+       
+
+                _terminalLoopService.HandleLoop(train);
+                return;
             }
             else if (train.Direction == -1 &&
                      train.CurrentStationIndex == 0 &&
                      p <= EPSILON)
             {
-                train.CurrentStationIndex = lastIndex;
-                p = 0f;
+
+                _terminalLoopService.HandleLoop(train);
+                return;
             }
 
             // -----------------------------
@@ -94,6 +152,8 @@ namespace LondonUndergroundSimulator.Engine.Services
 
                 train.IsDwelling = true;
                 train.DwellTimer = train.DwellDuration;
+                train.HasProcessedDwell = false;
+
 
                 // Compute next segment arrival time
                 int nextIndex = Math.Clamp(train.CurrentStationIndex + train.Direction, 0, lastIndex);
@@ -115,6 +175,7 @@ namespace LondonUndergroundSimulator.Engine.Services
 
                 train.IsDwelling = true;
                 train.DwellTimer = train.DwellDuration;
+                train.HasProcessedDwell = false;
             }
 
             train.CurrentStationIndex = Math.Clamp(train.CurrentStationIndex, 0, lastIndex);
@@ -150,24 +211,11 @@ namespace LondonUndergroundSimulator.Engine.Services
 
             train.Position = track.GetPointAt(t);
 
-            // -----------------------------
-            // ROTATION (original engine method)
-            // -----------------------------
-            float d1 = headDist + train.Direction * 20f;
-            float d2 = headDist + train.Direction * 40f;
 
-            if (d1 < 0) d1 += track.TotalLength;
-            if (d2 < 0) d2 += track.TotalLength;
-            if (d1 > track.TotalLength) d1 -= track.TotalLength;
-            if (d2 > track.TotalLength) d2 -= track.TotalLength;
+            float tNorm = headDist / track.TotalLength;
+            Vector2 tangent = track.GetTangentAt(tNorm);
+            train.Rotation = MathF.Atan2(tangent.Y, tangent.X);
 
-            var p1 = track.GetPointAt(d1 / track.TotalLength);
-            var p2 = track.GetPointAt(d2 / track.TotalLength);
-
-            var forward = p2 - p1;
-            float targetAngle = MathF.Atan2(forward.Y, forward.X);
-
-            train.Rotation = LerpAngle(train.Rotation, targetAngle, 8f * dt);
 
             // -----------------------------
             // CARRIAGES
@@ -206,14 +254,9 @@ namespace LondonUndergroundSimulator.Engine.Services
         private float Lerp(float a, float b, float t)
             => a + (b - a) * t;
 
-        private float LerpAngle(float a, float b, float t)
-        {
-            float diff = MathF.Atan2(MathF.Sin(b - a), MathF.Cos(b - a));
-            return a + diff * t;
-        }
-
         public void InitialiseTrain(Train train)
         {
+
             var track = train.Track;
             var line = train.Line;
             int lastIndex = line.Stations.Count - 1;
@@ -230,5 +273,7 @@ namespace LondonUndergroundSimulator.Engine.Services
             train.ExpectedArrivalTime =
                 train.ScheduledArrivalTime + TimeSpan.FromSeconds(train.DelayDuration);
         }
+
+
     }
 }

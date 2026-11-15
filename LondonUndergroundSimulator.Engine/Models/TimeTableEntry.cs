@@ -27,9 +27,23 @@ namespace LondonUndergroundSimulator.Engine.Models
         public record TimetableStatus(string Text, string Color);
 
         public IReadOnlyList<string> DelayReasons { get; init; }
+        public int CurrentPassengers { get; set; }
+        public int CurrentStationWaitingPassengers { get; set; }
+
+        public bool ServiceStatus { get; set; } = true;
+
+        public float LingerTime { get; set; } = 0f;
+        public bool WasRecentlyBusy { get; set; } = false;
+        public bool ShouldDisplay { get; set; }
+
+        public float Opacity { get; set; } = 0f;   // 0 = invisible, 1 = fully visible
+        public bool IsVisible { get; set; } = false;
+
 
         public string GetCountdown(TimeSpan currentTime)
         {
+            if (ServiceStatus == false)
+                return "Service Not Active";
             var remaining = ExpectedArrival - currentTime;
 
             if (IsDwelling)
@@ -47,6 +61,11 @@ namespace LondonUndergroundSimulator.Engine.Models
 
         public TimetableStatus GetStatus()
         {
+            if (ServiceStatus == false)
+                return new TimetableStatus(
+                    "Service Not Active",
+                     "A9A9A9"
+                );
             if (IsDwelling)
             {
                 return new TimetableStatus(

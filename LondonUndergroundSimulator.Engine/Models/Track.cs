@@ -12,7 +12,7 @@ namespace LondonUndergroundSimulator.Engine.Models
         public List<Vector2> Points { get; set; } = new();
         public List<float> StationDistances { get; set; } = new();
         public float TotalLength { get; set; }
-
+        public string TrackDirection { get; set; }
         public Vector2 GetPointAt(float t)
         {
             if (Points.Count < 2)
@@ -38,6 +38,8 @@ namespace LondonUndergroundSimulator.Engine.Models
         public static Track GenerateOffsetTrack(Track original, float offset)
         {
             Track t = new();
+
+            t.TrackDirection = "Eastbound";
 
             for (int i = 0; i < original.Points.Count; i++)
             {
@@ -72,7 +74,7 @@ namespace LondonUndergroundSimulator.Engine.Models
         public static Track Reverse(Track original)
         {
             var reversed = new Track();
-
+            reversed.TrackDirection = "Westbound";
             // 1. Reverse geometry
             reversed.Points = new List<Vector2>(original.Points);
             reversed.Points.Reverse();
@@ -90,6 +92,28 @@ namespace LondonUndergroundSimulator.Engine.Models
             return reversed;
         }
 
+        public Vector2 GetTangentAt(float t)
+        {
+            if (Points.Count < 2)
+                return Vector2.UnitX;
 
+            float targetDist = t * TotalLength;
+
+            for (int i = 0; i < StationDistances.Count - 1; i++)
+            {
+                float a = StationDistances[i];
+                float b = StationDistances[i + 1];
+
+                if (targetDist >= a && targetDist <= b)
+                {
+                    // Direction of the segment
+                    Vector2 dir = Points[i + 1] - Points[i];
+                    return Vector2.Normalize(dir);
+                }
+            }
+
+            // Fallback: last segment direction
+            return Vector2.Normalize(Points[^1] - Points[^2]);
+        }
     }
 }

@@ -56,16 +56,22 @@ namespace LondonUndergroundSimulator.Engine.Services
 
             train.DelayStartTime = clock;
             train.DelayReasons.Add(rule.Name);
+     
         }
 
-        /// <summary>
-        /// Updates dwell logic.
-        /// Returns true if the train is still dwelling.
-        /// </summary>
-        public bool UpdateDwell(Train train, float dt)
+        public bool UpdateDwell(Train train, float dt, Station station)
         {
             if (!train.IsDwelling)
                 return false;
+
+            // FIRST TICK OF DWELL
+            if (!train.HasProcessedDwell)
+            {
+                UnloadPassengers(train);
+                LoadPassengers(train, station);
+
+                train.HasProcessedDwell = true;
+            }
 
             train.DwellTimer -= dt;
 
@@ -73,10 +79,39 @@ namespace LondonUndergroundSimulator.Engine.Services
             {
                 train.IsDwelling = false;
                 train.DwellTimer = 0;
+                train.HasProcessedDwell = false; // reset for next station
                 return false;
             }
 
-            return true; // still dwelling
+            return true;
         }
+
+
+        public void UnloadPassengers(Train train)
+        {
+            var random = new Random();
+            double unloadPercentage = random.NextDouble() * 0.3; // up to 30%
+
+            int passengersToUnload = (int)(train.CurrentPassengers * unloadPercentage);
+            train.CurrentPassengers -= passengersToUnload;
+
+            // Optionally: track total passengers unloaded at this station
+        }
+
+        public void LoadPassengers(Train train, Station station)
+        {         
+
+            int availableCapacity = train.MaxCapacity - train.CurrentPassengers;
+            if (availableCapacity <= 0) return;
+
+            int passengersToLoad = Math.Min(availableCapacity, station.WaitingPassengers);
+       
+            train.CurrentPassengers += passengersToLoad;
+            station.WaitingPassengers -= passengersToLoad;
+         
+
+        }
+
+
     }
 }

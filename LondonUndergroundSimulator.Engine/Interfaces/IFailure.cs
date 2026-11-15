@@ -10,8 +10,8 @@ namespace LondonUndergroundSimulator.Engine.Interfaces
   
         public interface IFailureRule
         {
-            bool ShouldTrigger(float deltaTime);
-            float GetDelayDuration(Train train);
+        bool ShouldTrigger(float dt, Train train, Train trainAhead);
+        float GetDelayDuration(Train train);
 
            string Name { get; }
     }

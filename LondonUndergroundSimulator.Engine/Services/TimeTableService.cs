@@ -13,6 +13,9 @@ namespace LondonUndergroundSimulator.Engine.Services
     public class TimetableService
     {
         private readonly SimulationEngine _engine;
+        private readonly Dictionary<string, float> _lingerTimers = new();
+        private readonly Dictionary<string, bool> _wasBusy = new();
+
 
         public TimetableService(SimulationEngine engine)
         {
@@ -26,7 +29,7 @@ namespace LondonUndergroundSimulator.Engine.Services
         {
             var entries = new List<TimetableEntry>();
 
-            foreach (var train in _engine.Trains)
+            foreach (var train in _engine._trains)
             {
                 var entry = BuildEntry(train);
                 entries.Add(entry);
@@ -37,26 +40,93 @@ namespace LondonUndergroundSimulator.Engine.Services
 
         private TimetableEntry BuildEntry(Train train)
         {
-            return new TimetableEntry
+            var line = train.Line;
+
+            UpdateServiceStatus(_engine.Clock24);
+
+            string id = train.Id;
+
+            int waiting = line.Stations[train.CurrentStationIndex].WaitingPassengers;
+
+            // Ensure dictionary entries exist
+            if (!_lingerTimers.ContainsKey(id))
+                _lingerTimers[id] = 0f;
+
+            if (!_wasBusy.ContainsKey(id))
+                _wasBusy[id] = false;
+
+            // LINGER LOGIC
+            if (waiting >= 30)
             {
-                TrainId = train.Id,
-                LineName = train.Line.Name,
-                CurrentStation = train.Line.Stations[train.CurrentStationIndex].Name,
-                Color = train.Line.ColorHex,
+                _wasBusy[id] = true;
+                _lingerTimers[id] = 2.0f; // linger for 2 seconds
+            }
+            else
+            {
+                if (_wasBusy[id])
+                {
+                    _lingerTimers[id] -= 1f / 60f; // approx per frame at 60fps
+                    if (_lingerTimers[id] <= 0)
+                        _wasBusy[id] = false;
+                }
+            }
 
-                ScheduledArrival = train.ScheduledArrivalTime,
-                ExpectedArrival = train.ExpectedArrivalTime,
+            bool show = _wasBusy[id] || waiting >= 30;
 
-                DelayDuration = TimeSpan.FromSeconds(train.DelayDuration),
-                DelayStartTime = train.DelayStartTime,
-                DelayEndTime = train.DelayStartTime + TimeSpan.FromSeconds(train.DelayDuration),
+            if (line.IsServiceActive == true)
+            {
+                var entry = new TimetableEntry
+                {
+                    TrainId = train.Id,
+                    LineName = line.Name,
+                    CurrentStation = line.Stations[train.CurrentStationIndex].Name,
+                    Color = line.ColorHex,
+                    ScheduledArrival = train.ScheduledArrivalTime,
+                    ExpectedArrival = train.ExpectedArrivalTime,
+                    DelayDuration = TimeSpan.FromSeconds(train.DelayDuration),
+                    DelayStartTime = train.DelayStartTime,
+                    DelayEndTime = train.DelayStartTime + TimeSpan.FromSeconds(train.DelayDuration),
+                    IsDelayed = train.IsDelayed,
+                    IsDwelling = train.IsDwelling,
+                    DelayReasons = new List<string>(train.DelayReasons),
+                    CurrentPassengers = train.CurrentPassengers,
+                    CurrentStationWaitingPassengers = line.Stations[train.CurrentStationIndex].WaitingPassengers,
+                    ShouldDisplay = show
+                    
+                };
 
-                IsDelayed = train.IsDelayed,
-                IsDwelling = train.IsDwelling,
-                DelayReasons = new List<string>(train.DelayReasons)
-            };
+               
+                return entry;
+            } else
+            {
+                return new TimetableEntry
+                {
+                    TrainId = "N/A",
+                    LineName = line.Name,
+                    ServiceStatus = false,
+                    ShouldDisplay = false
+                };
+            }
+
+            
         }
 
-        
+
+        public void UpdateServiceStatus(SimulationClock clock)
+        {
+            foreach (var line in _engine.Lines)
+            {
+                if (clock.Hour >= 5 || clock.Hour < 1)
+                {
+                    line.IsServiceActive = true;
+                }
+                else
+                {
+                    line.IsServiceActive = false;
+                }
+            }
+
+
+        }
     }
 }

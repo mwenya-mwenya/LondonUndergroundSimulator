@@ -16,7 +16,7 @@ namespace LondonUndergroundSimulator.Engine.Data
 
         static TrainConfig()
         {
-            var json = File.ReadAllText("Data/train_config.json");
+            var json = File.ReadAllText("SimulationData/train_config.json");
             Lines = JsonSerializer.Deserialize<Dictionary<string, LineTrainConfig>>(json);
         }
     }

@@ -7,9 +7,10 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Content Include="Data\lines.json">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
+    <ProjectReference Include="..\LondonUndergroundSimulator.Infrastructure\LondonUndergroundSimulator.Infrastructure.csproj" />
+    <ProjectReference Include="..\MLInferenceEngine.Abstractions\MLInferenceEngine.Abstractions.csproj" />
   </ItemGroup>
+
+  
 
 </Project>

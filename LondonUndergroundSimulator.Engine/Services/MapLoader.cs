@@ -5,6 +5,7 @@ using System.Diagnostics;
 using System.IO;
 using System.Numerics;
 using System.Text.Json;
+using static LondonUndergroundSimulator.Engine.Models.Station;
 
 namespace LondonUndergroundSimulator.Engine.Services
 {
@@ -12,6 +13,7 @@ namespace LondonUndergroundSimulator.Engine.Services
     {
         public static List<Line> Load(string path)
         {
+
             var json = File.ReadAllText(path);
 
             var options = new JsonSerializerOptions
@@ -20,10 +22,17 @@ namespace LondonUndergroundSimulator.Engine.Services
             };
 
             var lines = JsonSerializer.Deserialize<List<Line>>(json, options);
+            foreach (var line in lines)
+            {
+                if (string.IsNullOrWhiteSpace(line.ColorHex))
+                    Debug.WriteLine($"WARNING: Line '{line.Name}' has NULL ColorHex!");
+            }
+
 
             foreach (var line in lines)
             {
-                //
+               
+               
                 // 1. Build CENTERLINE track directly from station coordinates
                 //
                 var center = new Track();
@@ -50,6 +59,8 @@ namespace LondonUndergroundSimulator.Engine.Services
 
                 center.TotalLength = total;
 
+                AssignStationTypes(line);
+
                 //
                 // 2. EASTBOUND = offset centerline
                 //
@@ -73,5 +84,24 @@ namespace LondonUndergroundSimulator.Engine.Services
 
             return lines;
         }
+
+        public static void AssignStationTypes(Line line)
+        {
+            int count = line.Stations.Count;
+
+            for (int i = 0; i < count; i++)
+            {
+                double ratio = (double)i / count;
+
+                if (ratio < 0.2 || ratio > 0.8)
+                    line.Stations[i].Type = StationType.Quiet;
+                else if (ratio < 0.4 || ratio > 0.6)
+                    line.Stations[i].Type = StationType.Normal;
+                else
+                    line.Stations[i].Type = StationType.Busy;
+            }
+        }
+
+
     }
 }

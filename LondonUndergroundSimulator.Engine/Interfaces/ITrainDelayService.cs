@@ -12,7 +12,9 @@ namespace LondonUndergroundSimulator.Engine.Interfaces
         bool IsTrainDelayed(Train train);
         void UpdateDelay(Train train, float dt, TimeSpan clock);
         void ApplyDelay(Train train, IFailureRule rule, TimeSpan clock);
-        bool UpdateDwell(Train train, float dt);
+        bool UpdateDwell(Train train, float dt, Station station);
+        void LoadPassengers(Train train, Station station);
+        void UnloadPassengers(Train train);
     }
 
 

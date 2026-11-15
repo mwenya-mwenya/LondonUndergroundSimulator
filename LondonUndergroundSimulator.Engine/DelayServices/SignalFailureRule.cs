@@ -28,7 +28,7 @@ namespace LondonUndergroundSimulator.Engine.DelayServices
         /// Returns true if this failure should trigger this frame.
         /// Pure function: no side effects.
         /// </summary>
-        public bool ShouldTrigger(float dt)
+        public bool ShouldTrigger(float dt, Train train, Train trainAhead)
         {
             float chancePerSecond = _chancePerMinute / 60f;
             return _rng.NextDouble() < chancePerSecond * dt;
@@ -42,6 +42,7 @@ namespace LondonUndergroundSimulator.Engine.DelayServices
         {
             return _rng.Next(20, 60); // 20–60 seconds
         }
+
 
     }
 }

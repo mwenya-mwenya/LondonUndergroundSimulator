@@ -2,7 +2,7 @@
   {
     "name": "Piccadilly",
     "colorHex": "#0019A8",
-    "numberOfTrains": 2,
+    "lineId": "PIC",
     "stations": [
       {
         "name": "Cockfosters",
@@ -140,7 +140,8 @@
   {
     "name": "Central",
     "colorHex": "#DC241F",
-    "numberOfTrains": 2,
+    "lineId": "CTR",
+
     "stations": [
       {
         "name": "West Ruislip",
@@ -278,7 +279,7 @@
   {
     "name": "Victoria",
     "colorHex": "#0098D4",
-    "numberOfTrains": 2,
+    "lineId": "VIC",
     "stations": [
       {
         "name": "Walthamstow Central",
@@ -366,7 +367,7 @@
   {
     "name": "Jubilee",
     "colorHex": "#A0A5A9",
-    "numberOfTrains": 2,
+    "lineId": "JUB",
     "stations": [
       {
         "name": "Stanmore",
@@ -494,7 +495,7 @@
   {
     "name": "Bakerloo",
     "colorHex": "#B36305",
-    "numberOfTrains": 2,
+    "lineId": "BAK",
     "stations": [
       {
         "name": "Harrow & Wealdstone",
