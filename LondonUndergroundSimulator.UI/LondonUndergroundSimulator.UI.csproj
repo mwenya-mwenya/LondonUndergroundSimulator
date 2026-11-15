@@ -12,6 +12,12 @@
     <EnableMsixTooling>true</EnableMsixTooling>
     <Nullable>enable</Nullable>
   </PropertyGroup>
+	<ItemGroup>
+		<Content Include="..\Data\**\*">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+			<Link>Data\%(RecursiveDir)%(Filename)%(Extension)</Link>
+		</Content>
+	</ItemGroup>
   <ItemGroup>
     <None Remove="Views\MapView.xaml" />
     <None Remove="Views\TrainListView.xaml" />
@@ -40,14 +46,29 @@
     <ProjectCapability Include="Msix" />
   </ItemGroup>
   <ItemGroup>
+  <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="10.0.11" />
   <PackageReference Include="Microsoft.WindowsAppSDK" Version="1.8.260209005" />
  
   <PackageReference Include="Microsoft.Graphics.Win2D" Version="1.0.0.29-preview3" />
 </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\LondonUndergroundSimulator.App\LondonUndergroundSimulator.HostServices.csproj" />
     <ProjectReference Include="..\LondonUndergroundSimulator.Engine\LondonUndergroundSimulator.Engine.csproj" />
+    <ProjectReference Include="..\LondonUndergroundSimulator.Infrastructure\LondonUndergroundSimulator.Infrastructure.csproj" />
+    <ProjectReference Include="..\MLInferenceEngine.Abstractions\MLInferenceEngine.Abstractions.csproj" />
+    <ProjectReference Include="..\MLInferenceEngine.Orchestration\MLInferenceEngine.Orchestration.csproj" />
+    <ProjectReference Include="..\MLInferenceEngine\MLInferenceEngine.csproj" />	  
   </ItemGroup>
-  <ItemGroup>
+	<ItemGroup>
+		<Content Include="..\PythonInferenceService\**\*">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+			<Link>PythonInferenceService\%(RecursiveDir)%(Filename)%(Extension)</Link>
+		</Content>
+	</ItemGroup>
+
+
+
+	<ItemGroup>
     <Page Update="Views\TrainListView.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -57,7 +78,7 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
-
+	
   <!--
     Defining the "HasPackageAndPublishMenuAddedByProject" property here allows the Solution
     Explorer "Package and Publish" context menu entry to be enabled for this project even if
@@ -73,5 +94,17 @@
     <PublishReadyToRun Condition="'$(Configuration)' != 'Debug'">True</PublishReadyToRun>
     <PublishTrimmed Condition="'$(Configuration)' == 'Debug'">False</PublishTrimmed>
     <PublishTrimmed Condition="'$(Configuration)' != 'Debug'">True</PublishTrimmed>
+    <GenerateAppInstallerFile>True</GenerateAppInstallerFile>
+    <AppxPackageSigningEnabled>True</AppxPackageSigningEnabled>
+    <PackageCertificateThumbprint>7C02C825A55135BB740FBEA15E133378C992DD84</PackageCertificateThumbprint>
+    <AppxPackageSigningTimestampDigestAlgorithm>SHA256</AppxPackageSigningTimestampDigestAlgorithm>
+    <AppxAutoIncrementPackageRevision>True</AppxAutoIncrementPackageRevision>
+    <GenerateTestArtifacts>True</GenerateTestArtifacts>
+    <AppxBundle>Never</AppxBundle>
+    <AppInstallerUri>C:\Users\mwen\Documents\LondonUndergroundSimulatorePublish</AppInstallerUri>
+    <HoursBetweenUpdateChecks>0</HoursBetweenUpdateChecks>
   </PropertyGroup>
+
+
+
 </Project>

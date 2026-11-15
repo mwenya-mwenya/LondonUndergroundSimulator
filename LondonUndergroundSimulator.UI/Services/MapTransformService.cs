@@ -17,30 +17,42 @@ public class MapTransformService
 
     public void Compute(MainViewModel vm, float canvasWidth, float canvasHeight)
     {
-        float scaleXDivider = 1000f;
-        float scaleYDivider = 1000f;
+        var stations = vm.Map.Lines.SelectMany(l => l.Stations);
 
-        float scaleX = canvasWidth / scaleXDivider;
-        float scaleY = canvasHeight / scaleYDivider;
+        float minX = stations.Min(s => (float)s.X);
+        float maxX = stations.Max(s => (float)s.X);
+        float minY = stations.Min(s => (float)s.Y);
+        float maxY = stations.Max(s => (float)s.Y);
 
-        Scale = Math.Max(scaleX, scaleY);
+        // Add padding so lines/labels don't overflow
+        float padding = 50f;
 
-        float scaledWidth = scaleXDivider * Scale;
-        float scaledHeight = scaleYDivider * Scale;
+        minX -= padding;
+        minY -= padding;
+        maxX += padding;
+        maxY += padding;
 
+        float mapWidth = maxX - minX;
+        float mapHeight = maxY - minY;
+
+        // Fit map inside canvas
+        float scaleX = canvasWidth / mapWidth;
+        float scaleY = canvasHeight / mapHeight;
+
+        Scale = Math.Min(scaleX, scaleY);
+
+        float scaledWidth = mapWidth * Scale;
+        float scaledHeight = mapHeight * Scale;
+
+        // Center the map
         OffsetX = (canvasWidth - scaledWidth) / 2f;
         OffsetY = (canvasHeight - scaledHeight) / 2f;
 
-        MinX = vm.Map.Lines.SelectMany(l => l.Stations).Min(s => (float)s.X);
-        MinY = vm.Map.Lines.SelectMany(l => l.Stations).Min(s => (float)s.Y);
-
-        MapShiftX = 200;
-        MapShiftY = 200;
-
         Transform =
-            Matrix3x2.CreateTranslation(-MinX, -MinY) *
-            Matrix3x2.CreateTranslation(MapShiftX, MapShiftY) *
+            Matrix3x2.CreateTranslation(-minX, -minY) *
             Matrix3x2.CreateScale(Scale) *
             Matrix3x2.CreateTranslation(OffsetX, OffsetY);
     }
+
+
 }

@@ -4,6 +4,7 @@ using LondonUndergroundSimulator.ViewModels;
 using Microsoft.Graphics.Canvas;
 using Microsoft.Graphics.Canvas.Text;
 using Microsoft.UI;
+using System;
 using System.Numerics;
 using Windows.Foundation;
 
@@ -102,5 +103,6 @@ namespace LondonUndergroundSimulator.Rendering
 
             ds.DrawTextLayout(textLayout, x, y, Colors.Black);
         }
+
     }
 }

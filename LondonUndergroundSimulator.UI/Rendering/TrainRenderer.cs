@@ -4,6 +4,7 @@ using Microsoft.Graphics.Canvas;
 using Microsoft.Graphics.Canvas.Text;
 using Microsoft.UI;
 using System;
+using System.Diagnostics;
 using System.Numerics;
 using Windows.Foundation;
 
@@ -21,10 +22,12 @@ namespace LondonUndergroundSimulator.Rendering
             var headPosScreen = Vector2.Transform(train.Position, worldToScreen);
             DrawCarriage(ds, headPosScreen, train.Rotation, line.ColorHex);
             DrawTrainTag(ds, headPosScreen, train.Id);
+            //if (train.Line.Name == "Central")
+            //Debug.WriteLine($"Train {train.Id} at position {train.Position}, Line Name: {train.Line.Name}");
 
             // Other carriages: offset along the train’s forward direction
             float spacing = train.CarriageSpacing;
-            var forward = new Vector2(MathF.Cos(train.Rotation), MathF.Sin(train.Rotation));
+                var forward = new Vector2(MathF.Cos(train.Rotation), MathF.Sin(train.Rotation));
 
             for (int i = 0; i < train.CarriageCount; i++)
             {

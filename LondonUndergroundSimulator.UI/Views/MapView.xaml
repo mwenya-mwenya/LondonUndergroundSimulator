@@ -2,7 +2,13 @@
     x:Class="LondonUndergroundSimulator.Views.MapView"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:canvas="using:Microsoft.Graphics.Canvas.UI.Xaml">
+    xmlns:canvas="using:Microsoft.Graphics.Canvas.UI.Xaml" 
+    xmlns:viewmodels="using:LondonUndergroundSimulator.ViewModels" 
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    d:DataContext="{d:DesignInstance Type=viewmodels:MainViewModel}">
+
 
     <Grid>
         <Grid.RowDefinitions>
@@ -10,29 +16,104 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
+        <Grid x:Name="StartupOverlay"
+              Grid.RowSpan="2"
+              Background="#CC000000"
+              Visibility="{Binding StartupVisibility}"
+              Canvas.ZIndex="100">
+
+            <StackPanel
+        HorizontalAlignment="Center"
+        VerticalAlignment="Center"
+        Spacing="12">
+
+                <TextBlock Text="System Startup"
+                   FontSize="32"/>
+
+                <ItemsControl ItemsSource="{Binding StartupChecks}">
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate>
+                            <StackPanel Orientation="Horizontal"
+                        Spacing="8">
+
+                                <TextBlock Text="{Binding StatusIcon}"
+                           FontSize="16"/>
+
+                                <TextBlock Text="{Binding Name}"
+                           Width="180"/>
+
+                                <TextBlock Text="{Binding Message}"
+                           TextWrapping="Wrap"/>
+
+                            </StackPanel>
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>
+
+
+                <ProgressBar
+            Value="{Binding StartupProgress}"
+            Maximum="100"
+            Width="400"/>
+
+                <TextBlock
+            Text="{Binding StartupProgressText}"
+            HorizontalAlignment="Center"/>
+
+                <TextBlock
+            Text="{Binding ChecksPassedText}"
+            Foreground="LimeGreen"
+            TextWrapping="Wrap"/>
+
+                <TextBlock
+            Text="{Binding StartupFailureReason}"
+            Foreground="Red"
+            TextWrapping="Wrap"/>
+
+            </StackPanel>
+
+        </Grid>
+
         <!-- Top control bar -->
         <StackPanel Orientation="Horizontal"
-                    Spacing="12"
-                    Margin="12"
-                    Grid.Row="0">
+            Spacing="12"
+            Margin="12"
+            Grid.Row="0">
+
             <TextBlock Text="Speed:"
-                       VerticalAlignment="Center"
-                       FontSize="14"/>
+               VerticalAlignment="Center"
+               FontSize="14"/>
 
             <Slider x:Name="SpeedSlider"
-                    Minimum="0"
-                    Maximum="10"
-                    Value="4"
-                    Width="200"
-                    TickFrequency="0.1"
-                    ValueChanged="SpeedSlider_ValueChanged"/>
+            Minimum="0"
+            Maximum="10"
+            Value="4"
+            Width="200"
+            TickFrequency="0.1"
+            ValueChanged="SpeedSlider_ValueChanged"/>
 
             <TextBlock x:Name="SpeedStatusText"
-               Text="Drag left or right to adjust sim speed"
+               Text="{Binding TimeScaleText}" 
+               VerticalAlignment="Center"/>
+
+            <TextBlock Text="Demand:"
                VerticalAlignment="Center"
-               Margin="8,0,0,0"/>
+               Margin="20,0,0,0"/>
+
+            <Slider Minimum="0.1"
+            Maximum="5"
+            Value="{Binding PassengerDemandMultiplier, Mode=TwoWay}"
+            Width="150"
+            StepFrequency="0.1"/>
+
+            <TextBlock Text="{Binding PassengerDemandMultiplier}"
+               VerticalAlignment="Center"/>
+            <Button Content="{Binding IsRetrainingText}"
+        Click="RetrainButton_Click"
+        IsEnabled="{Binding CanRetrainModel}"/>
 
         </StackPanel>
+
 
         <!-- Canvas fills the rest -->
         <canvas:CanvasControl x:Name="MapCanvas"

@@ -1,50 +1,74 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Runtime.InteropServices.WindowsRuntime;
+﻿using LondonUndergroundSimulator;
+using LondonUndergroundSimulator.Engine.Services;
+using LondonUndergroundSimulator.HostServices;
+using LondonUndergroundSimulator.HostServices.Services;
+using LondonUndergroundSimulator.Infrastructure.Interfaces;
+using LondonUndergroundSimulator.Infrastructure.Services;
+using LondonUndergroundSimulator.Rendering;
+using LondonUndergroundSimulator.Services;
+using LondonUndergroundSimulator.ViewModels;
+using Microsoft.Extensions.DependencyInjection;
 using Microsoft.UI.Xaml;
-using Microsoft.UI.Xaml.Controls;
-using Microsoft.UI.Xaml.Controls.Primitives;
-using Microsoft.UI.Xaml.Data;
-using Microsoft.UI.Xaml.Input;
-using Microsoft.UI.Xaml.Media;
-using Microsoft.UI.Xaml.Navigation;
-using Microsoft.UI.Xaml.Shapes;
-using Windows.ApplicationModel;
-using Windows.ApplicationModel.Activation;
-using Windows.Foundation;
-using Windows.Foundation.Collections;
-
-// To learn more about WinUI, the WinUI project structure,
-// and more about our project templates, see: http://aka.ms/winui-project-info.
+using System;
+using System.Diagnostics;
+using Windows.Storage;
 
 namespace LondonUndergroundSimulator
 {
-    /// <summary>
-    /// Provides application-specific behavior to supplement the default Application class.
-    /// </summary>
     public partial class App : Application
     {
-        private Window? _window;
+        public static IServiceProvider Services { get; private set; }
+        private SimulationHost _host;
+        private Window _window;
 
-        /// <summary>
-        /// Initializes the singleton application object.  This is the first line of authored code
-        /// executed, and as such is the logical equivalent of main() or WinMain().
-        /// </summary>
         public App()
         {
             InitializeComponent();
+            var serviceRegistration = new SimulatorServiceRegistration();
+            var services = new ServiceCollection();
+            
+
+            // Similation engine + inference services
+            serviceRegistration.AddSimulatorServices(services);
+
+            // UI services
+            ConfigureUIServices(services);
+            ConfigureViewModels(services);
+            
+            // Build unified DI container
+            Services = services.BuildServiceProvider();
+            var filePathService = Services.GetRequiredService<IFilePathService>(); // Ensure file path service is initialized
+            filePathService.PackagePathResolver = () => ApplicationData.Current.LocalFolder.Path;
+            // Give provider to service registration
+            //_host = new SimulationHost(Services.GetRequiredService<PythonInferenceLauncher>());
+            _host = Services.GetRequiredService<SimulationHost>();
+            
         }
 
-        /// <summary>
-        /// Invoked when the application is launched.
-        /// </summary>
-        /// <param name="args">Details about the launch request and process.</param>
-        protected override void OnLaunched(Microsoft.UI.Xaml.LaunchActivatedEventArgs args)
+        private void ConfigureUIServices(IServiceCollection services)
         {
+            services.AddSingleton<MapRenderer>();
+            services.AddSingleton<TrainRenderer>();
+            services.AddSingleton<MapTransformService>();
+            services.AddSingleton<DrawUITimetable>();
+            services.AddSingleton<CreateMLConsole>();
+            services.AddSingleton<TimetableService>();
+        }
+
+        private void ConfigureViewModels(IServiceCollection services)
+        {
+            services.AddSingleton<MainViewModel>();
+            services.AddSingleton<MapViewModel>();
+        }
+
+        protected override async void OnLaunched(LaunchActivatedEventArgs args)
+        {
+            // Give provider to host
+            await _host.FinaliseAsync();
             _window = new MainWindow();
+            _window.Closed += async (_, _) => { await _host.Stop(); };
             _window.Activate();
         }
     }
+
 }
