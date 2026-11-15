@@ -1,0 +1,2121 @@
+DayOfWeek,Hour,Minute,TrainId,Station,LineName,StationType,WaitingPassengers,CurrentPassengers,MaxCapacity,IsDwelling,IsDelayed
+0,0,30,Piccadilly_East_1,Cockfosters,Piccadilly,Quiet,0,0,300,False,False
+0,0,30,Piccadilly_West_1,Cockfosters,Piccadilly,Quiet,0,0,300,False,False
+0,0,30,Piccadilly_East_2,Russell Square,Piccadilly,Busy,0,0,300,True,False
+0,0,30,Piccadilly_West_2,King's Cross St Pancras,Piccadilly,Busy,0,0,300,False,False
+0,0,30,Central_East_1,West Ruislip,Central,Quiet,0,0,300,False,False
+0,0,30,Central_West_1,West Ruislip,Central,Quiet,0,0,300,False,False
+0,0,30,Central_East_2,Holland Park,Central,Busy,0,0,300,False,False
+0,0,30,Central_West_2,Shepherd's Bush,Central,Busy,0,0,300,False,False
+0,0,30,Victoria_East_1,Walthamstow Central,Victoria,Quiet,0,0,300,False,False
+0,0,30,Victoria_West_1,Walthamstow Central,Victoria,Quiet,0,0,300,False,False
+0,0,30,Victoria_East_2,Warren Street,Victoria,Busy,0,0,300,False,False
+0,0,30,Victoria_West_2,Euston,Victoria,Busy,0,0,300,False,False
+0,0,30,Jubilee_East_1,Stanmore,Jubilee,Quiet,0,0,300,False,False
+0,0,30,Jubilee_West_1,Stanmore,Jubilee,Quiet,0,0,300,False,False
+0,0,30,Jubilee_East_2,St John's Wood,Jubilee,Busy,0,0,300,True,False
+0,0,30,Jubilee_West_2,Swiss Cottage,Jubilee,Busy,0,0,300,False,False
+0,0,30,Bakerloo_East_1,Harrow & Wealdstone,Bakerloo,Quiet,0,0,300,False,False
+0,0,30,Bakerloo_West_1,Harrow & Wealdstone,Bakerloo,Quiet,0,0,300,False,False
+0,0,30,Bakerloo_East_2,Warwick Avenue,Bakerloo,Busy,0,0,300,False,False
+0,0,30,Bakerloo_West_2,Warwick Avenue,Bakerloo,Busy,0,0,300,False,False
+0,1,0,Piccadilly_East_1,Oakwood,Piccadilly,Quiet,0,0,300,True,False
+0,1,0,Piccadilly_West_1,Cockfosters,Piccadilly,Quiet,0,0,300,False,False
+0,1,0,Piccadilly_East_2,Russell Square,Piccadilly,Busy,6,0,300,False,False
+0,1,0,Piccadilly_West_2,King's Cross St Pancras,Piccadilly,Busy,7,0,300,False,False
+0,1,0,Central_East_1,Ruislip Gardens,Central,Quiet,0,0,300,False,False
+0,1,0,Central_West_1,Ruislip Gardens,Central,Quiet,0,0,300,False,False
+0,1,0,Central_East_2,Holland Park,Central,Busy,4,0,300,False,False
+0,1,0,Central_West_2,Shepherd's Bush,Central,Busy,6,0,300,False,False
+0,1,0,Victoria_East_1,Blackhorse Road,Victoria,Quiet,0,0,300,False,False
+0,1,0,Victoria_West_1,Blackhorse Road,Victoria,Quiet,0,0,300,False,False
+0,1,0,Victoria_East_2,Warren Street,Victoria,Busy,5,0,300,False,False
+0,1,0,Victoria_West_2,Euston,Victoria,Busy,6,0,300,False,False
+0,1,0,Jubilee_East_1,Canons Park,Jubilee,Quiet,0,0,300,True,False
+0,1,0,Jubilee_West_1,Canons Park,Jubilee,Quiet,0,0,300,False,False
+0,1,0,Jubilee_East_2,St John's Wood,Jubilee,Busy,2,0,300,False,False
+0,1,0,Jubilee_West_2,Swiss Cottage,Jubilee,Busy,3,0,300,False,False
+0,1,0,Bakerloo_East_1,Kenton,Bakerloo,Quiet,0,0,300,True,False
+0,1,0,Bakerloo_West_1,Kenton,Bakerloo,Quiet,0,0,300,False,False
+0,1,0,Bakerloo_East_2,Paddington,Bakerloo,Busy,0,3,300,True,False
+0,1,0,Bakerloo_West_2,Warwick Avenue,Bakerloo,Busy,4,0,300,False,False
+0,1,30,Piccadilly_East_1,Oakwood,Piccadilly,Quiet,0,0,300,False,False
+0,1,30,Piccadilly_West_1,Cockfosters,Piccadilly,Quiet,0,0,300,False,False
+0,1,30,Piccadilly_East_2,Russell Square,Piccadilly,Busy,6,0,300,False,False
+0,1,30,Piccadilly_West_2,King's Cross St Pancras,Piccadilly,Busy,7,0,300,False,False
+0,1,30,Central_East_1,Ruislip Gardens,Central,Quiet,0,0,300,False,False
+0,1,30,Central_West_1,Ruislip Gardens,Central,Quiet,0,0,300,False,False
+0,1,30,Central_East_2,Holland Park,Central,Busy,4,0,300,False,False
+0,1,30,Central_West_2,Shepherd's Bush,Central,Busy,6,0,300,False,False
+0,1,30,Victoria_East_1,Blackhorse Road,Victoria,Quiet,0,0,300,False,False
+0,1,30,Victoria_West_1,Blackhorse Road,Victoria,Quiet,0,0,300,False,False
+0,1,30,Victoria_East_2,Warren Street,Victoria,Busy,5,0,300,False,False
+0,1,30,Victoria_West_2,Euston,Victoria,Busy,6,0,300,False,False
+0,1,30,Jubilee_East_1,Canons Park,Jubilee,Quiet,0,0,300,False,False
+0,1,30,Jubilee_West_1,Canons Park,Jubilee,Quiet,0,0,300,False,False
+0,1,30,Jubilee_East_2,St John's Wood,Jubilee,Busy,2,0,300,False,False
+0,1,30,Jubilee_West_2,Swiss Cottage,Jubilee,Busy,3,0,300,False,False
+0,1,30,Bakerloo_East_1,Kenton,Bakerloo,Quiet,0,0,300,False,False
+0,1,30,Bakerloo_West_1,Kenton,Bakerloo,Quiet,0,0,300,False,False
+0,1,30,Bakerloo_East_2,Paddington,Bakerloo,Busy,0,3,300,False,False
+0,1,30,Bakerloo_West_2,Warwick Avenue,Bakerloo,Busy,4,0,300,False,False
+0,2,0,Piccadilly_East_1,Oakwood,Piccadilly,Quiet,0,0,300,False,False
+0,2,0,Piccadilly_West_1,Cockfosters,Piccadilly,Quiet,0,0,300,False,False
+0,2,0,Piccadilly_East_2,Russell Square,Piccadilly,Busy,6,0,300,False,False
+0,2,0,Piccadilly_West_2,King's Cross St Pancras,Piccadilly,Busy,7,0,300,False,False
+0,2,0,Central_East_1,Ruislip Gardens,Central,Quiet,0,0,300,False,False
+0,2,0,Central_West_1,Ruislip Gardens,Central,Quiet,0,0,300,False,False
+0,2,0,Central_East_2,Holland Park,Central,Busy,4,0,300,False,False
+0,2,0,Central_West_2,Shepherd's Bush,Central,Busy,6,0,300,False,False
+0,2,0,Victoria_East_1,Blackhorse Road,Victoria,Quiet,0,0,300,False,False
+0,2,0,Victoria_West_1,Blackhorse Road,Victoria,Quiet,0,0,300,False,False
+0,2,0,Victoria_East_2,Warren Street,Victoria,Busy,5,0,300,False,False
+0,2,0,Victoria_West_2,Euston,Victoria,Busy,6,0,300,False,False
+0,2,0,Jubilee_East_1,Canons Park,Jubilee,Quiet,0,0,300,False,False
+0,2,0,Jubilee_West_1,Canons Park,Jubilee,Quiet,0,0,300,False,False
+0,2,0,Jubilee_East_2,St John's Wood,Jubilee,Busy,2,0,300,False,False
+0,2,0,Jubilee_West_2,Swiss Cottage,Jubilee,Busy,3,0,300,False,False
+0,2,0,Bakerloo_East_1,Kenton,Bakerloo,Quiet,0,0,300,False,False
+0,2,0,Bakerloo_West_1,Kenton,Bakerloo,Quiet,0,0,300,False,False
+0,2,0,Bakerloo_East_2,Paddington,Bakerloo,Busy,0,3,300,False,False
+0,2,0,Bakerloo_West_2,Warwick Avenue,Bakerloo,Busy,4,0,300,False,False
+0,2,30,Piccadilly_East_1,Oakwood,Piccadilly,Quiet,0,0,300,False,False
+0,2,30,Piccadilly_West_1,Cockfosters,Piccadilly,Quiet,0,0,300,False,False
+0,2,30,Piccadilly_East_2,Russell Square,Piccadilly,Busy,6,0,300,False,False
+0,2,30,Piccadilly_West_2,King's Cross St Pancras,Piccadilly,Busy,7,0,300,False,False
+0,2,30,Central_East_1,Ruislip Gardens,Central,Quiet,0,0,300,False,False
+0,2,30,Central_West_1,Ruislip Gardens,Central,Quiet,0,0,300,False,False
+0,2,30,Central_East_2,Holland Park,Central,Busy,4,0,300,False,False
+0,2,30,Central_West_2,Shepherd's Bush,Central,Busy,6,0,300,False,False
+0,2,30,Victoria_East_1,Blackhorse Road,Victoria,Quiet,0,0,300,False,False
+0,2,30,Victoria_West_1,Blackhorse Road,Victoria,Quiet,0,0,300,False,False
+0,2,30,Victoria_East_2,Warren Street,Victoria,Busy,5,0,300,False,False
+0,2,30,Victoria_West_2,Euston,Victoria,Busy,6,0,300,False,False
+0,2,30,Jubilee_East_1,Canons Park,Jubilee,Quiet,0,0,300,False,False
+0,2,30,Jubilee_West_1,Canons Park,Jubilee,Quiet,0,0,300,False,False
+0,2,30,Jubilee_East_2,St John's Wood,Jubilee,Busy,2,0,300,False,False
+0,2,30,Jubilee_West_2,Swiss Cottage,Jubilee,Busy,3,0,300,False,False
+0,2,30,Bakerloo_East_1,Kenton,Bakerloo,Quiet,0,0,300,False,False
+0,2,30,Bakerloo_West_1,Kenton,Bakerloo,Quiet,0,0,300,False,False
+0,2,30,Bakerloo_East_2,Paddington,Bakerloo,Busy,0,3,300,False,False
+0,2,30,Bakerloo_West_2,Warwick Avenue,Bakerloo,Busy,4,0,300,False,False
+0,3,1,Piccadilly_East_1,Oakwood,Piccadilly,Quiet,0,0,300,False,False
+0,3,1,Piccadilly_West_1,Cockfosters,Piccadilly,Quiet,0,0,300,False,False
+0,3,1,Piccadilly_East_2,Russell Square,Piccadilly,Busy,6,0,300,False,False
+0,3,1,Piccadilly_West_2,King's Cross St Pancras,Piccadilly,Busy,7,0,300,False,False
+0,3,1,Central_East_1,Ruislip Gardens,Central,Quiet,0,0,300,False,False
+0,3,1,Central_West_1,Ruislip Gardens,Central,Quiet,0,0,300,False,False
+0,3,1,Central_East_2,Holland Park,Central,Busy,4,0,300,False,False
+0,3,1,Central_West_2,Shepherd's Bush,Central,Busy,6,0,300,False,False
+0,3,1,Victoria_East_1,Blackhorse Road,Victoria,Quiet,0,0,300,False,False
+0,3,1,Victoria_West_1,Blackhorse Road,Victoria,Quiet,0,0,300,False,False
+0,3,1,Victoria_East_2,Warren Street,Victoria,Busy,5,0,300,False,False
+0,3,1,Victoria_West_2,Euston,Victoria,Busy,6,0,300,False,False
+0,3,1,Jubilee_East_1,Canons Park,Jubilee,Quiet,0,0,300,False,False
+0,3,1,Jubilee_West_1,Canons Park,Jubilee,Quiet,0,0,300,False,False
+0,3,1,Jubilee_East_2,St John's Wood,Jubilee,Busy,2,0,300,False,False
+0,3,1,Jubilee_West_2,Swiss Cottage,Jubilee,Busy,3,0,300,False,False
+0,3,1,Bakerloo_East_1,Kenton,Bakerloo,Quiet,0,0,300,False,False
+0,3,1,Bakerloo_West_1,Kenton,Bakerloo,Quiet,0,0,300,False,False
+0,3,1,Bakerloo_East_2,Paddington,Bakerloo,Busy,0,3,300,False,False
+0,3,1,Bakerloo_West_2,Warwick Avenue,Bakerloo,Busy,4,0,300,False,False
+0,3,31,Piccadilly_East_1,Oakwood,Piccadilly,Quiet,0,0,300,False,False
+0,3,31,Piccadilly_West_1,Cockfosters,Piccadilly,Quiet,0,0,300,False,False
+0,3,31,Piccadilly_East_2,Russell Square,Piccadilly,Busy,6,0,300,False,False
+0,3,31,Piccadilly_West_2,King's Cross St Pancras,Piccadilly,Busy,7,0,300,False,False
+0,3,31,Central_East_1,Ruislip Gardens,Central,Quiet,0,0,300,False,False
+0,3,31,Central_West_1,Ruislip Gardens,Central,Quiet,0,0,300,False,False
+0,3,31,Central_East_2,Holland Park,Central,Busy,4,0,300,False,False
+0,3,31,Central_West_2,Shepherd's Bush,Central,Busy,6,0,300,False,False
+0,3,31,Victoria_East_1,Blackhorse Road,Victoria,Quiet,0,0,300,False,False
+0,3,31,Victoria_West_1,Blackhorse Road,Victoria,Quiet,0,0,300,False,False
+0,3,31,Victoria_East_2,Warren Street,Victoria,Busy,5,0,300,False,False
+0,3,31,Victoria_West_2,Euston,Victoria,Busy,6,0,300,False,False
+0,3,31,Jubilee_East_1,Canons Park,Jubilee,Quiet,0,0,300,False,False
+0,3,31,Jubilee_West_1,Canons Park,Jubilee,Quiet,0,0,300,False,False
+0,3,31,Jubilee_East_2,St John's Wood,Jubilee,Busy,2,0,300,False,False
+0,3,31,Jubilee_West_2,Swiss Cottage,Jubilee,Busy,3,0,300,False,False
+0,3,31,Bakerloo_East_1,Kenton,Bakerloo,Quiet,0,0,300,False,False
+0,3,31,Bakerloo_West_1,Kenton,Bakerloo,Quiet,0,0,300,False,False
+0,3,31,Bakerloo_East_2,Paddington,Bakerloo,Busy,0,3,300,False,False
+0,3,31,Bakerloo_West_2,Warwick Avenue,Bakerloo,Busy,4,0,300,False,False
+0,4,1,Piccadilly_East_1,Oakwood,Piccadilly,Quiet,0,0,300,False,False
+0,4,1,Piccadilly_West_1,Cockfosters,Piccadilly,Quiet,0,0,300,False,False
+0,4,1,Piccadilly_East_2,Russell Square,Piccadilly,Busy,6,0,300,False,False
+0,4,1,Piccadilly_West_2,King's Cross St Pancras,Piccadilly,Busy,7,0,300,False,False
+0,4,1,Central_East_1,Ruislip Gardens,Central,Quiet,0,0,300,False,False
+0,4,1,Central_West_1,Ruislip Gardens,Central,Quiet,0,0,300,False,False
+0,4,1,Central_East_2,Holland Park,Central,Busy,4,0,300,False,False
+0,4,1,Central_West_2,Shepherd's Bush,Central,Busy,6,0,300,False,False
+0,4,1,Victoria_East_1,Blackhorse Road,Victoria,Quiet,0,0,300,False,False
+0,4,1,Victoria_West_1,Blackhorse Road,Victoria,Quiet,0,0,300,False,False
+0,4,1,Victoria_East_2,Warren Street,Victoria,Busy,5,0,300,False,False
+0,4,1,Victoria_West_2,Euston,Victoria,Busy,6,0,300,False,False
+0,4,1,Jubilee_East_1,Canons Park,Jubilee,Quiet,0,0,300,False,False
+0,4,1,Jubilee_West_1,Canons Park,Jubilee,Quiet,0,0,300,False,False
+0,4,1,Jubilee_East_2,St John's Wood,Jubilee,Busy,2,0,300,False,False
+0,4,1,Jubilee_West_2,Swiss Cottage,Jubilee,Busy,3,0,300,False,False
+0,4,1,Bakerloo_East_1,Kenton,Bakerloo,Quiet,0,0,300,False,False
+0,4,1,Bakerloo_West_1,Kenton,Bakerloo,Quiet,0,0,300,False,False
+0,4,1,Bakerloo_East_2,Paddington,Bakerloo,Busy,0,3,300,False,False
+0,4,1,Bakerloo_West_2,Warwick Avenue,Bakerloo,Busy,4,0,300,False,False
+0,4,32,Piccadilly_East_1,Oakwood,Piccadilly,Quiet,0,0,300,False,False
+0,4,32,Piccadilly_West_1,Cockfosters,Piccadilly,Quiet,0,0,300,False,False
+0,4,32,Piccadilly_East_2,Russell Square,Piccadilly,Busy,6,0,300,False,False
+0,4,32,Piccadilly_West_2,King's Cross St Pancras,Piccadilly,Busy,7,0,300,False,False
+0,4,32,Central_East_1,Ruislip Gardens,Central,Quiet,0,0,300,False,False
+0,4,32,Central_West_1,Ruislip Gardens,Central,Quiet,0,0,300,False,False
+0,4,32,Central_East_2,Holland Park,Central,Busy,4,0,300,False,False
+0,4,32,Central_West_2,Shepherd's Bush,Central,Busy,6,0,300,False,False
+0,4,32,Victoria_East_1,Blackhorse Road,Victoria,Quiet,0,0,300,False,False
+0,4,32,Victoria_West_1,Blackhorse Road,Victoria,Quiet,0,0,300,False,False
+0,4,32,Victoria_East_2,Warren Street,Victoria,Busy,5,0,300,False,False
+0,4,32,Victoria_West_2,Euston,Victoria,Busy,6,0,300,False,False
+0,4,32,Jubilee_East_1,Canons Park,Jubilee,Quiet,0,0,300,False,False
+0,4,32,Jubilee_West_1,Canons Park,Jubilee,Quiet,0,0,300,False,False
+0,4,32,Jubilee_East_2,St John's Wood,Jubilee,Busy,2,0,300,False,False
+0,4,32,Jubilee_West_2,Swiss Cottage,Jubilee,Busy,3,0,300,False,False
+0,4,32,Bakerloo_East_1,Kenton,Bakerloo,Quiet,0,0,300,False,False
+0,4,32,Bakerloo_West_1,Kenton,Bakerloo,Quiet,0,0,300,False,False
+0,4,32,Bakerloo_East_2,Paddington,Bakerloo,Busy,0,3,300,False,False
+0,4,32,Bakerloo_West_2,Warwick Avenue,Bakerloo,Busy,4,0,300,False,False
+0,5,2,Piccadilly_East_1,Oakwood,Piccadilly,Quiet,0,0,300,False,False
+0,5,2,Piccadilly_West_1,Cockfosters,Piccadilly,Quiet,0,0,300,False,True
+0,5,2,Piccadilly_East_2,Russell Square,Piccadilly,Busy,10,0,300,False,False
+0,5,2,Piccadilly_West_2,King's Cross St Pancras,Piccadilly,Busy,12,0,300,False,True
+0,5,2,Central_East_1,Ruislip Gardens,Central,Quiet,0,0,300,False,False
+0,5,2,Central_West_1,Ruislip Gardens,Central,Quiet,0,0,300,False,False
+0,5,2,Central_East_2,Holland Park,Central,Busy,9,0,300,False,False
+0,5,2,Central_West_2,Shepherd's Bush,Central,Busy,8,0,300,False,True
+0,5,2,Victoria_East_1,Blackhorse Road,Victoria,Quiet,0,0,300,False,False
+0,5,2,Victoria_West_1,Blackhorse Road,Victoria,Quiet,0,0,300,False,False
+0,5,2,Victoria_East_2,Warren Street,Victoria,Busy,11,0,300,False,False
+0,5,2,Victoria_West_2,Euston,Victoria,Busy,12,0,300,False,True
+0,5,2,Jubilee_East_1,Canons Park,Jubilee,Quiet,0,0,300,False,False
+0,5,2,Jubilee_West_1,Canons Park,Jubilee,Quiet,0,0,300,False,False
+0,5,2,Jubilee_East_2,St John's Wood,Jubilee,Busy,6,0,300,False,False
+0,5,2,Jubilee_West_2,Swiss Cottage,Jubilee,Busy,6,0,300,False,True
+0,5,2,Bakerloo_East_1,Kenton,Bakerloo,Quiet,0,0,300,False,False
+0,5,2,Bakerloo_West_1,Kenton,Bakerloo,Quiet,0,0,300,False,False
+0,5,2,Bakerloo_East_2,Paddington,Bakerloo,Busy,6,3,300,False,False
+0,5,2,Bakerloo_West_2,Warwick Avenue,Bakerloo,Busy,7,0,300,False,True
+0,5,32,Piccadilly_East_1,Oakwood,Piccadilly,Quiet,0,0,300,False,False
+0,5,32,Piccadilly_West_1,Cockfosters,Piccadilly,Quiet,0,0,300,False,True
+0,5,32,Piccadilly_East_2,Russell Square,Piccadilly,Busy,10,0,300,False,False
+0,5,32,Piccadilly_West_2,King's Cross St Pancras,Piccadilly,Busy,12,0,300,False,True
+0,5,32,Central_East_1,South Ruislip,Central,Quiet,0,0,300,True,False
+0,5,32,Central_West_1,South Ruislip,Central,Quiet,0,0,300,True,False
+0,5,32,Central_East_2,Notting Hill Gate,Central,Busy,0,7,300,False,False
+0,5,32,Central_West_2,Shepherd's Bush,Central,Busy,8,0,300,False,True
+0,5,32,Victoria_East_1,Tottenham Hale,Victoria,Quiet,0,0,300,True,False
+0,5,32,Victoria_West_1,Tottenham Hale,Victoria,Quiet,0,0,300,True,False
+0,5,32,Victoria_East_2,Warren Street,Victoria,Busy,11,0,300,False,False
+0,5,32,Victoria_West_2,Euston,Victoria,Busy,12,0,300,False,True
+0,5,32,Jubilee_East_1,Canons Park,Jubilee,Quiet,0,0,300,False,False
+0,5,32,Jubilee_West_1,Queensbury,Jubilee,Quiet,0,0,300,True,False
+0,5,32,Jubilee_East_2,St John's Wood,Jubilee,Busy,6,0,300,False,False
+0,5,32,Jubilee_West_2,Swiss Cottage,Jubilee,Busy,6,0,300,False,True
+0,5,32,Bakerloo_East_1,Kenton,Bakerloo,Quiet,0,0,300,False,False
+0,5,32,Bakerloo_West_1,Kenton,Bakerloo,Quiet,0,0,300,False,False
+0,5,32,Bakerloo_East_2,Paddington,Bakerloo,Busy,6,3,300,False,False
+0,5,32,Bakerloo_West_2,Warwick Avenue,Bakerloo,Busy,7,0,300,False,True
+0,6,3,Piccadilly_East_1,Southgate,Piccadilly,Quiet,0,0,300,True,False
+0,6,3,Piccadilly_West_1,Cockfosters,Piccadilly,Quiet,0,0,300,False,False
+0,6,3,Piccadilly_East_2,Holborn,Piccadilly,Busy,6,7,300,False,False
+0,6,3,Piccadilly_West_2,King's Cross St Pancras,Piccadilly,Busy,19,0,300,False,False
+0,6,3,Central_East_1,South Ruislip,Central,Quiet,0,0,300,False,False
+0,6,3,Central_West_1,South Ruislip,Central,Quiet,0,0,300,False,False
+0,6,3,Central_East_2,Queensway,Central,Busy,0,20,300,True,False
+0,6,3,Central_West_2,Shepherd's Bush,Central,Busy,11,0,300,False,False
+0,6,3,Victoria_East_1,Tottenham Hale,Victoria,Quiet,0,0,300,False,False
+0,6,3,Victoria_West_1,Tottenham Hale,Victoria,Quiet,0,0,300,False,False
+0,6,3,Victoria_East_2,Warren Street,Victoria,Busy,13,0,300,False,False
+0,6,3,Victoria_West_2,Euston,Victoria,Busy,18,0,300,False,False
+0,6,3,Jubilee_East_1,Queensbury,Jubilee,Quiet,0,0,300,True,False
+0,6,3,Jubilee_West_1,Queensbury,Jubilee,Quiet,0,0,300,False,False
+0,6,3,Jubilee_East_2,Baker Street,Jubilee,Busy,2,9,300,False,False
+0,6,3,Jubilee_West_2,Swiss Cottage,Jubilee,Busy,10,0,300,False,False
+0,6,3,Bakerloo_East_1,South Kenton,Bakerloo,Quiet,0,0,300,True,False
+0,6,3,Bakerloo_West_1,South Kenton,Bakerloo,Quiet,0,0,300,False,False
+0,6,3,Bakerloo_East_2,Edgware Road,Bakerloo,Busy,0,14,300,True,False
+0,6,3,Bakerloo_West_2,Warwick Avenue,Bakerloo,Busy,14,0,300,False,False
+0,6,33,Piccadilly_East_1,Southgate,Piccadilly,Quiet,0,0,300,False,False
+0,6,33,Piccadilly_West_1,Cockfosters,Piccadilly,Quiet,0,0,300,False,False
+0,6,33,Piccadilly_East_2,Holborn,Piccadilly,Busy,6,7,300,False,False
+0,6,33,Piccadilly_West_2,Russell Square,Piccadilly,Busy,0,16,300,False,False
+0,6,33,Central_East_1,Northolt,Central,Quiet,0,0,300,False,False
+0,6,33,Central_West_1,Northolt,Central,Quiet,0,0,300,False,False
+0,6,33,Central_East_2,Queensway,Central,Busy,0,20,300,False,False
+0,6,33,Central_West_2,Holland Park,Central,Busy,0,13,300,False,False
+0,6,33,Victoria_East_1,Seven Sisters,Victoria,Quiet,0,0,300,False,False
+0,6,33,Victoria_West_1,Seven Sisters,Victoria,Quiet,0,0,300,False,False
+0,6,33,Victoria_East_2,Warren Street,Victoria,Busy,13,0,300,False,False
+0,6,33,Victoria_West_2,Euston,Victoria,Busy,18,0,300,False,False
+0,6,33,Jubilee_East_1,Queensbury,Jubilee,Quiet,0,0,300,False,False
+0,6,33,Jubilee_West_1,Kingsbury,Jubilee,Quiet,0,0,300,False,False
+0,6,33,Jubilee_East_2,Baker Street,Jubilee,Busy,2,9,300,False,False
+0,6,33,Jubilee_West_2,St John's Wood,Jubilee,Busy,0,8,300,False,False
+0,6,33,Bakerloo_East_1,South Kenton,Bakerloo,Quiet,0,0,300,False,False
+0,6,33,Bakerloo_West_1,South Kenton,Bakerloo,Quiet,0,0,300,False,False
+0,6,33,Bakerloo_East_2,Edgware Road,Bakerloo,Busy,0,14,300,False,False
+0,6,33,Bakerloo_West_2,Warwick Avenue,Bakerloo,Busy,14,0,300,False,False
+0,7,3,Piccadilly_East_1,Arnos Grove,Piccadilly,Quiet,0,0,300,True,False
+0,7,3,Piccadilly_West_1,Oakwood,Piccadilly,Quiet,0,0,300,False,False
+0,7,3,Piccadilly_East_2,Covent Garden,Piccadilly,Busy,3,20,300,False,False
+0,7,3,Piccadilly_West_2,Russell Square,Piccadilly,Busy,5,16,300,False,False
+0,7,3,Central_East_1,Northolt,Central,Quiet,0,0,300,False,False
+0,7,3,Central_West_1,Northolt,Central,Quiet,0,0,300,False,False
+0,7,3,Central_East_2,Lancaster Gate,Central,Normal,0,20,300,False,False
+0,7,3,Central_West_2,Notting Hill Gate,Central,Busy,0,22,300,True,False
+0,7,3,Victoria_East_1,Seven Sisters,Victoria,Quiet,0,0,300,False,False
+0,7,3,Victoria_West_1,Seven Sisters,Victoria,Quiet,0,0,300,False,False
+0,7,3,Victoria_East_2,Warren Street,Victoria,Busy,6,0,300,False,False
+0,7,3,Victoria_West_2,Warren Street,Victoria,Busy,6,13,300,False,False
+0,7,3,Jubilee_East_1,Kingsbury,Jubilee,Quiet,0,0,300,True,False
+0,7,3,Jubilee_West_1,Kingsbury,Jubilee,Quiet,0,0,300,False,False
+0,7,3,Jubilee_East_2,Baker Street,Jubilee,Busy,7,9,300,False,False
+0,7,3,Jubilee_West_2,St John's Wood,Jubilee,Busy,7,8,300,False,False
+0,7,3,Bakerloo_East_1,North Wembley,Bakerloo,Quiet,0,0,300,True,False
+0,7,3,Bakerloo_West_1,North Wembley,Bakerloo,Quiet,0,0,300,False,False
+0,7,3,Bakerloo_East_2,Marylebone,Bakerloo,Busy,0,30,300,True,False
+0,7,3,Bakerloo_West_2,Paddington,Bakerloo,Busy,0,15,300,False,False
+0,7,34,Piccadilly_East_1,Arnos Grove,Piccadilly,Quiet,0,0,300,False,False
+0,7,34,Piccadilly_West_1,Oakwood,Piccadilly,Quiet,0,0,300,False,False
+0,7,34,Piccadilly_East_2,Covent Garden,Piccadilly,Busy,9,20,300,False,False
+0,7,34,Piccadilly_West_2,Holborn,Piccadilly,Busy,3,26,300,True,False
+0,7,34,Central_East_1,Greenford,Central,Quiet,0,0,300,False,False
+0,7,34,Central_West_1,Greenford,Central,Quiet,0,0,300,False,False
+0,7,34,Central_East_2,Lancaster Gate,Central,Normal,0,20,300,False,False
+0,7,34,Central_West_2,Notting Hill Gate,Central,Busy,2,22,300,False,False
+0,7,34,Victoria_East_1,Seven Sisters,Victoria,Quiet,0,0,300,False,False
+0,7,34,Victoria_West_1,Finsbury Park,Victoria,Normal,1,2,300,False,False
+0,7,34,Victoria_East_2,Warren Street,Victoria,Busy,13,0,300,False,False
+0,7,34,Victoria_West_2,Oxford Circus,Victoria,Busy,6,28,300,True,False
+0,7,34,Jubilee_East_1,Kingsbury,Jubilee,Quiet,0,0,300,False,False
+0,7,34,Jubilee_West_1,Wembley Park,Jubilee,Quiet,0,0,300,False,False
+0,7,34,Jubilee_East_2,Baker Street,Jubilee,Busy,3,9,300,False,False
+0,7,34,Jubilee_West_2,Baker Street,Jubilee,Busy,3,14,300,True,False
+0,7,34,Bakerloo_East_1,North Wembley,Bakerloo,Quiet,0,0,300,False,False
+0,7,34,Bakerloo_West_1,North Wembley,Bakerloo,Quiet,0,0,300,False,False
+0,7,34,Bakerloo_East_2,Marylebone,Bakerloo,Busy,6,30,300,False,False
+0,7,34,Bakerloo_West_2,Paddington,Bakerloo,Busy,3,15,300,False,False
+0,8,4,Piccadilly_East_1,Arnos Grove,Piccadilly,Quiet,0,0,300,False,False
+0,8,4,Piccadilly_West_1,Southgate,Piccadilly,Quiet,0,0,300,False,False
+0,8,4,Piccadilly_East_2,Leicester Square,Piccadilly,Normal,0,21,300,False,False
+0,8,4,Piccadilly_West_2,Holborn,Piccadilly,Busy,3,26,300,False,False
+0,8,4,Central_East_1,Perivale,Central,Quiet,0,0,300,True,False
+0,8,4,Central_West_1,Perivale,Central,Quiet,0,0,300,True,False
+0,8,4,Central_East_2,Marble Arch,Central,Normal,0,19,300,False,False
+0,8,4,Central_West_2,Queensway,Central,Busy,0,28,300,False,False
+0,8,4,Victoria_East_1,Seven Sisters,Victoria,Quiet,0,0,300,False,False
+0,8,4,Victoria_West_1,Finsbury Park,Victoria,Normal,1,2,300,False,False
+0,8,4,Victoria_East_2,Warren Street,Victoria,Busy,13,0,300,False,False
+0,8,4,Victoria_West_2,Oxford Circus,Victoria,Busy,6,28,300,False,False
+0,8,4,Jubilee_East_1,Kingsbury,Jubilee,Quiet,0,0,300,False,False
+0,8,4,Jubilee_West_1,Neasden,Jubilee,Normal,0,6,300,True,False
+0,8,4,Jubilee_East_2,Baker Street,Jubilee,Busy,3,9,300,False,False
+0,8,4,Jubilee_West_2,Baker Street,Jubilee,Busy,3,14,300,False,False
+0,8,4,Bakerloo_East_1,North Wembley,Bakerloo,Quiet,0,0,300,False,False
+0,8,4,Bakerloo_West_1,Wembley Central,Bakerloo,Quiet,0,0,300,False,False
+0,8,4,Bakerloo_East_2,Marylebone,Bakerloo,Busy,6,30,300,False,False
+0,8,4,Bakerloo_West_2,Edgware Road,Bakerloo,Busy,0,20,300,False,False
+0,8,34,Piccadilly_East_1,Bounds Green,Piccadilly,Quiet,0,0,300,False,False
+0,8,34,Piccadilly_West_1,Southgate,Piccadilly,Quiet,0,0,300,False,False
+0,8,34,Piccadilly_East_2,Leicester Square,Piccadilly,Normal,1,21,300,False,False
+0,8,34,Piccadilly_West_2,Covent Garden,Piccadilly,Busy,0,35,300,True,False
+0,8,34,Central_East_1,Perivale,Central,Quiet,0,0,300,False,False
+0,8,34,Central_West_1,Perivale,Central,Quiet,0,0,300,False,False
+0,8,34,Central_East_2,Bond Street,Central,Normal,0,21,300,True,False
+0,8,34,Central_West_2,Queensway,Central,Busy,4,28,300,False,False
+0,8,34,Victoria_East_1,Seven Sisters,Victoria,Quiet,0,0,300,False,False
+0,8,34,Victoria_West_1,Highbury & Islington,Victoria,Normal,1,5,300,False,False
+0,8,34,Victoria_East_2,Warren Street,Victoria,Busy,19,0,300,False,False
+0,8,34,Victoria_West_2,Oxford Circus,Victoria,Busy,11,28,300,False,False
+0,8,34,Jubilee_East_1,Wembley Park,Jubilee,Quiet,0,0,300,False,False
+0,8,34,Jubilee_West_1,Neasden,Jubilee,Normal,1,6,300,False,False
+0,8,34,Jubilee_East_2,Baker Street,Jubilee,Busy,7,9,300,False,False
+0,8,34,Jubilee_West_2,Bond Street,Jubilee,Busy,0,36,300,True,False
+0,8,34,Bakerloo_East_1,Wembley Central,Bakerloo,Quiet,0,0,300,False,False
+0,8,34,Bakerloo_West_1,Stonebridge Park,Bakerloo,Normal,0,5,300,True,False
+0,8,34,Bakerloo_East_2,Marylebone,Bakerloo,Busy,12,30,300,False,False
+0,8,34,Bakerloo_West_2,Edgware Road,Bakerloo,Busy,3,20,300,False,False
+0,9,5,Piccadilly_East_1,Bounds Green,Piccadilly,Quiet,0,0,300,False,False
+0,9,5,Piccadilly_West_1,Arnos Grove,Piccadilly,Quiet,0,0,300,True,False
+0,9,5,Piccadilly_East_2,Piccadilly Circus,Piccadilly,Normal,0,23,300,False,False
+0,9,5,Piccadilly_West_2,Covent Garden,Piccadilly,Busy,0,35,300,False,False
+0,9,5,Central_East_1,Hanger Lane,Central,Normal,0,7,300,False,False
+0,9,5,Central_West_1,Hanger Lane,Central,Normal,0,0,300,False,False
+0,9,5,Central_East_2,Bond Street,Central,Normal,0,21,300,False,False
+0,9,5,Central_West_2,Lancaster Gate,Central,Normal,0,24,300,False,False
+0,9,5,Victoria_East_1,Seven Sisters,Victoria,Quiet,0,0,300,False,False
+0,9,5,Victoria_West_1,Highbury & Islington,Victoria,Normal,1,5,300,False,False
+0,9,5,Victoria_East_2,Warren Street,Victoria,Busy,19,0,300,False,False
+0,9,5,Victoria_West_2,Oxford Circus,Victoria,Busy,11,28,300,False,False
+0,9,5,Jubilee_East_1,Wembley Park,Jubilee,Quiet,0,0,300,False,False
+0,9,5,Jubilee_West_1,Dollis Hill,Jubilee,Normal,0,13,300,False,False
+0,9,5,Jubilee_East_2,Baker Street,Jubilee,Busy,7,9,300,False,False
+0,9,5,Jubilee_West_2,Bond Street,Jubilee,Busy,0,36,300,False,False
+0,9,5,Bakerloo_East_1,Wembley Central,Bakerloo,Quiet,0,0,300,False,False
+0,9,5,Bakerloo_West_1,Stonebridge Park,Bakerloo,Normal,0,5,300,False,False
+0,9,5,Bakerloo_East_2,Marylebone,Bakerloo,Busy,0,30,300,False,False
+0,9,5,Bakerloo_West_2,Marylebone,Bakerloo,Busy,0,28,300,True,False
+0,9,35,Piccadilly_East_1,Wood Green,Piccadilly,Quiet,0,0,300,False,False
+0,9,35,Piccadilly_West_1,Arnos Grove,Piccadilly,Quiet,0,0,300,False,False
+0,9,35,Piccadilly_East_2,Piccadilly Circus,Piccadilly,Normal,2,23,300,False,False
+0,9,35,Piccadilly_West_2,Covent Garden,Piccadilly,Busy,7,35,300,False,False
+0,9,35,Central_East_1,Hanger Lane,Central,Normal,1,7,300,False,True
+0,9,35,Central_West_1,Hanger Lane,Central,Normal,1,0,300,False,False
+0,9,35,Central_East_2,Oxford Circus,Central,Normal,0,21,300,False,False
+0,9,35,Central_West_2,Marble Arch,Central,Normal,0,25,300,True,False
+0,9,35,Victoria_East_1,Seven Sisters,Victoria,Quiet,0,0,300,False,False
+0,9,35,Victoria_West_1,Highbury & Islington,Victoria,Normal,3,5,300,False,False
+0,9,35,Victoria_East_2,Warren Street,Victoria,Busy,24,0,300,False,False
+0,9,35,Victoria_West_2,Oxford Circus,Victoria,Busy,15,28,300,False,False
+0,9,35,Jubilee_East_1,Neasden,Jubilee,Normal,0,2,300,False,False
+0,9,35,Jubilee_West_1,Dollis Hill,Jubilee,Normal,0,13,300,False,False
+0,9,35,Jubilee_East_2,Bond Street,Jubilee,Busy,0,15,300,False,False
+0,9,35,Jubilee_West_2,Bond Street,Jubilee,Busy,0,36,300,False,False
+0,9,35,Bakerloo_East_1,Stonebridge Park,Bakerloo,Normal,0,0,300,False,False
+0,9,35,Bakerloo_West_1,Stonebridge Park,Bakerloo,Normal,0,5,300,False,False
+0,9,35,Bakerloo_East_2,Baker Street,Bakerloo,Normal,0,34,300,True,False
+0,9,35,Bakerloo_West_2,Marylebone,Bakerloo,Busy,5,28,300,False,False
+0,10,5,Piccadilly_East_1,Wood Green,Piccadilly,Quiet,0,0,300,False,False
+0,10,5,Piccadilly_West_1,Arnos Grove,Piccadilly,Quiet,0,0,300,False,False
+0,10,5,Piccadilly_East_2,Green Park,Piccadilly,Normal,0,22,300,True,False
+0,10,5,Piccadilly_West_2,Leicester Square,Piccadilly,Normal,1,28,300,False,False
+0,10,5,Central_East_1,Hanger Lane,Central,Normal,3,7,300,False,True
+0,10,5,Central_West_1,Ealing Broadway,Central,Normal,1,5,300,False,False
+0,10,5,Central_East_2,Oxford Circus,Central,Normal,1,21,300,False,False
+0,10,5,Central_West_2,Marble Arch,Central,Normal,1,25,300,False,False
+0,10,5,Victoria_East_1,Finsbury Park,Victoria,Normal,1,3,300,False,False
+0,10,5,Victoria_West_1,Highbury & Islington,Victoria,Normal,4,5,300,False,False
+0,10,5,Victoria_East_2,Oxford Circus,Victoria,Busy,3,15,300,False,False
+0,10,5,Victoria_West_2,Green Park,Victoria,Normal,1,28,300,False,False
+0,10,5,Jubilee_East_1,Neasden,Jubilee,Normal,1,2,300,False,False
+0,10,5,Jubilee_West_1,Willesden Green,Jubilee,Normal,0,21,300,False,False
+0,10,5,Jubilee_East_2,Bond Street,Jubilee,Busy,3,15,300,False,False
+0,10,5,Jubilee_West_2,Green Park,Jubilee,Normal,0,38,300,False,False
+0,10,5,Bakerloo_East_1,Stonebridge Park,Bakerloo,Normal,2,0,300,False,False
+0,10,5,Bakerloo_West_1,Stonebridge Park,Bakerloo,Normal,2,5,300,False,False
+0,10,5,Bakerloo_East_2,Baker Street,Bakerloo,Normal,0,34,300,False,False
+0,10,5,Bakerloo_West_2,Marylebone,Bakerloo,Busy,11,28,300,False,False
+0,10,36,Piccadilly_East_1,Turnpike Lane,Piccadilly,Normal,0,4,300,False,False
+0,10,36,Piccadilly_West_1,Bounds Green,Piccadilly,Quiet,0,0,300,False,False
+0,10,36,Piccadilly_East_2,Green Park,Piccadilly,Normal,0,22,300,False,False
+0,10,36,Piccadilly_West_2,Leicester Square,Piccadilly,Normal,1,28,300,False,False
+0,10,36,Central_East_1,Ealing Broadway,Central,Normal,0,7,300,True,False
+0,10,36,Central_West_1,West Acton,Central,Normal,0,13,300,True,False
+0,10,36,Central_East_2,Tottenham Court Road,Central,Normal,0,24,300,False,False
+0,10,36,Central_West_2,Bond Street,Central,Normal,0,25,300,False,False
+0,10,36,Victoria_East_1,Finsbury Park,Victoria,Normal,1,3,300,False,False
+0,10,36,Victoria_West_1,Highbury & Islington,Victoria,Normal,4,5,300,False,False
+0,10,36,Victoria_East_2,Oxford Circus,Victoria,Busy,3,15,300,False,False
+0,10,36,Victoria_West_2,Victoria,Victoria,Normal,0,31,300,False,False
+0,10,36,Jubilee_East_1,Dollis Hill,Jubilee,Normal,0,3,300,False,False
+0,10,36,Jubilee_West_1,Kilburn,Jubilee,Normal,0,25,300,True,False
+0,10,36,Jubilee_East_2,Bond Street,Jubilee,Busy,3,15,300,False,False
+0,10,36,Jubilee_West_2,Green Park,Jubilee,Normal,0,38,300,False,False
+0,10,36,Bakerloo_East_1,Harlesden,Bakerloo,Normal,0,9,300,False,False
+0,10,36,Bakerloo_West_1,Stonebridge Park,Bakerloo,Normal,2,5,300,False,False
+0,10,36,Bakerloo_East_2,Regent's Park,Bakerloo,Normal,0,31,300,False,False
+0,10,36,Bakerloo_West_2,Baker Street,Bakerloo,Normal,0,23,300,False,False
+0,11,6,Piccadilly_East_1,Turnpike Lane,Piccadilly,Normal,0,4,300,False,True
+0,11,6,Piccadilly_West_1,Bounds Green,Piccadilly,Quiet,0,0,300,False,False
+0,11,6,Piccadilly_East_2,Green Park,Piccadilly,Normal,1,22,300,False,False
+0,11,6,Piccadilly_West_2,Piccadilly Circus,Piccadilly,Normal,1,28,300,False,False
+0,11,6,Central_East_1,Ealing Broadway,Central,Normal,0,7,300,False,False
+0,11,6,Central_West_1,West Acton,Central,Normal,0,13,300,False,False
+0,11,6,Central_East_2,Holborn,Central,Quiet,0,24,300,True,False
+0,11,6,Central_West_2,Bond Street,Central,Normal,1,25,300,False,False
+0,11,6,Victoria_East_1,Highbury & Islington,Victoria,Normal,1,7,300,False,False
+0,11,6,Victoria_West_1,Highbury & Islington,Victoria,Normal,1,5,300,False,False
+0,11,6,Victoria_East_2,Oxford Circus,Victoria,Busy,6,15,300,False,False
+0,11,6,Victoria_West_2,Victoria,Victoria,Normal,0,31,300,False,False
+0,11,6,Jubilee_East_1,Dollis Hill,Jubilee,Normal,1,3,300,False,False
+0,11,6,Jubilee_West_1,Kilburn,Jubilee,Normal,0,25,300,False,False
+0,11,6,Jubilee_East_2,Bond Street,Jubilee,Busy,7,15,300,False,False
+0,11,6,Jubilee_West_2,Westminster,Jubilee,Normal,0,41,300,False,False
+0,11,6,Bakerloo_East_1,Harlesden,Bakerloo,Normal,1,9,300,False,True
+0,11,6,Bakerloo_West_1,Stonebridge Park,Bakerloo,Normal,3,5,300,False,False
+0,11,6,Bakerloo_East_2,Regent's Park,Bakerloo,Normal,1,31,300,False,False
+0,11,6,Bakerloo_West_2,Baker Street,Bakerloo,Normal,1,23,300,False,False
+0,11,36,Piccadilly_East_1,Turnpike Lane,Piccadilly,Normal,0,4,300,False,True
+0,11,36,Piccadilly_West_1,Wood Green,Piccadilly,Quiet,0,0,300,False,False
+0,11,36,Piccadilly_East_2,Hyde Park Corner,Piccadilly,Normal,0,29,300,False,False
+0,11,36,Piccadilly_West_2,Piccadilly Circus,Piccadilly,Normal,1,28,300,False,False
+0,11,36,Central_East_1,West Acton,Central,Normal,0,7,300,False,False
+0,11,36,Central_West_1,North Acton,Central,Normal,0,23,300,False,False
+0,11,36,Central_East_2,Holborn,Central,Quiet,0,24,300,False,False
+0,11,36,Central_West_2,Oxford Circus,Central,Normal,0,19,300,False,False
+0,11,36,Victoria_East_1,Highbury & Islington,Victoria,Normal,1,7,300,False,False
+0,11,36,Victoria_West_1,Highbury & Islington,Victoria,Normal,1,5,300,False,True
+0,11,36,Victoria_East_2,Oxford Circus,Victoria,Busy,6,15,300,False,False
+0,11,36,Victoria_West_2,Victoria,Victoria,Normal,0,31,300,False,False
+0,11,36,Jubilee_East_1,Willesden Green,Jubilee,Normal,0,4,300,True,False
+0,11,36,Jubilee_West_1,Kilburn,Jubilee,Normal,0,25,300,False,False
+0,11,36,Jubilee_East_2,Bond Street,Jubilee,Busy,7,15,300,False,False
+0,11,36,Jubilee_West_2,Westminster,Jubilee,Normal,0,41,300,False,False
+0,11,36,Bakerloo_East_1,Harlesden,Bakerloo,Normal,1,9,300,False,False
+0,11,36,Bakerloo_West_1,Stonebridge Park,Bakerloo,Normal,3,5,300,False,False
+0,11,36,Bakerloo_East_2,Regent's Park,Bakerloo,Normal,0,31,300,False,False
+0,11,36,Bakerloo_West_2,Regent's Park,Bakerloo,Normal,0,22,300,False,False
+0,12,7,Piccadilly_East_1,Turnpike Lane,Piccadilly,Normal,0,4,300,False,False
+0,12,7,Piccadilly_West_1,Wood Green,Piccadilly,Quiet,0,0,300,False,False
+0,12,7,Piccadilly_East_2,Hyde Park Corner,Piccadilly,Normal,2,29,300,False,False
+0,12,7,Piccadilly_West_2,Green Park,Piccadilly,Normal,0,30,300,False,False
+0,12,7,Central_East_1,West Acton,Central,Normal,2,7,300,False,False
+0,12,7,Central_West_1,North Acton,Central,Normal,2,23,300,False,False
+0,12,7,Central_East_2,Chancery Lane,Central,Quiet,0,17,300,False,False
+0,12,7,Central_West_2,Tottenham Court Road,Central,Normal,0,20,300,True,False
+0,12,7,Victoria_East_1,Highbury & Islington,Victoria,Normal,1,7,300,False,False
+0,12,7,Victoria_West_1,Highbury & Islington,Victoria,Normal,1,5,300,False,False
+0,12,7,Victoria_East_2,Oxford Circus,Victoria,Busy,11,15,300,False,False
+0,12,7,Victoria_West_2,Victoria,Victoria,Normal,0,31,300,False,False
+0,12,7,Jubilee_East_1,Willesden Green,Jubilee,Normal,1,4,300,False,False
+0,12,7,Jubilee_West_1,Kilburn,Jubilee,Normal,2,25,300,False,True
+0,12,7,Jubilee_East_2,Bond Street,Jubilee,Busy,14,15,300,False,False
+0,12,7,Jubilee_West_2,Waterloo,Jubilee,Normal,0,46,300,False,False
+0,12,7,Bakerloo_East_1,Harlesden,Bakerloo,Normal,1,9,300,False,False
+0,12,7,Bakerloo_West_1,Stonebridge Park,Bakerloo,Normal,4,5,300,False,False
+0,12,7,Bakerloo_East_2,Regent's Park,Bakerloo,Normal,1,31,300,False,False
+0,12,7,Bakerloo_West_2,Regent's Park,Bakerloo,Normal,1,22,300,False,False
+0,12,37,Piccadilly_East_1,Turnpike Lane,Piccadilly,Normal,4,4,300,False,False
+0,12,37,Piccadilly_West_1,Turnpike Lane,Piccadilly,Normal,4,0,300,False,False
+0,12,37,Piccadilly_East_2,Knightsbridge,Piccadilly,Normal,0,34,300,False,False
+0,12,37,Piccadilly_West_2,Green Park,Piccadilly,Normal,4,30,300,False,False
+0,12,37,Central_East_1,North Acton,Central,Normal,0,8,300,False,False
+0,12,37,Central_West_1,East Acton,Central,Normal,4,29,300,False,False
+0,12,37,Central_East_2,St Paul's,Central,Quiet,0,18,300,True,False
+0,12,37,Central_West_2,Tottenham Court Road,Central,Normal,1,20,300,False,False
+0,12,37,Victoria_East_1,Highbury & Islington,Victoria,Normal,2,7,300,False,False
+0,12,37,Victoria_West_1,Highbury & Islington,Victoria,Normal,2,5,300,False,False
+0,12,37,Victoria_East_2,Oxford Circus,Victoria,Busy,20,15,300,False,False
+0,12,37,Victoria_West_2,Victoria,Victoria,Normal,2,31,300,False,False
+0,12,37,Jubilee_East_1,Kilburn,Jubilee,Normal,0,6,300,True,False
+0,12,37,Jubilee_West_1,Kilburn,Jubilee,Normal,0,25,300,False,True
+0,12,37,Jubilee_East_2,Bond Street,Jubilee,Busy,20,15,300,False,False
+0,12,37,Jubilee_West_2,Waterloo,Jubilee,Normal,4,46,300,False,False
+0,12,37,Bakerloo_East_1,Willesden Junction,Bakerloo,Normal,1,12,300,False,False
+0,12,37,Bakerloo_West_1,Stonebridge Park,Bakerloo,Normal,4,5,300,False,False
+0,12,37,Bakerloo_East_2,Regent's Park,Bakerloo,Normal,4,31,300,False,False
+0,12,37,Bakerloo_West_2,Oxford Circus,Bakerloo,Normal,1,29,300,False,False
+0,13,7,Piccadilly_East_1,Turnpike Lane,Piccadilly,Normal,4,4,300,False,False
+0,13,7,Piccadilly_West_1,Turnpike Lane,Piccadilly,Normal,4,0,300,False,False
+0,13,7,Piccadilly_East_2,Knightsbridge,Piccadilly,Normal,0,34,300,False,False
+0,13,7,Piccadilly_West_2,Hyde Park Corner,Piccadilly,Normal,0,28,300,False,False
+0,13,7,Central_East_1,East Acton,Central,Normal,0,12,300,True,False
+0,13,7,Central_West_1,White City,Central,Busy,0,69,300,False,False
+0,13,7,Central_East_2,St Paul's,Central,Quiet,0,18,300,False,False
+0,13,7,Central_West_2,Holborn,Central,Quiet,0,20,300,False,False
+0,13,7,Victoria_East_1,King's Cross St Pancras,Victoria,Normal,0,20,300,False,False
+0,13,7,Victoria_West_1,Highbury & Islington,Victoria,Normal,2,5,300,False,False
+0,13,7,Victoria_East_2,Oxford Circus,Victoria,Busy,20,15,300,False,False
+0,13,7,Victoria_West_2,Victoria,Victoria,Normal,2,31,300,False,False
+0,13,7,Jubilee_East_1,Kilburn,Jubilee,Normal,0,6,300,False,False
+0,13,7,Jubilee_West_1,Kilburn,Jubilee,Normal,0,25,300,False,False
+0,13,7,Jubilee_East_2,Bond Street,Jubilee,Busy,20,15,300,False,False
+0,13,7,Jubilee_West_2,Southwark,Jubilee,Normal,0,46,300,False,False
+0,13,7,Bakerloo_East_1,Willesden Junction,Bakerloo,Normal,1,12,300,False,False
+0,13,7,Bakerloo_West_1,Stonebridge Park,Bakerloo,Normal,4,5,300,False,False
+0,13,7,Bakerloo_East_2,Regent's Park,Bakerloo,Normal,4,31,300,False,False
+0,13,7,Bakerloo_West_2,Oxford Circus,Bakerloo,Normal,1,29,300,False,False
+0,13,38,Piccadilly_East_1,Manor House,Piccadilly,Normal,0,4,300,False,False
+0,13,38,Piccadilly_West_1,Manor House,Piccadilly,Normal,0,7,300,False,False
+0,13,38,Piccadilly_East_2,South Kensington,Piccadilly,Quiet,1,28,300,False,False
+0,13,38,Piccadilly_West_2,Hyde Park Corner,Piccadilly,Normal,0,28,300,False,False
+0,13,38,Central_East_1,East Acton,Central,Normal,3,12,300,False,False
+0,13,38,Central_West_1,White City,Central,Busy,15,69,300,False,False
+0,13,38,Central_East_2,Bank,Central,Quiet,0,19,300,False,False
+0,13,38,Central_West_2,Chancery Lane,Central,Quiet,0,16,300,True,False
+0,13,38,Victoria_East_1,King's Cross St Pancras,Victoria,Normal,3,20,300,False,False
+0,13,38,Victoria_West_1,Highbury & Islington,Victoria,Normal,4,5,300,False,False
+0,13,38,Victoria_East_2,Oxford Circus,Victoria,Busy,29,15,300,False,False
+0,13,38,Victoria_West_2,Victoria,Victoria,Normal,2,31,300,False,False
+0,13,38,Jubilee_East_1,Kilburn,Jubilee,Normal,3,6,300,False,False
+0,13,38,Jubilee_West_1,Kilburn,Jubilee,Normal,3,25,300,False,False
+0,13,38,Jubilee_East_2,Bond Street,Jubilee,Busy,27,15,300,False,False
+0,13,38,Jubilee_West_2,Southwark,Jubilee,Normal,0,46,300,False,False
+0,13,38,Bakerloo_East_1,Kensal Green,Bakerloo,Normal,0,20,300,True,False
+0,13,38,Bakerloo_West_1,Harlesden,Bakerloo,Normal,0,10,300,True,False
+0,13,38,Bakerloo_East_2,Regent's Park,Bakerloo,Normal,7,31,300,False,False
+0,13,38,Bakerloo_West_2,Piccadilly Circus,Bakerloo,Normal,0,37,300,False,False
+0,14,8,Piccadilly_East_1,Manor House,Piccadilly,Normal,0,4,300,False,False
+0,14,8,Piccadilly_West_1,Manor House,Piccadilly,Normal,0,7,300,False,False
+0,14,8,Piccadilly_East_2,South Kensington,Piccadilly,Quiet,1,28,300,False,False
+0,14,8,Piccadilly_West_2,Knightsbridge,Piccadilly,Normal,0,30,300,True,False
+0,14,8,Central_East_1,White City,Central,Busy,0,27,300,False,False
+0,14,8,Central_West_1,Shepherd's Bush,Central,Busy,0,124,300,False,False
+0,14,8,Central_East_2,Bank,Central,Quiet,0,19,300,False,False
+0,14,8,Central_West_2,Chancery Lane,Central,Quiet,0,16,300,False,False
+0,14,8,Victoria_East_1,Euston,Victoria,Busy,0,86,300,False,False
+0,14,8,Victoria_West_1,Highbury & Islington,Victoria,Normal,4,5,300,False,False
+0,14,8,Victoria_East_2,Oxford Circus,Victoria,Busy,29,15,300,False,False
+0,14,8,Victoria_West_2,Pimlico,Victoria,Normal,0,40,300,False,False
+0,14,8,Jubilee_East_1,West Hampstead,Jubilee,Normal,0,17,300,False,False
+0,14,8,Jubilee_West_1,Kilburn,Jubilee,Normal,3,25,300,False,False
+0,14,8,Jubilee_East_2,Bond Street,Jubilee,Busy,27,15,300,False,False
+0,14,8,Jubilee_West_2,London Bridge,Jubilee,Normal,0,49,300,True,False
+0,14,8,Bakerloo_East_1,Kensal Green,Bakerloo,Normal,0,20,300,False,False
+0,14,8,Bakerloo_West_1,Harlesden,Bakerloo,Normal,0,10,300,False,False
+0,14,8,Bakerloo_East_2,Regent's Park,Bakerloo,Normal,7,31,300,False,False
+0,14,8,Bakerloo_West_2,Piccadilly Circus,Bakerloo,Normal,0,37,300,False,False
+0,14,38,Piccadilly_East_1,Finsbury Park,Piccadilly,Normal,0,4,300,True,False
+0,14,38,Piccadilly_West_1,Finsbury Park,Piccadilly,Normal,0,24,300,True,False
+0,14,38,Piccadilly_East_2,Gloucester Road,Piccadilly,Quiet,0,22,300,False,False
+0,14,38,Piccadilly_West_2,Knightsbridge,Piccadilly,Normal,4,30,300,False,False
+0,14,38,Central_East_1,White City,Central,Busy,13,27,300,False,False
+0,14,38,Central_West_1,Holland Park,Central,Busy,0,189,300,True,False
+0,14,38,Central_East_2,West Ruislip,Central,Quiet,1,14,300,False,False
+0,14,38,Central_West_2,St Paul's,Central,Quiet,0,18,300,False,False
+0,14,38,Victoria_East_1,Warren Street,Victoria,Busy,0,140,300,False,False
+0,14,38,Victoria_West_1,King's Cross St Pancras,Victoria,Normal,4,5,300,True,False
+0,14,38,Victoria_East_2,Oxford Circus,Victoria,Busy,36,15,300,False,False
+0,14,38,Victoria_West_2,Pimlico,Victoria,Normal,2,40,300,False,False
+0,14,38,Jubilee_East_1,West Hampstead,Jubilee,Normal,4,17,300,False,False
+0,14,38,Jubilee_West_1,Kilburn,Jubilee,Normal,6,25,300,False,False
+0,14,38,Jubilee_East_2,Bond Street,Jubilee,Busy,36,15,300,False,False
+0,14,38,Jubilee_West_2,London Bridge,Jubilee,Normal,0,49,300,False,False
+0,14,38,Bakerloo_East_1,Queen's Park,Bakerloo,Normal,0,33,300,True,False
+0,14,38,Bakerloo_West_1,Harlesden,Bakerloo,Normal,2,10,300,False,False
+0,14,38,Bakerloo_East_2,Oxford Circus,Bakerloo,Normal,0,35,300,True,False
+0,14,38,Bakerloo_West_2,Charing Cross,Bakerloo,Normal,0,54,300,True,False
+0,15,9,Piccadilly_East_1,Finsbury Park,Piccadilly,Normal,4,4,300,False,False
+0,15,9,Piccadilly_West_1,Finsbury Park,Piccadilly,Normal,4,24,300,False,False
+0,15,9,Piccadilly_East_2,Gloucester Road,Piccadilly,Quiet,1,22,300,False,False
+0,15,9,Piccadilly_West_2,Knightsbridge,Piccadilly,Normal,8,30,300,False,False
+0,15,9,Central_East_1,White City,Central,Busy,29,27,300,False,True
+0,15,9,Central_West_1,Holland Park,Central,Busy,7,189,300,False,False
+0,15,9,Central_East_2,Ruislip Gardens,Central,Quiet,0,14,300,True,False
+0,15,9,Central_West_2,St Paul's,Central,Quiet,0,18,300,False,False
+0,15,9,Victoria_East_1,Warren Street,Victoria,Busy,7,140,300,False,False
+0,15,9,Victoria_West_1,King's Cross St Pancras,Victoria,Normal,2,9,300,False,False
+0,15,9,Victoria_East_2,Oxford Circus,Victoria,Busy,51,15,300,False,False
+0,15,9,Victoria_West_2,Vauxhall,Victoria,Quiet,0,35,300,False,False
+0,15,9,Jubilee_East_1,Finchley Road,Jubilee,Busy,8,90,300,False,False
+0,15,9,Jubilee_West_1,Kilburn,Jubilee,Normal,6,25,300,False,False
+0,15,9,Jubilee_East_2,Green Park,Jubilee,Normal,1,17,300,False,False
+0,15,9,Jubilee_West_2,London Bridge,Jubilee,Normal,3,49,300,False,False
+0,15,9,Bakerloo_East_1,Queen's Park,Bakerloo,Normal,1,33,300,False,False
+0,15,9,Bakerloo_West_1,Harlesden,Bakerloo,Normal,5,10,300,False,False
+0,15,9,Bakerloo_East_2,Oxford Circus,Bakerloo,Normal,0,35,300,False,False
+0,15,9,Bakerloo_West_2,Charing Cross,Bakerloo,Normal,1,54,300,False,False
+0,15,39,Piccadilly_East_1,Finsbury Park,Piccadilly,Normal,4,4,300,False,False
+0,15,39,Piccadilly_West_1,Arsenal,Piccadilly,Normal,0,47,300,True,False
+0,15,39,Piccadilly_East_2,Earl's Court,Piccadilly,Quiet,0,26,300,True,False
+0,15,39,Piccadilly_West_2,South Kensington,Piccadilly,Quiet,0,29,300,False,False
+0,15,39,Central_East_1,White City,Central,Busy,29,27,300,False,True
+0,15,39,Central_West_1,Notting Hill Gate,Central,Busy,0,214,300,False,False
+0,15,39,Central_East_2,Ruislip Gardens,Central,Quiet,0,14,300,False,False
+0,15,39,Central_West_2,Bank,Central,Quiet,0,16,300,False,False
+0,15,39,Victoria_East_1,Warren Street,Victoria,Busy,7,140,300,False,False
+0,15,39,Victoria_West_1,King's Cross St Pancras,Victoria,Normal,2,9,300,False,False
+0,15,39,Victoria_East_2,Green Park,Victoria,Normal,0,23,300,False,False
+0,15,39,Victoria_West_2,Stockwell,Victoria,Quiet,0,35,300,True,False
+0,15,39,Jubilee_East_1,Finchley Road,Jubilee,Busy,8,90,300,False,False
+0,15,39,Jubilee_West_1,Kilburn,Jubilee,Normal,6,25,300,False,False
+0,15,39,Jubilee_East_2,Green Park,Jubilee,Normal,1,17,300,False,False
+0,15,39,Jubilee_West_2,Bermondsey,Jubilee,Quiet,0,52,300,False,False
+0,15,39,Bakerloo_East_1,Queen's Park,Bakerloo,Normal,1,33,300,False,False
+0,15,39,Bakerloo_West_1,Harlesden,Bakerloo,Normal,5,10,300,False,False
+0,15,39,Bakerloo_East_2,Oxford Circus,Bakerloo,Normal,0,35,300,False,False
+0,15,39,Bakerloo_West_2,Embankment,Bakerloo,Quiet,0,51,300,True,False
+0,16,9,Piccadilly_East_1,Arsenal,Piccadilly,Normal,0,4,300,False,False
+0,16,9,Piccadilly_West_1,Arsenal,Piccadilly,Normal,0,47,300,False,False
+0,16,9,Piccadilly_East_2,Earl's Court,Piccadilly,Quiet,0,26,300,False,False
+0,16,9,Piccadilly_West_2,South Kensington,Piccadilly,Quiet,1,29,300,False,False
+0,16,9,Central_East_1,White City,Central,Busy,39,27,300,False,False
+0,16,9,Central_West_1,Notting Hill Gate,Central,Busy,15,214,300,False,False
+0,16,9,Central_East_2,Ruislip Gardens,Central,Quiet,0,14,300,False,True
+0,16,9,Central_West_2,Liverpool Street,Central,Quiet,0,16,300,True,False
+0,16,9,Victoria_East_1,Warren Street,Victoria,Busy,13,140,300,False,False
+0,16,9,Victoria_West_1,King's Cross St Pancras,Victoria,Normal,6,9,300,False,False
+0,16,9,Victoria_East_2,Green Park,Victoria,Normal,0,23,300,False,False
+0,16,9,Victoria_West_2,Stockwell,Victoria,Quiet,1,35,300,False,False
+0,16,9,Jubilee_East_1,Swiss Cottage,Jubilee,Busy,14,147,300,False,False
+0,16,9,Jubilee_West_1,Kilburn,Jubilee,Normal,7,25,300,False,False
+0,16,9,Jubilee_East_2,Westminster,Jubilee,Normal,0,24,300,False,False
+0,16,9,Jubilee_West_2,Bermondsey,Jubilee,Quiet,1,52,300,False,False
+0,16,9,Bakerloo_East_1,Kilburn Park,Bakerloo,Busy,16,121,300,False,False
+0,16,9,Bakerloo_West_1,Harlesden,Bakerloo,Normal,7,10,300,False,True
+0,16,9,Bakerloo_East_2,Oxford Circus,Bakerloo,Normal,1,35,300,False,False
+0,16,9,Bakerloo_West_2,Embankment,Bakerloo,Quiet,0,51,300,False,False
+0,16,40,Piccadilly_East_1,Arsenal,Piccadilly,Normal,0,4,300,False,False
+0,16,40,Piccadilly_West_1,Arsenal,Piccadilly,Normal,0,47,300,False,False
+0,16,40,Piccadilly_East_2,Barons Court,Piccadilly,Quiet,0,27,300,True,False
+0,16,40,Piccadilly_West_2,Gloucester Road,Piccadilly,Quiet,0,28,300,False,False
+0,16,40,Central_East_1,White City,Central,Busy,39,27,300,False,False
+0,16,40,Central_West_1,Queensway,Central,Busy,0,266,300,False,False
+0,16,40,Central_East_2,Ruislip Gardens,Central,Quiet,0,14,300,False,True
+0,16,40,Central_West_2,West Ruislip,Central,Quiet,2,16,300,False,False
+0,16,40,Victoria_East_1,Warren Street,Victoria,Busy,13,140,300,False,False
+0,16,40,Victoria_West_1,King's Cross St Pancras,Victoria,Normal,6,9,300,False,False
+0,16,40,Victoria_East_2,Victoria,Victoria,Normal,0,29,300,True,False
+0,16,40,Victoria_West_2,Walthamstow Central,Victoria,Quiet,3,36,300,False,False
+0,16,40,Jubilee_East_1,Swiss Cottage,Jubilee,Busy,14,147,300,False,False
+0,16,40,Jubilee_West_1,Kilburn,Jubilee,Normal,7,25,300,False,False
+0,16,40,Jubilee_East_2,Waterloo,Jubilee,Normal,0,30,300,False,False
+0,16,40,Jubilee_West_2,Canada Water,Jubilee,Quiet,0,41,300,False,False
+0,16,40,Bakerloo_East_1,Kilburn Park,Bakerloo,Busy,16,121,300,False,False
+0,16,40,Bakerloo_West_1,Harlesden,Bakerloo,Normal,7,10,300,False,True
+0,16,40,Bakerloo_East_2,Oxford Circus,Bakerloo,Normal,1,35,300,False,False
+0,16,40,Bakerloo_West_2,Embankment,Bakerloo,Quiet,0,51,300,False,False
+0,17,10,Piccadilly_East_1,Holloway Road,Piccadilly,Normal,0,4,300,False,False
+0,17,10,Piccadilly_West_1,Holloway Road,Piccadilly,Normal,0,57,300,False,False
+0,17,10,Piccadilly_East_2,Barons Court,Piccadilly,Quiet,0,27,300,False,False
+0,17,10,Piccadilly_West_2,Gloucester Road,Piccadilly,Quiet,0,28,300,False,False
+0,17,10,Central_East_1,White City,Central,Busy,41,27,300,False,False
+0,17,10,Central_West_1,Lancaster Gate,Central,Normal,0,223,300,True,False
+0,17,10,Central_East_2,Ruislip Gardens,Central,Quiet,0,14,300,False,True
+0,17,10,Central_West_2,Ruislip Gardens,Central,Quiet,0,16,300,False,False
+0,17,10,Victoria_East_1,Warren Street,Victoria,Busy,18,140,300,False,False
+0,17,10,Victoria_West_1,King's Cross St Pancras,Victoria,Normal,7,9,300,False,True
+0,17,10,Victoria_East_2,Victoria,Victoria,Normal,1,29,300,False,False
+0,17,10,Victoria_West_2,Walthamstow Central,Victoria,Quiet,3,36,300,False,False
+0,17,10,Jubilee_East_1,St John's Wood,Jubilee,Busy,0,241,300,False,False
+0,17,10,Jubilee_West_1,West Hampstead,Jubilee,Normal,0,34,300,False,False
+0,17,10,Jubilee_East_2,Waterloo,Jubilee,Normal,1,30,300,False,False
+0,17,10,Jubilee_West_2,Canada Water,Jubilee,Quiet,0,41,300,False,False
+0,17,10,Bakerloo_East_1,Maida Vale,Bakerloo,Busy,0,231,300,False,False
+0,17,10,Bakerloo_West_1,Harlesden,Bakerloo,Normal,9,10,300,False,True
+0,17,10,Bakerloo_East_2,Oxford Circus,Bakerloo,Normal,3,35,300,False,False
+0,17,10,Bakerloo_West_2,Waterloo,Bakerloo,Quiet,0,51,300,False,False
+0,17,40,Piccadilly_East_1,Holloway Road,Piccadilly,Normal,0,4,300,False,False
+0,17,40,Piccadilly_West_1,Holloway Road,Piccadilly,Normal,0,57,300,False,False
+0,17,40,Piccadilly_East_2,Barons Court,Piccadilly,Quiet,0,27,300,False,False
+0,17,40,Piccadilly_West_2,Earl's Court,Piccadilly,Quiet,0,26,300,False,False
+0,17,40,Central_East_1,White City,Central,Busy,47,27,300,False,False
+0,17,40,Central_West_1,Lancaster Gate,Central,Normal,1,223,300,False,False
+0,17,40,Central_East_2,Ruislip Gardens,Central,Quiet,0,14,300,False,True
+0,17,40,Central_West_2,Ruislip Gardens,Central,Quiet,0,16,300,False,False
+0,17,40,Victoria_East_1,Warren Street,Victoria,Busy,21,140,300,False,False
+0,17,40,Victoria_West_1,King's Cross St Pancras,Victoria,Normal,8,9,300,False,True
+0,17,40,Victoria_East_2,Pimlico,Victoria,Normal,1,32,300,False,False
+0,17,40,Victoria_West_2,Blackhorse Road,Victoria,Quiet,0,32,300,False,False
+0,17,40,Jubilee_East_1,St John's Wood,Jubilee,Busy,2,241,300,False,False
+0,17,40,Jubilee_West_1,West Hampstead,Jubilee,Normal,2,34,300,False,False
+0,17,40,Jubilee_East_2,Southwark,Jubilee,Normal,0,37,300,False,False
+0,17,40,Jubilee_West_2,Canary Wharf,Jubilee,Quiet,0,37,300,False,False
+0,17,40,Bakerloo_East_1,Maida Vale,Bakerloo,Busy,5,231,300,False,False
+0,17,40,Bakerloo_West_1,Harlesden,Bakerloo,Normal,9,10,300,False,True
+0,17,40,Bakerloo_East_2,Oxford Circus,Bakerloo,Normal,5,35,300,False,False
+0,17,40,Bakerloo_West_2,Waterloo,Bakerloo,Quiet,0,51,300,False,False
+0,18,11,Piccadilly_East_1,Caledonian Road,Piccadilly,Busy,0,3,300,False,False
+0,18,11,Piccadilly_West_1,Caledonian Road,Piccadilly,Busy,0,138,300,False,False
+0,18,11,Piccadilly_East_2,Cockfosters,Piccadilly,Quiet,3,26,300,False,False
+0,18,11,Piccadilly_West_2,Earl's Court,Piccadilly,Quiet,0,26,300,False,False
+0,18,11,Central_East_1,Shepherd's Bush,Central,Busy,0,62,300,False,False
+0,18,11,Central_West_1,Marble Arch,Central,Normal,0,197,300,False,False
+0,18,11,Central_East_2,Ruislip Gardens,Central,Quiet,0,14,300,False,True
+0,18,11,Central_West_2,South Ruislip,Central,Quiet,0,16,300,False,False
+0,18,11,Victoria_East_1,Warren Street,Victoria,Busy,21,140,300,False,False
+0,18,11,Victoria_West_1,King's Cross St Pancras,Victoria,Normal,8,9,300,False,False
+0,18,11,Victoria_East_2,Vauxhall,Victoria,Quiet,0,27,300,True,False
+0,18,11,Victoria_West_2,Tottenham Hale,Victoria,Quiet,0,31,300,True,False
+0,18,11,Jubilee_East_1,Baker Street,Jubilee,Busy,0,281,300,True,False
+0,18,11,Jubilee_West_1,West Hampstead,Jubilee,Normal,2,34,300,False,False
+0,18,11,Jubilee_East_2,London Bridge,Jubilee,Normal,0,42,300,True,False
+0,18,11,Jubilee_West_2,Canary Wharf,Jubilee,Quiet,0,37,300,False,False
+0,18,11,Bakerloo_East_1,Warwick Avenue,Bakerloo,Busy,5,300,300,False,False
+0,18,11,Bakerloo_West_1,Harlesden,Bakerloo,Normal,9,10,300,False,True
+0,18,11,Bakerloo_East_2,Oxford Circus,Bakerloo,Normal,5,35,300,False,False
+0,18,11,Bakerloo_West_2,Lambeth North,Bakerloo,Quiet,0,39,300,False,False
+0,18,41,Piccadilly_East_1,Caledonian Road,Piccadilly,Busy,5,3,300,False,False
+0,18,41,Piccadilly_West_1,Caledonian Road,Piccadilly,Busy,5,138,300,False,False
+0,18,41,Piccadilly_East_2,Cockfosters,Piccadilly,Quiet,3,26,300,False,False
+0,18,41,Piccadilly_West_2,Barons Court,Piccadilly,Quiet,0,19,300,False,False
+0,18,41,Central_East_1,Holland Park,Central,Busy,0,78,300,False,False
+0,18,41,Central_West_1,Marble Arch,Central,Normal,0,197,300,False,False
+0,18,41,Central_East_2,Ruislip Gardens,Central,Quiet,0,14,300,False,True
+0,18,41,Central_West_2,Northolt,Central,Quiet,0,16,300,True,False
+0,18,41,Victoria_East_1,Warren Street,Victoria,Busy,28,140,300,False,False
+0,18,41,Victoria_West_1,King's Cross St Pancras,Victoria,Normal,8,9,300,False,False
+0,18,41,Victoria_East_2,Vauxhall,Victoria,Quiet,0,27,300,False,False
+0,18,41,Victoria_West_2,Tottenham Hale,Victoria,Quiet,0,31,300,False,False
+0,18,41,Jubilee_East_1,Baker Street,Jubilee,Busy,6,281,300,False,False
+0,18,41,Jubilee_West_1,West Hampstead,Jubilee,Normal,3,34,300,False,False
+0,18,41,Jubilee_East_2,London Bridge,Jubilee,Normal,1,42,300,False,False
+0,18,41,Jubilee_West_2,Stanmore,Jubilee,Quiet,4,32,300,False,False
+0,18,41,Bakerloo_East_1,Warwick Avenue,Bakerloo,Busy,8,300,300,False,False
+0,18,41,Bakerloo_West_1,Harlesden,Bakerloo,Normal,11,10,300,False,True
+0,18,41,Bakerloo_East_2,Oxford Circus,Bakerloo,Normal,6,35,300,False,False
+0,18,41,Bakerloo_West_2,Lambeth North,Bakerloo,Quiet,0,39,300,False,False
+0,19,11,Piccadilly_East_1,Caledonian Road,Piccadilly,Busy,5,3,300,False,True
+0,19,11,Piccadilly_West_1,King's Cross St Pancras,Piccadilly,Busy,0,227,300,False,False
+0,19,11,Piccadilly_East_2,Oakwood,Piccadilly,Quiet,0,25,300,False,False
+0,19,11,Piccadilly_West_2,Barons Court,Piccadilly,Quiet,0,19,300,False,False
+0,19,11,Central_East_1,Holland Park,Central,Busy,0,78,300,False,False
+0,19,11,Central_West_1,Bond Street,Central,Normal,0,180,300,False,False
+0,19,11,Central_East_2,Ruislip Gardens,Central,Quiet,0,14,300,False,True
+0,19,11,Central_West_2,Northolt,Central,Quiet,0,16,300,False,False
+0,19,11,Victoria_East_1,Warren Street,Victoria,Busy,28,140,300,False,False
+0,19,11,Victoria_West_1,King's Cross St Pancras,Victoria,Normal,8,9,300,False,False
+0,19,11,Victoria_East_2,Stockwell,Victoria,Quiet,0,23,300,False,False
+0,19,11,Victoria_West_2,Seven Sisters,Victoria,Quiet,0,25,300,False,False
+0,19,11,Jubilee_East_1,Baker Street,Jubilee,Busy,6,281,300,False,False
+0,19,11,Jubilee_West_1,West Hampstead,Jubilee,Normal,3,34,300,False,True
+0,19,11,Jubilee_East_2,Bermondsey,Jubilee,Quiet,0,42,300,False,False
+0,19,11,Jubilee_West_2,Stanmore,Jubilee,Quiet,4,32,300,False,False
+0,19,11,Bakerloo_East_1,Paddington,Bakerloo,Busy,45,300,300,True,False
+0,19,11,Bakerloo_West_1,Harlesden,Bakerloo,Normal,11,10,300,False,True
+0,19,11,Bakerloo_East_2,Oxford Circus,Bakerloo,Normal,6,35,300,False,False
+0,19,11,Bakerloo_West_2,Harrow & Wealdstone,Bakerloo,Quiet,5,41,300,False,False
+0,19,42,Piccadilly_East_1,Caledonian Road,Piccadilly,Busy,9,3,300,False,False
+0,19,42,Piccadilly_West_1,King's Cross St Pancras,Piccadilly,Busy,5,227,300,False,False
+0,19,42,Piccadilly_East_2,Oakwood,Piccadilly,Quiet,0,25,300,False,False
+0,19,42,Piccadilly_West_2,Hammersmith,Piccadilly,Quiet,0,19,300,True,False
+0,19,42,Central_East_1,Notting Hill Gate,Central,Busy,0,86,300,False,False
+0,19,42,Central_West_1,Oxford Circus,Central,Normal,0,192,300,True,False
+0,19,42,Central_East_2,Ruislip Gardens,Central,Quiet,0,14,300,False,True
+0,19,42,Central_West_2,Greenford,Central,Quiet,0,16,300,False,False
+0,19,42,Victoria_East_1,Warren Street,Victoria,Busy,34,140,300,False,False
+0,19,42,Victoria_West_1,King's Cross St Pancras,Victoria,Normal,8,9,300,False,False
+0,19,42,Victoria_East_2,Stockwell,Victoria,Quiet,0,23,300,False,False
+0,19,42,Victoria_West_2,Seven Sisters,Victoria,Quiet,0,25,300,False,False
+0,19,42,Jubilee_East_1,Baker Street,Jubilee,Busy,8,281,300,False,False
+0,19,42,Jubilee_West_1,West Hampstead,Jubilee,Normal,3,34,300,False,False
+0,19,42,Jubilee_East_2,Bermondsey,Jubilee,Quiet,0,42,300,False,False
+0,19,42,Jubilee_West_2,Canons Park,Jubilee,Quiet,0,28,300,False,False
+0,19,42,Bakerloo_East_1,Paddington,Bakerloo,Busy,50,300,300,False,False
+0,19,42,Bakerloo_West_1,Harlesden,Bakerloo,Normal,11,10,300,False,True
+0,19,42,Bakerloo_East_2,Piccadilly Circus,Bakerloo,Normal,0,40,300,True,False
+0,19,42,Bakerloo_West_2,Harrow & Wealdstone,Bakerloo,Quiet,5,41,300,False,False
+0,20,12,Piccadilly_East_1,Caledonian Road,Piccadilly,Busy,15,3,300,False,False
+0,20,12,Piccadilly_West_1,Russell Square,Piccadilly,Busy,14,300,300,True,False
+0,20,12,Piccadilly_East_2,Southgate,Piccadilly,Quiet,0,23,300,False,False
+0,20,12,Piccadilly_West_2,Cockfosters,Piccadilly,Quiet,3,19,300,False,False
+0,20,12,Central_East_1,Queensway,Central,Busy,0,96,300,True,False
+0,20,12,Central_West_1,Oxford Circus,Central,Normal,0,192,300,False,False
+0,20,12,Central_East_2,Ruislip Gardens,Central,Quiet,0,14,300,False,True
+0,20,12,Central_West_2,Greenford,Central,Quiet,0,16,300,False,False
+0,20,12,Victoria_East_1,Oxford Circus,Victoria,Busy,5,205,300,False,False
+0,20,12,Victoria_West_1,King's Cross St Pancras,Victoria,Normal,10,9,300,False,False
+0,20,12,Victoria_East_2,Walthamstow Central,Victoria,Quiet,3,19,300,False,False
+0,20,12,Victoria_West_2,Finsbury Park,Victoria,Normal,1,38,300,False,False
+0,20,12,Jubilee_East_1,Baker Street,Jubilee,Busy,10,281,300,False,False
+0,20,12,Jubilee_West_1,West Hampstead,Jubilee,Normal,4,34,300,False,False
+0,20,12,Jubilee_East_2,Canada Water,Jubilee,Quiet,0,31,300,False,False
+0,20,12,Jubilee_West_2,Queensbury,Jubilee,Quiet,0,26,300,True,False
+0,20,12,Bakerloo_East_1,Edgware Road,Bakerloo,Busy,38,300,300,True,False
+0,20,12,Bakerloo_West_1,Harlesden,Bakerloo,Normal,11,10,300,False,True
+0,20,12,Bakerloo_East_2,Piccadilly Circus,Bakerloo,Normal,0,40,300,False,False
+0,20,12,Bakerloo_West_2,Kenton,Bakerloo,Quiet,0,41,300,False,False
+0,20,42,Piccadilly_East_1,Caledonian Road,Piccadilly,Busy,15,3,300,False,False
+0,20,42,Piccadilly_West_1,Russell Square,Piccadilly,Busy,14,300,300,False,False
+0,20,42,Piccadilly_East_2,Southgate,Piccadilly,Quiet,0,23,300,False,False
+0,20,42,Piccadilly_West_2,Oakwood,Piccadilly,Quiet,0,19,300,True,False
+0,20,42,Central_East_1,Queensway,Central,Busy,0,96,300,False,False
+0,20,42,Central_West_1,Tottenham Court Road,Central,Normal,0,193,300,False,False
+0,20,42,Central_East_2,Ruislip Gardens,Central,Quiet,0,14,300,False,True
+0,20,42,Central_West_2,Perivale,Central,Quiet,0,16,300,False,False
+0,20,42,Victoria_East_1,Oxford Circus,Victoria,Busy,5,205,300,False,False
+0,20,42,Victoria_West_1,King's Cross St Pancras,Victoria,Normal,10,9,300,False,False
+0,20,42,Victoria_East_2,Blackhorse Road,Victoria,Quiet,0,15,300,True,False
+0,20,42,Victoria_West_2,Finsbury Park,Victoria,Normal,1,38,300,False,False
+0,20,42,Jubilee_East_1,Baker Street,Jubilee,Busy,10,281,300,False,False
+0,20,42,Jubilee_West_1,West Hampstead,Jubilee,Normal,4,34,300,False,False
+0,20,42,Jubilee_East_2,Canary Wharf,Jubilee,Quiet,0,30,300,True,False
+0,20,42,Jubilee_West_2,Queensbury,Jubilee,Quiet,0,26,300,False,False
+0,20,42,Bakerloo_East_1,Edgware Road,Bakerloo,Busy,38,300,300,False,False
+0,20,42,Bakerloo_West_1,Harlesden,Bakerloo,Normal,11,10,300,False,True
+0,20,42,Bakerloo_East_2,Charing Cross,Bakerloo,Normal,0,45,300,False,False
+0,20,42,Bakerloo_West_2,Kenton,Bakerloo,Quiet,0,41,300,False,False
+0,21,13,Piccadilly_East_1,Caledonian Road,Piccadilly,Busy,20,3,300,False,False
+0,21,13,Piccadilly_West_1,Holborn,Piccadilly,Busy,62,300,300,True,False
+0,21,13,Piccadilly_East_2,Arnos Grove,Piccadilly,Quiet,0,23,300,True,False
+0,21,13,Piccadilly_West_2,Oakwood,Piccadilly,Quiet,0,19,300,False,False
+0,21,13,Central_East_1,Lancaster Gate,Central,Normal,0,87,300,False,False
+0,21,13,Central_West_1,Tottenham Court Road,Central,Normal,1,193,300,False,False
+0,21,13,Central_East_2,Ruislip Gardens,Central,Quiet,0,14,300,False,True
+0,21,13,Central_West_2,Hanger Lane,Central,Normal,0,38,300,True,False
+0,21,13,Victoria_East_1,Oxford Circus,Victoria,Busy,12,205,300,False,False
+0,21,13,Victoria_West_1,King's Cross St Pancras,Victoria,Normal,11,9,300,False,False
+0,21,13,Victoria_East_2,Blackhorse Road,Victoria,Quiet,0,15,300,False,False
+0,21,13,Victoria_West_2,Highbury & Islington,Victoria,Normal,1,51,300,False,False
+0,21,13,Jubilee_East_1,Baker Street,Jubilee,Busy,15,281,300,False,False
+0,21,13,Jubilee_West_1,West Hampstead,Jubilee,Normal,5,34,300,False,False
+0,21,13,Jubilee_East_2,Canary Wharf,Jubilee,Quiet,0,30,300,False,False
+0,21,13,Jubilee_West_2,Kingsbury,Jubilee,Quiet,0,28,300,False,False
+0,21,13,Bakerloo_East_1,Edgware Road,Bakerloo,Busy,40,300,300,False,False
+0,21,13,Bakerloo_West_1,Harlesden,Bakerloo,Normal,11,10,300,False,True
+0,21,13,Bakerloo_East_2,Charing Cross,Bakerloo,Normal,2,45,300,False,False
+0,21,13,Bakerloo_West_2,South Kenton,Bakerloo,Quiet,0,31,300,False,False
+0,21,43,Piccadilly_East_1,Caledonian Road,Piccadilly,Busy,20,3,300,False,False
+0,21,43,Piccadilly_West_1,Holborn,Piccadilly,Busy,62,300,300,False,False
+0,21,43,Piccadilly_East_2,Arnos Grove,Piccadilly,Quiet,0,23,300,False,False
+0,21,43,Piccadilly_West_2,Oakwood,Piccadilly,Quiet,0,19,300,False,False
+0,21,43,Central_East_1,Lancaster Gate,Central,Normal,0,87,300,False,False
+0,21,43,Central_West_1,Holborn,Central,Quiet,0,184,300,False,False
+0,21,43,Central_East_2,Ruislip Gardens,Central,Quiet,0,14,300,False,True
+0,21,43,Central_West_2,Hanger Lane,Central,Normal,0,38,300,False,True
+0,21,43,Victoria_East_1,Oxford Circus,Victoria,Busy,12,205,300,False,False
+0,21,43,Victoria_West_1,King's Cross St Pancras,Victoria,Normal,11,9,300,False,False
+0,21,43,Victoria_East_2,Tottenham Hale,Victoria,Quiet,0,14,300,False,False
+0,21,43,Victoria_West_2,Highbury & Islington,Victoria,Normal,1,51,300,False,False
+0,21,43,Jubilee_East_1,Baker Street,Jubilee,Busy,15,281,300,False,False
+0,21,43,Jubilee_West_1,West Hampstead,Jubilee,Normal,5,34,300,False,False
+0,21,43,Jubilee_East_2,Stanmore,Jubilee,Quiet,4,26,300,False,False
+0,21,43,Jubilee_West_2,Kingsbury,Jubilee,Quiet,0,28,300,False,False
+0,21,43,Bakerloo_East_1,Marylebone,Bakerloo,Busy,69,300,300,False,False
+0,21,43,Bakerloo_West_1,Harlesden,Bakerloo,Normal,11,10,300,False,True
+0,21,43,Bakerloo_East_2,Embankment,Bakerloo,Quiet,0,44,300,False,False
+0,21,43,Bakerloo_West_2,South Kenton,Bakerloo,Quiet,0,31,300,False,False
+0,22,13,Piccadilly_East_1,King's Cross St Pancras,Piccadilly,Busy,0,20,300,False,False
+0,22,13,Piccadilly_West_1,Holborn,Piccadilly,Busy,66,300,300,False,False
+0,22,13,Piccadilly_East_2,Bounds Green,Piccadilly,Quiet,0,22,300,True,False
+0,22,13,Piccadilly_West_2,Southgate,Piccadilly,Quiet,0,14,300,False,False
+0,22,13,Central_East_1,Marble Arch,Central,Normal,0,84,300,False,False
+0,22,13,Central_West_1,Chancery Lane,Central,Quiet,0,144,300,True,False
+0,22,13,Central_East_2,Ruislip Gardens,Central,Quiet,0,14,300,False,True
+0,22,13,Central_West_2,Hanger Lane,Central,Normal,1,38,300,False,True
+0,22,13,Victoria_East_1,Oxford Circus,Victoria,Busy,18,205,300,False,False
+0,22,13,Victoria_West_1,King's Cross St Pancras,Victoria,Normal,12,9,300,False,False
+0,22,13,Victoria_East_2,Tottenham Hale,Victoria,Quiet,0,14,300,False,False
+0,22,13,Victoria_West_2,Highbury & Islington,Victoria,Normal,2,51,300,False,False
+0,22,13,Jubilee_East_1,Bond Street,Jubilee,Busy,0,291,300,False,False
+0,22,13,Jubilee_West_1,West Hampstead,Jubilee,Normal,6,34,300,False,False
+0,22,13,Jubilee_East_2,Stanmore,Jubilee,Quiet,4,26,300,False,False
+0,22,13,Jubilee_West_2,Wembley Park,Jubilee,Quiet,0,29,300,False,False
+0,22,13,Bakerloo_East_1,Marylebone,Bakerloo,Busy,72,300,300,False,False
+0,22,13,Bakerloo_West_1,Harlesden,Bakerloo,Normal,13,10,300,False,True
+0,22,13,Bakerloo_East_2,Embankment,Bakerloo,Quiet,0,44,300,False,False
+0,22,13,Bakerloo_West_2,North Wembley,Bakerloo,Quiet,0,32,300,False,False
+0,22,43,Piccadilly_East_1,King's Cross St Pancras,Piccadilly,Busy,4,20,300,False,False
+0,22,43,Piccadilly_West_1,Covent Garden,Piccadilly,Busy,56,300,300,False,False
+0,22,43,Piccadilly_East_2,Bounds Green,Piccadilly,Quiet,0,22,300,False,False
+0,22,43,Piccadilly_West_2,Southgate,Piccadilly,Quiet,0,14,300,False,False
+0,22,43,Central_East_1,Bond Street,Central,Normal,0,69,300,True,False
+0,22,43,Central_West_1,Chancery Lane,Central,Quiet,0,144,300,False,False
+0,22,43,Central_East_2,Ruislip Gardens,Central,Quiet,0,14,300,False,True
+0,22,43,Central_West_2,Hanger Lane,Central,Normal,2,38,300,False,False
+0,22,43,Victoria_East_1,Oxford Circus,Victoria,Busy,23,205,300,False,False
+0,22,43,Victoria_West_1,King's Cross St Pancras,Victoria,Normal,14,9,300,False,False
+0,22,43,Victoria_East_2,Seven Sisters,Victoria,Quiet,0,11,300,False,False
+0,22,43,Victoria_West_2,Highbury & Islington,Victoria,Normal,3,51,300,False,False
+0,22,43,Jubilee_East_1,Bond Street,Jubilee,Busy,2,291,300,False,False
+0,22,43,Jubilee_West_1,West Hampstead,Jubilee,Normal,7,34,300,False,False
+0,22,43,Jubilee_East_2,Canons Park,Jubilee,Quiet,0,22,300,True,False
+0,22,43,Jubilee_West_2,Neasden,Jubilee,Normal,2,51,300,True,False
+0,22,43,Bakerloo_East_1,Marylebone,Bakerloo,Busy,75,300,300,False,False
+0,22,43,Bakerloo_West_1,Harlesden,Bakerloo,Normal,13,10,300,False,True
+0,22,43,Bakerloo_East_2,Waterloo,Bakerloo,Quiet,0,43,300,False,False
+0,22,43,Bakerloo_West_2,North Wembley,Bakerloo,Quiet,0,32,300,False,False
+0,23,13,Piccadilly_East_1,Russell Square,Piccadilly,Busy,0,44,300,True,False
+0,23,13,Piccadilly_West_1,Covent Garden,Piccadilly,Busy,56,300,300,False,False
+0,23,13,Piccadilly_East_2,Bounds Green,Piccadilly,Quiet,0,22,300,False,False
+0,23,13,Piccadilly_West_2,Arnos Grove,Piccadilly,Quiet,0,12,300,False,False
+0,23,13,Central_East_1,Bond Street,Central,Normal,0,69,300,False,False
+0,23,13,Central_West_1,St Paul's,Central,Quiet,0,129,300,False,False
+0,23,13,Central_East_2,Ruislip Gardens,Central,Quiet,0,14,300,False,False
+0,23,13,Central_West_2,Hanger Lane,Central,Normal,2,38,300,False,False
+0,23,13,Victoria_East_1,Oxford Circus,Victoria,Busy,23,205,300,False,False
+0,23,13,Victoria_West_1,Euston,Victoria,Busy,0,63,300,False,False
+0,23,13,Victoria_East_2,Seven Sisters,Victoria,Quiet,0,11,300,False,False
+0,23,13,Victoria_West_2,Highbury & Islington,Victoria,Normal,3,51,300,False,False
+0,23,13,Jubilee_East_1,Bond Street,Jubilee,Busy,2,291,300,False,False
+0,23,13,Jubilee_West_1,West Hampstead,Jubilee,Normal,7,34,300,False,False
+0,23,13,Jubilee_East_2,Canons Park,Jubilee,Quiet,0,22,300,False,False
+0,23,13,Jubilee_West_2,Neasden,Jubilee,Normal,2,51,300,False,False
+0,23,13,Bakerloo_East_1,Marylebone,Bakerloo,Busy,75,300,300,False,False
+0,23,13,Bakerloo_West_1,Harlesden,Bakerloo,Normal,13,10,300,False,True
+0,23,13,Bakerloo_East_2,Waterloo,Bakerloo,Quiet,0,43,300,False,False
+0,23,13,Bakerloo_West_2,Wembley Central,Bakerloo,Quiet,0,27,300,False,False
+0,23,43,Piccadilly_East_1,Russell Square,Piccadilly,Busy,3,44,300,False,False
+0,23,43,Piccadilly_West_1,Leicester Square,Piccadilly,Normal,0,272,300,False,False
+0,23,43,Piccadilly_East_2,Wood Green,Piccadilly,Quiet,0,23,300,False,False
+0,23,43,Piccadilly_West_2,Arnos Grove,Piccadilly,Quiet,0,12,300,False,False
+0,23,43,Central_East_1,Oxford Circus,Central,Normal,0,69,300,False,False
+0,23,43,Central_West_1,Bank,Central,Quiet,0,109,300,True,False
+0,23,43,Central_East_2,South Ruislip,Central,Quiet,0,12,300,False,False
+0,23,43,Central_West_2,Hanger Lane,Central,Normal,4,38,300,False,False
+0,23,43,Victoria_East_1,Oxford Circus,Victoria,Busy,30,205,300,False,False
+0,23,43,Victoria_West_1,Warren Street,Victoria,Busy,0,116,300,True,False
+0,23,43,Victoria_East_2,Seven Sisters,Victoria,Quiet,0,11,300,False,False
+0,23,43,Victoria_West_2,Highbury & Islington,Victoria,Normal,3,51,300,False,False
+0,23,43,Jubilee_East_1,Bond Street,Jubilee,Busy,8,291,300,False,False
+0,23,43,Jubilee_West_1,Finchley Road,Jubilee,Busy,6,79,300,False,False
+0,23,43,Jubilee_East_2,Queensbury,Jubilee,Quiet,0,22,300,True,False
+0,23,43,Jubilee_West_2,Dollis Hill,Jubilee,Normal,0,58,300,False,False
+0,23,43,Bakerloo_East_1,Marylebone,Bakerloo,Busy,79,300,300,False,False
+0,23,43,Bakerloo_West_1,Harlesden,Bakerloo,Normal,13,10,300,False,True
+0,23,43,Bakerloo_East_2,Lambeth North,Bakerloo,Quiet,0,40,300,False,False
+0,23,43,Bakerloo_West_2,Stonebridge Park,Bakerloo,Normal,0,46,300,True,False
+1,0,13,Piccadilly_East_1,Russell Square,Piccadilly,Busy,3,44,300,False,False
+1,0,13,Piccadilly_West_1,Leicester Square,Piccadilly,Normal,0,272,300,False,False
+1,0,13,Piccadilly_East_2,Wood Green,Piccadilly,Quiet,0,23,300,False,False
+1,0,13,Piccadilly_West_2,Bounds Green,Piccadilly,Quiet,0,9,300,False,False
+1,0,13,Central_East_1,Oxford Circus,Central,Normal,0,69,300,False,False
+1,0,13,Central_West_1,Bank,Central,Quiet,0,109,300,False,False
+1,0,13,Central_East_2,Northolt,Central,Quiet,0,12,300,True,False
+1,0,13,Central_West_2,Hanger Lane,Central,Normal,4,38,300,False,False
+1,0,13,Victoria_East_1,Oxford Circus,Victoria,Busy,30,205,300,False,False
+1,0,13,Victoria_West_1,Warren Street,Victoria,Busy,0,116,300,False,False
+1,0,13,Victoria_East_2,Seven Sisters,Victoria,Quiet,0,11,300,False,False
+1,0,13,Victoria_West_2,Highbury & Islington,Victoria,Normal,3,51,300,False,False
+1,0,13,Jubilee_East_1,Bond Street,Jubilee,Busy,8,291,300,False,False
+1,0,13,Jubilee_West_1,Finchley Road,Jubilee,Busy,6,79,300,False,False
+1,0,13,Jubilee_East_2,Queensbury,Jubilee,Quiet,0,22,300,False,False
+1,0,13,Jubilee_West_2,Dollis Hill,Jubilee,Normal,0,58,300,False,False
+1,0,13,Bakerloo_East_1,Baker Street,Bakerloo,Normal,0,261,300,False,False
+1,0,13,Bakerloo_West_1,Harlesden,Bakerloo,Normal,13,10,300,False,True
+1,0,13,Bakerloo_East_2,Lambeth North,Bakerloo,Quiet,0,40,300,False,False
+1,0,13,Bakerloo_West_2,Stonebridge Park,Bakerloo,Normal,0,46,300,False,False
+1,0,43,Piccadilly_East_1,Holborn,Piccadilly,Busy,9,116,300,False,False
+1,0,43,Piccadilly_West_1,Piccadilly Circus,Piccadilly,Normal,0,255,300,False,False
+1,0,43,Piccadilly_East_2,Turnpike Lane,Piccadilly,Normal,0,48,300,False,False
+1,0,43,Piccadilly_West_2,Bounds Green,Piccadilly,Quiet,1,9,300,False,False
+1,0,43,Central_East_1,Tottenham Court Road,Central,Normal,0,66,300,False,False
+1,0,43,Central_West_1,West Ruislip,Central,Quiet,3,102,300,False,False
+1,0,43,Central_East_2,Northolt,Central,Quiet,1,12,300,False,False
+1,0,43,Central_West_2,Hanger Lane,Central,Normal,7,38,300,False,False
+1,0,43,Victoria_East_1,Oxford Circus,Victoria,Busy,0,205,300,False,False
+1,0,43,Victoria_West_1,Oxford Circus,Victoria,Busy,0,153,300,False,False
+1,0,43,Victoria_East_2,Seven Sisters,Victoria,Quiet,1,11,300,False,False
+1,0,43,Victoria_West_2,Highbury & Islington,Victoria,Normal,3,51,300,False,False
+1,0,43,Jubilee_East_1,Bond Street,Jubilee,Busy,13,291,300,False,False
+1,0,43,Jubilee_West_1,Swiss Cottage,Jubilee,Busy,0,114,300,False,False
+1,0,43,Jubilee_East_2,Queensbury,Jubilee,Quiet,0,22,300,False,False
+1,0,43,Jubilee_West_2,Willesden Green,Jubilee,Normal,3,62,300,False,False
+1,0,43,Bakerloo_East_1,Regent's Park,Bakerloo,Normal,0,248,300,True,False
+1,0,43,Bakerloo_West_1,Harlesden,Bakerloo,Normal,16,10,300,False,True
+1,0,43,Bakerloo_East_2,Harrow & Wealdstone,Bakerloo,Quiet,6,36,300,False,False
+1,0,43,Bakerloo_West_2,Stonebridge Park,Bakerloo,Normal,2,46,300,False,False
+1,1,14,Piccadilly_East_1,Holborn,Piccadilly,Busy,9,116,300,False,False
+1,1,14,Piccadilly_West_1,Piccadilly Circus,Piccadilly,Normal,0,255,300,False,False
+1,1,14,Piccadilly_East_2,Turnpike Lane,Piccadilly,Normal,0,48,300,False,False
+1,1,14,Piccadilly_West_2,Bounds Green,Piccadilly,Quiet,1,9,300,False,False
+1,1,14,Central_East_1,Tottenham Court Road,Central,Normal,0,66,300,False,False
+1,1,14,Central_West_1,West Ruislip,Central,Quiet,3,102,300,False,False
+1,1,14,Central_East_2,Greenford,Central,Quiet,0,10,300,False,False
+1,1,14,Central_West_2,Hanger Lane,Central,Normal,7,38,300,False,False
+1,1,14,Victoria_East_1,Oxford Circus,Victoria,Busy,0,205,300,False,False
+1,1,14,Victoria_West_1,Oxford Circus,Victoria,Busy,0,153,300,False,False
+1,1,14,Victoria_East_2,Seven Sisters,Victoria,Quiet,1,11,300,False,False
+1,1,14,Victoria_West_2,Highbury & Islington,Victoria,Normal,3,51,300,False,False
+1,1,14,Jubilee_East_1,Bond Street,Jubilee,Busy,13,291,300,False,False
+1,1,14,Jubilee_West_1,Swiss Cottage,Jubilee,Busy,0,114,300,False,False
+1,1,14,Jubilee_East_2,Kingsbury,Jubilee,Quiet,0,19,300,False,False
+1,1,14,Jubilee_West_2,Willesden Green,Jubilee,Normal,3,62,300,False,False
+1,1,14,Bakerloo_East_1,Regent's Park,Bakerloo,Normal,0,248,300,False,False
+1,1,14,Bakerloo_West_1,Harlesden,Bakerloo,Normal,16,10,300,False,True
+1,1,14,Bakerloo_East_2,Harrow & Wealdstone,Bakerloo,Quiet,6,36,300,False,False
+1,1,14,Bakerloo_West_2,Stonebridge Park,Bakerloo,Normal,2,46,300,False,False
+1,1,44,Piccadilly_East_1,Holborn,Piccadilly,Busy,9,116,300,False,False
+1,1,44,Piccadilly_West_1,Piccadilly Circus,Piccadilly,Normal,0,255,300,False,False
+1,1,44,Piccadilly_East_2,Turnpike Lane,Piccadilly,Normal,0,48,300,False,False
+1,1,44,Piccadilly_West_2,Bounds Green,Piccadilly,Quiet,1,9,300,False,False
+1,1,44,Central_East_1,Tottenham Court Road,Central,Normal,0,66,300,False,False
+1,1,44,Central_West_1,West Ruislip,Central,Quiet,3,102,300,False,False
+1,1,44,Central_East_2,Greenford,Central,Quiet,0,10,300,False,False
+1,1,44,Central_West_2,Hanger Lane,Central,Normal,7,38,300,False,False
+1,1,44,Victoria_East_1,Oxford Circus,Victoria,Busy,0,205,300,False,False
+1,1,44,Victoria_West_1,Oxford Circus,Victoria,Busy,0,153,300,False,False
+1,1,44,Victoria_East_2,Seven Sisters,Victoria,Quiet,1,11,300,False,False
+1,1,44,Victoria_West_2,Highbury & Islington,Victoria,Normal,3,51,300,False,False
+1,1,44,Jubilee_East_1,Bond Street,Jubilee,Busy,13,291,300,False,False
+1,1,44,Jubilee_West_1,Swiss Cottage,Jubilee,Busy,0,114,300,False,False
+1,1,44,Jubilee_East_2,Kingsbury,Jubilee,Quiet,0,19,300,False,False
+1,1,44,Jubilee_West_2,Willesden Green,Jubilee,Normal,3,62,300,False,False
+1,1,44,Bakerloo_East_1,Regent's Park,Bakerloo,Normal,0,248,300,False,False
+1,1,44,Bakerloo_West_1,Harlesden,Bakerloo,Normal,16,10,300,False,False
+1,1,44,Bakerloo_East_2,Harrow & Wealdstone,Bakerloo,Quiet,6,36,300,False,False
+1,1,44,Bakerloo_West_2,Stonebridge Park,Bakerloo,Normal,2,46,300,False,False
+1,2,14,Piccadilly_East_1,Holborn,Piccadilly,Busy,9,116,300,False,False
+1,2,14,Piccadilly_West_1,Piccadilly Circus,Piccadilly,Normal,0,255,300,False,False
+1,2,14,Piccadilly_East_2,Turnpike Lane,Piccadilly,Normal,0,48,300,False,False
+1,2,14,Piccadilly_West_2,Bounds Green,Piccadilly,Quiet,1,9,300,False,False
+1,2,14,Central_East_1,Tottenham Court Road,Central,Normal,0,66,300,False,False
+1,2,14,Central_West_1,West Ruislip,Central,Quiet,3,102,300,False,False
+1,2,14,Central_East_2,Greenford,Central,Quiet,0,10,300,False,False
+1,2,14,Central_West_2,Hanger Lane,Central,Normal,7,38,300,False,False
+1,2,14,Victoria_East_1,Oxford Circus,Victoria,Busy,0,205,300,False,False
+1,2,14,Victoria_West_1,Oxford Circus,Victoria,Busy,0,153,300,False,False
+1,2,14,Victoria_East_2,Seven Sisters,Victoria,Quiet,1,11,300,False,False
+1,2,14,Victoria_West_2,Highbury & Islington,Victoria,Normal,3,51,300,False,False
+1,2,14,Jubilee_East_1,Bond Street,Jubilee,Busy,13,291,300,False,False
+1,2,14,Jubilee_West_1,Swiss Cottage,Jubilee,Busy,0,114,300,False,False
+1,2,14,Jubilee_East_2,Kingsbury,Jubilee,Quiet,0,19,300,False,False
+1,2,14,Jubilee_West_2,Willesden Green,Jubilee,Normal,3,62,300,False,False
+1,2,14,Bakerloo_East_1,Regent's Park,Bakerloo,Normal,0,248,300,False,False
+1,2,14,Bakerloo_West_1,Harlesden,Bakerloo,Normal,16,10,300,False,False
+1,2,14,Bakerloo_East_2,Harrow & Wealdstone,Bakerloo,Quiet,6,36,300,False,False
+1,2,14,Bakerloo_West_2,Stonebridge Park,Bakerloo,Normal,2,46,300,False,False
+1,2,44,Piccadilly_East_1,Holborn,Piccadilly,Busy,9,116,300,False,False
+1,2,44,Piccadilly_West_1,Piccadilly Circus,Piccadilly,Normal,0,255,300,False,False
+1,2,44,Piccadilly_East_2,Turnpike Lane,Piccadilly,Normal,0,48,300,False,False
+1,2,44,Piccadilly_West_2,Bounds Green,Piccadilly,Quiet,1,9,300,False,False
+1,2,44,Central_East_1,Tottenham Court Road,Central,Normal,0,66,300,False,False
+1,2,44,Central_West_1,West Ruislip,Central,Quiet,3,102,300,False,False
+1,2,44,Central_East_2,Greenford,Central,Quiet,0,10,300,False,False
+1,2,44,Central_West_2,Hanger Lane,Central,Normal,7,38,300,False,False
+1,2,44,Victoria_East_1,Oxford Circus,Victoria,Busy,0,205,300,False,False
+1,2,44,Victoria_West_1,Oxford Circus,Victoria,Busy,0,153,300,False,False
+1,2,44,Victoria_East_2,Seven Sisters,Victoria,Quiet,1,11,300,False,False
+1,2,44,Victoria_West_2,Highbury & Islington,Victoria,Normal,3,51,300,False,False
+1,2,44,Jubilee_East_1,Bond Street,Jubilee,Busy,13,291,300,False,False
+1,2,44,Jubilee_West_1,Swiss Cottage,Jubilee,Busy,0,114,300,False,False
+1,2,44,Jubilee_East_2,Kingsbury,Jubilee,Quiet,0,19,300,False,False
+1,2,44,Jubilee_West_2,Willesden Green,Jubilee,Normal,3,62,300,False,False
+1,2,44,Bakerloo_East_1,Regent's Park,Bakerloo,Normal,0,248,300,False,False
+1,2,44,Bakerloo_West_1,Harlesden,Bakerloo,Normal,16,10,300,False,False
+1,2,44,Bakerloo_East_2,Harrow & Wealdstone,Bakerloo,Quiet,6,36,300,False,False
+1,2,44,Bakerloo_West_2,Stonebridge Park,Bakerloo,Normal,2,46,300,False,False
+1,3,14,Piccadilly_East_1,Holborn,Piccadilly,Busy,9,116,300,False,False
+1,3,14,Piccadilly_West_1,Piccadilly Circus,Piccadilly,Normal,0,255,300,False,False
+1,3,14,Piccadilly_East_2,Turnpike Lane,Piccadilly,Normal,0,48,300,False,False
+1,3,14,Piccadilly_West_2,Bounds Green,Piccadilly,Quiet,1,9,300,False,False
+1,3,14,Central_East_1,Tottenham Court Road,Central,Normal,0,66,300,False,False
+1,3,14,Central_West_1,West Ruislip,Central,Quiet,3,102,300,False,False
+1,3,14,Central_East_2,Greenford,Central,Quiet,0,10,300,False,False
+1,3,14,Central_West_2,Hanger Lane,Central,Normal,7,38,300,False,False
+1,3,14,Victoria_East_1,Oxford Circus,Victoria,Busy,0,205,300,False,False
+1,3,14,Victoria_West_1,Oxford Circus,Victoria,Busy,0,153,300,False,False
+1,3,14,Victoria_East_2,Seven Sisters,Victoria,Quiet,1,11,300,False,False
+1,3,14,Victoria_West_2,Highbury & Islington,Victoria,Normal,3,51,300,False,False
+1,3,14,Jubilee_East_1,Bond Street,Jubilee,Busy,13,291,300,False,False
+1,3,14,Jubilee_West_1,Swiss Cottage,Jubilee,Busy,0,114,300,False,False
+1,3,14,Jubilee_East_2,Kingsbury,Jubilee,Quiet,0,19,300,False,False
+1,3,14,Jubilee_West_2,Willesden Green,Jubilee,Normal,3,62,300,False,False
+1,3,14,Bakerloo_East_1,Regent's Park,Bakerloo,Normal,0,248,300,False,False
+1,3,14,Bakerloo_West_1,Harlesden,Bakerloo,Normal,16,10,300,False,False
+1,3,14,Bakerloo_East_2,Harrow & Wealdstone,Bakerloo,Quiet,6,36,300,False,False
+1,3,14,Bakerloo_West_2,Stonebridge Park,Bakerloo,Normal,2,46,300,False,False
+1,3,44,Piccadilly_East_1,Holborn,Piccadilly,Busy,9,116,300,False,False
+1,3,44,Piccadilly_West_1,Piccadilly Circus,Piccadilly,Normal,0,255,300,False,False
+1,3,44,Piccadilly_East_2,Turnpike Lane,Piccadilly,Normal,0,48,300,False,False
+1,3,44,Piccadilly_West_2,Bounds Green,Piccadilly,Quiet,1,9,300,False,False
+1,3,44,Central_East_1,Tottenham Court Road,Central,Normal,0,66,300,False,False
+1,3,44,Central_West_1,West Ruislip,Central,Quiet,3,102,300,False,False
+1,3,44,Central_East_2,Greenford,Central,Quiet,0,10,300,False,False
+1,3,44,Central_West_2,Hanger Lane,Central,Normal,7,38,300,False,False
+1,3,44,Victoria_East_1,Oxford Circus,Victoria,Busy,0,205,300,False,False
+1,3,44,Victoria_West_1,Oxford Circus,Victoria,Busy,0,153,300,False,False
+1,3,44,Victoria_East_2,Seven Sisters,Victoria,Quiet,1,11,300,False,False
+1,3,44,Victoria_West_2,Highbury & Islington,Victoria,Normal,3,51,300,False,False
+1,3,44,Jubilee_East_1,Bond Street,Jubilee,Busy,13,291,300,False,False
+1,3,44,Jubilee_West_1,Swiss Cottage,Jubilee,Busy,0,114,300,False,False
+1,3,44,Jubilee_East_2,Kingsbury,Jubilee,Quiet,0,19,300,False,False
+1,3,44,Jubilee_West_2,Willesden Green,Jubilee,Normal,3,62,300,False,False
+1,3,44,Bakerloo_East_1,Regent's Park,Bakerloo,Normal,0,248,300,False,False
+1,3,44,Bakerloo_West_1,Harlesden,Bakerloo,Normal,16,10,300,False,False
+1,3,44,Bakerloo_East_2,Harrow & Wealdstone,Bakerloo,Quiet,6,36,300,False,False
+1,3,44,Bakerloo_West_2,Stonebridge Park,Bakerloo,Normal,2,46,300,False,False
+1,4,15,Piccadilly_East_1,Holborn,Piccadilly,Busy,9,116,300,False,False
+1,4,15,Piccadilly_West_1,Piccadilly Circus,Piccadilly,Normal,0,255,300,False,False
+1,4,15,Piccadilly_East_2,Turnpike Lane,Piccadilly,Normal,0,48,300,False,False
+1,4,15,Piccadilly_West_2,Bounds Green,Piccadilly,Quiet,1,9,300,False,False
+1,4,15,Central_East_1,Tottenham Court Road,Central,Normal,0,66,300,False,False
+1,4,15,Central_West_1,West Ruislip,Central,Quiet,3,102,300,False,False
+1,4,15,Central_East_2,Greenford,Central,Quiet,0,10,300,False,False
+1,4,15,Central_West_2,Hanger Lane,Central,Normal,7,38,300,False,False
+1,4,15,Victoria_East_1,Oxford Circus,Victoria,Busy,0,205,300,False,False
+1,4,15,Victoria_West_1,Oxford Circus,Victoria,Busy,0,153,300,False,False
+1,4,15,Victoria_East_2,Seven Sisters,Victoria,Quiet,1,11,300,False,False
+1,4,15,Victoria_West_2,Highbury & Islington,Victoria,Normal,3,51,300,False,False
+1,4,15,Jubilee_East_1,Bond Street,Jubilee,Busy,13,291,300,False,False
+1,4,15,Jubilee_West_1,Swiss Cottage,Jubilee,Busy,0,114,300,False,False
+1,4,15,Jubilee_East_2,Kingsbury,Jubilee,Quiet,0,19,300,False,False
+1,4,15,Jubilee_West_2,Willesden Green,Jubilee,Normal,3,62,300,False,False
+1,4,15,Bakerloo_East_1,Regent's Park,Bakerloo,Normal,0,248,300,False,False
+1,4,15,Bakerloo_West_1,Harlesden,Bakerloo,Normal,16,10,300,False,False
+1,4,15,Bakerloo_East_2,Harrow & Wealdstone,Bakerloo,Quiet,6,36,300,False,False
+1,4,15,Bakerloo_West_2,Stonebridge Park,Bakerloo,Normal,2,46,300,False,False
+1,4,45,Piccadilly_East_1,Holborn,Piccadilly,Busy,9,116,300,False,False
+1,4,45,Piccadilly_West_1,Piccadilly Circus,Piccadilly,Normal,0,255,300,False,False
+1,4,45,Piccadilly_East_2,Turnpike Lane,Piccadilly,Normal,0,48,300,False,False
+1,4,45,Piccadilly_West_2,Bounds Green,Piccadilly,Quiet,1,9,300,False,False
+1,4,45,Central_East_1,Tottenham Court Road,Central,Normal,0,66,300,False,False
+1,4,45,Central_West_1,West Ruislip,Central,Quiet,3,102,300,False,False
+1,4,45,Central_East_2,Greenford,Central,Quiet,0,10,300,False,False
+1,4,45,Central_West_2,Hanger Lane,Central,Normal,7,38,300,False,False
+1,4,45,Victoria_East_1,Oxford Circus,Victoria,Busy,0,205,300,False,False
+1,4,45,Victoria_West_1,Oxford Circus,Victoria,Busy,0,153,300,False,False
+1,4,45,Victoria_East_2,Seven Sisters,Victoria,Quiet,1,11,300,False,False
+1,4,45,Victoria_West_2,Highbury & Islington,Victoria,Normal,3,51,300,False,False
+1,4,45,Jubilee_East_1,Bond Street,Jubilee,Busy,13,291,300,False,False
+1,4,45,Jubilee_West_1,Swiss Cottage,Jubilee,Busy,0,114,300,False,False
+1,4,45,Jubilee_East_2,Kingsbury,Jubilee,Quiet,0,19,300,False,False
+1,4,45,Jubilee_West_2,Willesden Green,Jubilee,Normal,3,62,300,False,False
+1,4,45,Bakerloo_East_1,Regent's Park,Bakerloo,Normal,0,248,300,False,False
+1,4,45,Bakerloo_West_1,Harlesden,Bakerloo,Normal,16,10,300,False,False
+1,4,45,Bakerloo_East_2,Harrow & Wealdstone,Bakerloo,Quiet,6,36,300,False,False
+1,4,45,Bakerloo_West_2,Stonebridge Park,Bakerloo,Normal,2,46,300,False,False
+1,5,15,Piccadilly_East_1,Holborn,Piccadilly,Busy,9,116,300,False,False
+1,5,15,Piccadilly_West_1,Piccadilly Circus,Piccadilly,Normal,0,255,300,False,False
+1,5,15,Piccadilly_East_2,Turnpike Lane,Piccadilly,Normal,0,48,300,False,False
+1,5,15,Piccadilly_West_2,Wood Green,Piccadilly,Quiet,0,8,300,True,False
+1,5,15,Central_East_1,Holborn,Central,Quiet,0,67,300,True,False
+1,5,15,Central_West_1,West Ruislip,Central,Quiet,3,102,300,False,False
+1,5,15,Central_East_2,Greenford,Central,Quiet,0,10,300,False,False
+1,5,15,Central_West_2,Ealing Broadway,Central,Normal,0,60,300,True,False
+1,5,15,Victoria_East_1,Oxford Circus,Victoria,Busy,0,205,300,False,False
+1,5,15,Victoria_West_1,Oxford Circus,Victoria,Busy,0,153,300,False,False
+1,5,15,Victoria_East_2,Seven Sisters,Victoria,Quiet,1,11,300,False,False
+1,5,15,Victoria_West_2,Highbury & Islington,Victoria,Normal,3,51,300,False,False
+1,5,15,Jubilee_East_1,Bond Street,Jubilee,Busy,13,291,300,False,False
+1,5,15,Jubilee_West_1,Swiss Cottage,Jubilee,Busy,0,114,300,False,False
+1,5,15,Jubilee_East_2,Kingsbury,Jubilee,Quiet,0,19,300,False,False
+1,5,15,Jubilee_West_2,Kilburn,Jubilee,Normal,0,70,300,True,False
+1,5,15,Bakerloo_East_1,Regent's Park,Bakerloo,Normal,0,248,300,False,False
+1,5,15,Bakerloo_West_1,Harlesden,Bakerloo,Normal,16,10,300,False,False
+1,5,15,Bakerloo_East_2,Harrow & Wealdstone,Bakerloo,Quiet,6,36,300,False,False
+1,5,15,Bakerloo_West_2,Stonebridge Park,Bakerloo,Normal,2,46,300,False,False
+1,5,45,Piccadilly_East_1,Covent Garden,Piccadilly,Busy,0,170,300,False,False
+1,5,45,Piccadilly_West_1,Green Park,Piccadilly,Normal,0,256,300,True,False
+1,5,45,Piccadilly_East_2,Manor House,Piccadilly,Normal,0,54,300,False,False
+1,5,45,Piccadilly_West_2,Wood Green,Piccadilly,Quiet,1,8,300,False,False
+1,5,45,Central_East_1,Holborn,Central,Quiet,1,67,300,False,False
+1,5,45,Central_West_1,Ruislip Gardens,Central,Quiet,0,74,300,False,False
+1,5,45,Central_East_2,Perivale,Central,Quiet,0,9,300,True,False
+1,5,45,Central_West_2,Ealing Broadway,Central,Normal,4,60,300,False,False
+1,5,45,Victoria_East_1,Green Park,Victoria,Normal,0,191,300,False,False
+1,5,45,Victoria_West_1,Oxford Circus,Victoria,Busy,8,153,300,False,False
+1,5,45,Victoria_East_2,Seven Sisters,Victoria,Quiet,2,11,300,False,False
+1,5,45,Victoria_West_2,Highbury & Islington,Victoria,Normal,3,51,300,False,False
+1,5,45,Jubilee_East_1,Bond Street,Jubilee,Busy,23,291,300,False,False
+1,5,45,Jubilee_West_1,St John's Wood,Jubilee,Busy,0,161,300,False,False
+1,5,45,Jubilee_East_2,Kingsbury,Jubilee,Quiet,1,19,300,False,False
+1,5,45,Jubilee_West_2,Kilburn,Jubilee,Normal,1,70,300,False,False
+1,5,45,Bakerloo_East_1,Regent's Park,Bakerloo,Normal,1,248,300,False,False
+1,5,45,Bakerloo_West_1,Harlesden,Bakerloo,Normal,16,10,300,False,False
+1,5,45,Bakerloo_East_2,Kenton,Bakerloo,Quiet,0,29,300,False,False
+1,5,45,Bakerloo_West_2,Stonebridge Park,Bakerloo,Normal,3,46,300,False,False
+1,6,15,Piccadilly_East_1,Covent Garden,Piccadilly,Busy,10,170,300,False,False
+1,6,15,Piccadilly_West_1,Green Park,Piccadilly,Normal,0,256,300,False,False
+1,6,15,Piccadilly_East_2,Manor House,Piccadilly,Normal,4,54,300,False,False
+1,6,15,Piccadilly_West_2,Turnpike Lane,Piccadilly,Normal,0,8,300,True,False
+1,6,15,Central_East_1,Chancery Lane,Central,Quiet,0,61,300,False,False
+1,6,15,Central_West_1,South Ruislip,Central,Quiet,0,72,300,True,False
+1,6,15,Central_East_2,Perivale,Central,Quiet,1,9,300,False,False
+1,6,15,Central_West_2,West Acton,Central,Normal,0,80,300,False,False
+1,6,15,Victoria_East_1,Green Park,Victoria,Normal,4,191,300,False,False
+1,6,15,Victoria_West_1,Oxford Circus,Victoria,Busy,13,153,300,False,False
+1,6,15,Victoria_East_2,Finsbury Park,Victoria,Normal,1,20,300,False,False
+1,6,15,Victoria_West_2,Highbury & Islington,Victoria,Normal,7,51,300,False,False
+1,6,15,Jubilee_East_1,Bond Street,Jubilee,Busy,34,291,300,False,False
+1,6,15,Jubilee_West_1,St John's Wood,Jubilee,Busy,8,161,300,False,False
+1,6,15,Jubilee_East_2,Wembley Park,Jubilee,Quiet,1,19,300,False,False
+1,6,15,Jubilee_West_2,Kilburn,Jubilee,Normal,5,70,300,False,False
+1,6,15,Bakerloo_East_1,Regent's Park,Bakerloo,Normal,4,248,300,False,False
+1,6,15,Bakerloo_West_1,Harlesden,Bakerloo,Normal,16,10,300,False,False
+1,6,15,Bakerloo_East_2,Kenton,Bakerloo,Quiet,0,29,300,False,False
+1,6,15,Bakerloo_West_2,Stonebridge Park,Bakerloo,Normal,6,46,300,False,False
+1,6,45,Piccadilly_East_1,Leicester Square,Piccadilly,Normal,0,147,300,False,False
+1,6,45,Piccadilly_West_1,Hyde Park Corner,Piccadilly,Normal,0,273,300,True,False
+1,6,45,Piccadilly_East_2,Finsbury Park,Piccadilly,Normal,0,61,300,True,False
+1,6,45,Piccadilly_West_2,Turnpike Lane,Piccadilly,Normal,0,8,300,False,False
+1,6,45,Central_East_1,Chancery Lane,Central,Quiet,0,61,300,False,False
+1,6,45,Central_West_1,South Ruislip,Central,Quiet,0,72,300,False,False
+1,6,45,Central_East_2,Hanger Lane,Central,Normal,0,18,300,False,False
+1,6,45,Central_West_2,West Acton,Central,Normal,0,80,300,False,False
+1,6,45,Victoria_East_1,Victoria,Victoria,Normal,0,180,300,True,False
+1,6,45,Victoria_West_1,Green Park,Victoria,Normal,0,116,300,True,False
+1,6,45,Victoria_East_2,Highbury & Islington,Victoria,Normal,0,26,300,True,False
+1,6,45,Victoria_West_2,King's Cross St Pancras,Victoria,Normal,0,63,300,False,False
+1,6,45,Jubilee_East_1,Bond Street,Jubilee,Busy,34,291,300,False,False
+1,6,45,Jubilee_West_1,Baker Street,Jubilee,Busy,0,200,300,False,False
+1,6,45,Jubilee_East_2,Wembley Park,Jubilee,Quiet,1,19,300,False,False
+1,6,45,Jubilee_West_2,Kilburn,Jubilee,Normal,5,70,300,False,False
+1,6,45,Bakerloo_East_1,Regent's Park,Bakerloo,Normal,4,248,300,False,False
+1,6,45,Bakerloo_West_1,Harlesden,Bakerloo,Normal,16,10,300,False,True
+1,6,45,Bakerloo_East_2,South Kenton,Bakerloo,Quiet,0,25,300,False,False
+1,6,45,Bakerloo_West_2,Stonebridge Park,Bakerloo,Normal,6,46,300,False,False
+1,7,16,Piccadilly_East_1,Leicester Square,Piccadilly,Normal,1,147,300,False,False
+1,7,16,Piccadilly_West_1,Hyde Park Corner,Piccadilly,Normal,0,273,300,False,False
+1,7,16,Piccadilly_East_2,Finsbury Park,Piccadilly,Normal,0,61,300,False,False
+1,7,16,Piccadilly_West_2,Turnpike Lane,Piccadilly,Normal,3,8,300,False,False
+1,7,16,Central_East_1,St Paul's,Central,Quiet,0,62,300,False,False
+1,7,16,Central_West_1,Northolt,Central,Quiet,0,65,300,False,False
+1,7,16,Central_East_2,Hanger Lane,Central,Normal,4,18,300,False,False
+1,7,16,Central_West_2,North Acton,Central,Normal,2,98,300,False,False
+1,7,16,Victoria_East_1,Victoria,Victoria,Normal,1,180,300,False,False
+1,7,16,Victoria_West_1,Green Park,Victoria,Normal,1,116,300,False,False
+1,7,16,Victoria_East_2,Highbury & Islington,Victoria,Normal,1,26,300,False,False
+1,7,16,Victoria_West_2,King's Cross St Pancras,Victoria,Normal,2,63,300,False,False
+1,7,16,Jubilee_East_1,Bond Street,Jubilee,Busy,43,291,300,False,False
+1,7,16,Jubilee_West_1,Baker Street,Jubilee,Busy,13,200,300,False,False
+1,7,16,Jubilee_East_2,Neasden,Jubilee,Normal,0,24,300,False,False
+1,7,16,Jubilee_West_2,Kilburn,Jubilee,Normal,7,70,300,False,False
+1,7,16,Bakerloo_East_1,Regent's Park,Bakerloo,Normal,8,248,300,False,False
+1,7,16,Bakerloo_West_1,Harlesden,Bakerloo,Normal,20,10,300,False,False
+1,7,16,Bakerloo_East_2,South Kenton,Bakerloo,Quiet,1,25,300,False,False
+1,7,16,Bakerloo_West_2,Stonebridge Park,Bakerloo,Normal,6,46,300,False,False
+1,7,46,Piccadilly_East_1,Piccadilly Circus,Piccadilly,Normal,0,134,300,False,False
+1,7,46,Piccadilly_West_1,Hyde Park Corner,Piccadilly,Normal,0,273,300,False,False
+1,7,46,Piccadilly_East_2,Arsenal,Piccadilly,Normal,0,70,300,True,False
+1,7,46,Piccadilly_West_2,Manor House,Piccadilly,Normal,0,12,300,False,False
+1,7,46,Central_East_1,Bank,Central,Quiet,0,49,300,True,False
+1,7,46,Central_West_1,Northolt,Central,Quiet,0,65,300,False,False
+1,7,46,Central_East_2,Ealing Broadway,Central,Normal,0,23,300,False,False
+1,7,46,Central_West_2,East Acton,Central,Normal,0,99,300,True,False
+1,7,46,Victoria_East_1,Pimlico,Victoria,Normal,0,154,300,False,False
+1,7,46,Victoria_West_1,Victoria,Victoria,Normal,0,105,300,False,False
+1,7,46,Victoria_East_2,Highbury & Islington,Victoria,Normal,1,26,300,False,False
+1,7,46,Victoria_West_2,King's Cross St Pancras,Victoria,Normal,2,63,300,False,False
+1,7,46,Jubilee_East_1,Green Park,Jubilee,Normal,0,282,300,False,False
+1,7,46,Jubilee_West_1,Bond Street,Jubilee,Busy,0,209,300,True,False
+1,7,46,Jubilee_East_2,Neasden,Jubilee,Normal,0,24,300,False,False
+1,7,46,Jubilee_West_2,Kilburn,Jubilee,Normal,7,70,300,False,False
+1,7,46,Bakerloo_East_1,Regent's Park,Bakerloo,Normal,8,248,300,False,False
+1,7,46,Bakerloo_West_1,Harlesden,Bakerloo,Normal,20,10,300,False,False
+1,7,46,Bakerloo_East_2,North Wembley,Bakerloo,Quiet,0,23,300,True,False
+1,7,46,Bakerloo_West_2,Stonebridge Park,Bakerloo,Normal,6,46,300,False,False
+1,8,16,Piccadilly_East_1,Piccadilly Circus,Piccadilly,Normal,14,134,300,False,False
+1,8,16,Piccadilly_West_1,Knightsbridge,Piccadilly,Normal,14,245,300,False,False
+1,8,16,Piccadilly_East_2,Arsenal,Piccadilly,Normal,3,70,300,False,False
+1,8,16,Piccadilly_West_2,Manor House,Piccadilly,Normal,10,12,300,False,False
+1,8,16,Central_East_1,Bank,Central,Quiet,0,49,300,False,False
+1,8,16,Central_West_1,Greenford,Central,Quiet,0,61,300,False,False
+1,8,16,Central_East_2,West Acton,Central,Normal,0,25,300,True,False
+1,8,16,Central_West_2,East Acton,Central,Normal,14,99,300,False,False
+1,8,16,Victoria_East_1,Pimlico,Victoria,Normal,0,154,300,False,False
+1,8,16,Victoria_West_1,Victoria,Victoria,Normal,7,105,300,False,False
+1,8,16,Victoria_East_2,Highbury & Islington,Victoria,Normal,1,26,300,False,False
+1,8,16,Victoria_West_2,King's Cross St Pancras,Victoria,Normal,9,63,300,False,False
+1,8,16,Jubilee_East_1,Westminster,Jubilee,Normal,0,248,300,True,False
+1,8,16,Jubilee_West_1,Bond Street,Jubilee,Busy,24,209,300,False,False
+1,8,16,Jubilee_East_2,Dollis Hill,Jubilee,Normal,0,31,300,True,False
+1,8,16,Jubilee_West_2,Kilburn,Jubilee,Normal,14,70,300,False,False
+1,8,16,Bakerloo_East_1,Regent's Park,Bakerloo,Normal,8,248,300,False,False
+1,8,16,Bakerloo_West_1,Harlesden,Bakerloo,Normal,34,10,300,False,False
+1,8,16,Bakerloo_East_2,North Wembley,Bakerloo,Quiet,0,23,300,False,False
+1,8,16,Bakerloo_West_2,Stonebridge Park,Bakerloo,Normal,6,46,300,False,False
+1,8,46,Piccadilly_East_1,Green Park,Piccadilly,Normal,0,124,300,True,False
+1,8,46,Piccadilly_West_1,Knightsbridge,Piccadilly,Normal,17,245,300,False,False
+1,8,46,Piccadilly_East_2,Arsenal,Piccadilly,Normal,3,70,300,False,False
+1,8,46,Piccadilly_West_2,Finsbury Park,Piccadilly,Normal,0,15,300,False,False
+1,8,46,Central_East_1,West Ruislip,Central,Quiet,8,46,300,False,False
+1,8,46,Central_West_1,Perivale,Central,Quiet,0,68,300,True,False
+1,8,46,Central_East_2,West Acton,Central,Normal,14,25,300,False,False
+1,8,46,Central_West_2,White City,Central,Busy,38,279,300,False,False
+1,8,46,Victoria_East_1,Vauxhall,Victoria,Quiet,3,124,300,False,False
+1,8,46,Victoria_West_1,Victoria,Victoria,Normal,10,105,300,False,False
+1,8,46,Victoria_East_2,Highbury & Islington,Victoria,Normal,8,26,300,False,False
+1,8,46,Victoria_West_2,King's Cross St Pancras,Victoria,Normal,16,63,300,False,False
+1,8,46,Jubilee_East_1,Westminster,Jubilee,Normal,14,248,300,False,False
+1,8,46,Jubilee_West_1,Bond Street,Jubilee,Busy,45,209,300,False,False
+1,8,46,Jubilee_East_2,Dollis Hill,Jubilee,Normal,3,31,300,False,False
+1,8,46,Jubilee_West_2,Kilburn,Jubilee,Normal,24,70,300,False,False
+1,8,46,Bakerloo_East_1,Regent's Park,Bakerloo,Normal,11,248,300,False,False
+1,8,46,Bakerloo_West_1,Harlesden,Bakerloo,Normal,0,10,300,False,False
+1,8,46,Bakerloo_East_2,Wembley Central,Bakerloo,Quiet,0,28,300,True,False
+1,8,46,Bakerloo_West_2,Harlesden,Bakerloo,Normal,0,69,300,True,False
+1,9,16,Piccadilly_East_1,Green Park,Piccadilly,Normal,0,124,300,False,False
+1,9,16,Piccadilly_West_1,South Kensington,Piccadilly,Quiet,0,251,300,False,False
+1,9,16,Piccadilly_East_2,Holloway Road,Piccadilly,Normal,0,78,300,False,False
+1,9,16,Piccadilly_West_2,Finsbury Park,Piccadilly,Normal,0,15,300,False,False
+1,9,16,Central_East_1,West Ruislip,Central,Quiet,8,46,300,False,False
+1,9,16,Central_West_1,Perivale,Central,Quiet,0,68,300,False,False
+1,9,16,Central_East_2,North Acton,Central,Normal,0,31,300,False,False
+1,9,16,Central_West_2,White City,Central,Busy,38,279,300,False,False
+1,9,16,Victoria_East_1,Stockwell,Victoria,Quiet,0,97,300,True,False
+1,9,16,Victoria_West_1,Victoria,Victoria,Normal,10,105,300,False,False
+1,9,16,Victoria_East_2,King's Cross St Pancras,Victoria,Normal,0,37,300,False,False
+1,9,16,Victoria_West_2,King's Cross St Pancras,Victoria,Normal,0,63,300,False,False
+1,9,16,Jubilee_East_1,Waterloo,Jubilee,Normal,0,204,300,False,False
+1,9,16,Jubilee_West_1,Green Park,Jubilee,Normal,0,210,300,False,False
+1,9,16,Jubilee_East_2,Willesden Green,Jubilee,Normal,0,52,300,True,False
+1,9,16,Jubilee_West_2,Kilburn,Jubilee,Normal,24,70,300,False,False
+1,9,16,Bakerloo_East_1,Oxford Circus,Bakerloo,Normal,0,229,300,False,False
+1,9,16,Bakerloo_West_1,Harlesden,Bakerloo,Normal,0,10,300,False,False
+1,9,16,Bakerloo_East_2,Wembley Central,Bakerloo,Quiet,0,28,300,False,False
+1,9,16,Bakerloo_West_2,Harlesden,Bakerloo,Normal,0,69,300,False,False
+1,9,46,Piccadilly_East_1,Green Park,Piccadilly,Normal,1,124,300,False,False
+1,9,46,Piccadilly_West_1,South Kensington,Piccadilly,Quiet,0,251,300,False,False
+1,9,46,Piccadilly_East_2,Holloway Road,Piccadilly,Normal,2,78,300,False,False
+1,9,46,Piccadilly_West_2,Arsenal,Piccadilly,Normal,0,16,300,False,False
+1,9,46,Central_East_1,Ruislip Gardens,Central,Quiet,0,51,300,False,False
+1,9,46,Central_West_1,Hanger Lane,Central,Normal,0,74,300,False,False
+1,9,46,Central_East_2,North Acton,Central,Normal,2,31,300,False,False
+1,9,46,Central_West_2,Shepherd's Bush,Central,Busy,127,300,300,False,False
+1,9,46,Victoria_East_1,Stockwell,Victoria,Quiet,0,97,300,False,False
+1,9,46,Victoria_West_1,Victoria,Victoria,Normal,10,105,300,False,False
+1,9,46,Victoria_East_2,Euston,Victoria,Busy,0,174,300,True,False
+1,9,46,Victoria_West_2,King's Cross St Pancras,Victoria,Normal,4,63,300,False,False
+1,9,46,Jubilee_East_1,Waterloo,Jubilee,Normal,4,204,300,False,False
+1,9,46,Jubilee_West_1,Green Park,Jubilee,Normal,0,210,300,False,False
+1,9,46,Jubilee_East_2,Willesden Green,Jubilee,Normal,4,52,300,False,False
+1,9,46,Jubilee_West_2,Kilburn,Jubilee,Normal,25,70,300,False,False
+1,9,46,Bakerloo_East_1,Oxford Circus,Bakerloo,Normal,3,229,300,False,False
+1,9,46,Bakerloo_West_1,Willesden Junction,Bakerloo,Normal,2,38,300,False,False
+1,9,46,Bakerloo_East_2,Wembley Central,Bakerloo,Quiet,0,28,300,False,False
+1,9,46,Bakerloo_West_2,Harlesden,Bakerloo,Normal,1,69,300,False,False
+1,10,17,Piccadilly_East_1,Hyde Park Corner,Piccadilly,Normal,0,117,300,False,False
+1,10,17,Piccadilly_West_1,Gloucester Road,Piccadilly,Quiet,0,246,300,False,False
+1,10,17,Piccadilly_East_2,Caledonian Road,Piccadilly,Busy,0,218,300,False,False
+1,10,17,Piccadilly_West_2,Arsenal,Piccadilly,Normal,0,16,300,False,False
+1,10,17,Central_East_1,South Ruislip,Central,Quiet,0,41,300,True,False
+1,10,17,Central_West_1,Hanger Lane,Central,Normal,0,74,300,False,False
+1,10,17,Central_East_2,East Acton,Central,Normal,0,52,300,False,True
+1,10,17,Central_West_2,Holland Park,Central,Busy,56,300,300,True,False
+1,10,17,Victoria_East_1,Walthamstow Central,Victoria,Quiet,6,100,300,False,False
+1,10,17,Victoria_West_1,Victoria,Victoria,Normal,10,105,300,False,False
+1,10,17,Victoria_East_2,Euston,Victoria,Busy,0,174,300,False,False
+1,10,17,Victoria_West_2,King's Cross St Pancras,Victoria,Normal,4,63,300,False,False
+1,10,17,Jubilee_East_1,Southwark,Jubilee,Normal,0,210,300,False,False
+1,10,17,Jubilee_West_1,Westminster,Jubilee,Normal,0,205,300,False,False
+1,10,17,Jubilee_East_2,Willesden Green,Jubilee,Normal,4,52,300,False,False
+1,10,17,Jubilee_West_2,Kilburn,Jubilee,Normal,25,70,300,False,False
+1,10,17,Bakerloo_East_1,Oxford Circus,Bakerloo,Normal,3,229,300,False,False
+1,10,17,Bakerloo_West_1,Willesden Junction,Bakerloo,Normal,2,38,300,False,False
+1,10,17,Bakerloo_East_2,Stonebridge Park,Bakerloo,Normal,0,37,300,False,False
+1,10,17,Bakerloo_West_2,Harlesden,Bakerloo,Normal,1,69,300,False,False
+1,10,47,Piccadilly_East_1,Hyde Park Corner,Piccadilly,Normal,0,117,300,False,False
+1,10,47,Piccadilly_West_1,Gloucester Road,Piccadilly,Quiet,0,246,300,False,False
+1,10,47,Piccadilly_East_2,Caledonian Road,Piccadilly,Busy,8,218,300,False,False
+1,10,47,Piccadilly_West_2,Holloway Road,Piccadilly,Normal,0,15,300,True,False
+1,10,47,Central_East_1,South Ruislip,Central,Quiet,1,41,300,False,False
+1,10,47,Central_West_1,Ealing Broadway,Central,Normal,0,78,300,False,False
+1,10,47,Central_East_2,East Acton,Central,Normal,0,52,300,False,True
+1,10,47,Central_West_2,Holland Park,Central,Busy,63,300,300,False,False
+1,10,47,Victoria_East_1,Walthamstow Central,Victoria,Quiet,6,100,300,False,False
+1,10,47,Victoria_West_1,Victoria,Victoria,Normal,11,105,300,False,False
+1,10,47,Victoria_East_2,Warren Street,Victoria,Busy,24,300,300,False,False
+1,10,47,Victoria_West_2,King's Cross St Pancras,Victoria,Normal,5,63,300,False,True
+1,10,47,Jubilee_East_1,London Bridge,Jubilee,Normal,0,258,300,True,False
+1,10,47,Jubilee_West_1,Westminster,Jubilee,Normal,2,205,300,False,False
+1,10,47,Jubilee_East_2,Kilburn,Jubilee,Normal,0,76,300,False,False
+1,10,47,Jubilee_West_2,West Hampstead,Jubilee,Normal,0,76,300,False,False
+1,10,47,Bakerloo_East_1,Oxford Circus,Bakerloo,Normal,3,229,300,False,False
+1,10,47,Bakerloo_West_1,Kensal Green,Bakerloo,Normal,3,70,300,False,False
+1,10,47,Bakerloo_East_2,Stonebridge Park,Bakerloo,Normal,1,37,300,False,False
+1,10,47,Bakerloo_West_2,Harlesden,Bakerloo,Normal,1,69,300,False,False
+1,11,17,Piccadilly_East_1,Knightsbridge,Piccadilly,Normal,2,127,300,False,False
+1,11,17,Piccadilly_West_1,Earl's Court,Piccadilly,Quiet,0,244,300,True,False
+1,11,17,Piccadilly_East_2,King's Cross St Pancras,Piccadilly,Busy,30,300,300,False,False
+1,11,17,Piccadilly_West_2,Holloway Road,Piccadilly,Normal,1,15,300,False,False
+1,11,17,Central_East_1,Northolt,Central,Quiet,1,38,300,False,False
+1,11,17,Central_West_1,West Acton,Central,Normal,0,91,300,True,False
+1,11,17,Central_East_2,East Acton,Central,Normal,3,52,300,False,False
+1,11,17,Central_West_2,Notting Hill Gate,Central,Busy,150,300,300,False,False
+1,11,17,Victoria_East_1,Blackhorse Road,Victoria,Quiet,1,90,300,False,False
+1,11,17,Victoria_West_1,Pimlico,Victoria,Normal,4,113,300,False,False
+1,11,17,Victoria_East_2,Warren Street,Victoria,Busy,33,300,300,False,False
+1,11,17,Victoria_West_2,King's Cross St Pancras,Victoria,Normal,7,63,300,False,True
+1,11,17,Jubilee_East_1,London Bridge,Jubilee,Normal,4,258,300,False,False
+1,11,17,Jubilee_West_1,Waterloo,Jubilee,Normal,1,177,300,False,False
+1,11,17,Jubilee_East_2,Kilburn,Jubilee,Normal,2,76,300,False,False
+1,11,17,Jubilee_West_2,West Hampstead,Jubilee,Normal,3,76,300,False,False
+1,11,17,Bakerloo_East_1,Oxford Circus,Bakerloo,Normal,5,229,300,False,False
+1,11,17,Bakerloo_West_1,Kensal Green,Bakerloo,Normal,4,70,300,False,False
+1,11,17,Bakerloo_East_2,Harlesden,Bakerloo,Normal,4,35,300,False,False
+1,11,17,Bakerloo_West_2,Harlesden,Bakerloo,Normal,4,69,300,False,False
+1,11,47,Piccadilly_East_1,Knightsbridge,Piccadilly,Normal,2,127,300,False,False
+1,11,47,Piccadilly_West_1,Earl's Court,Piccadilly,Quiet,0,244,300,False,False
+1,11,47,Piccadilly_East_2,King's Cross St Pancras,Piccadilly,Busy,30,300,300,False,False
+1,11,47,Piccadilly_West_2,Caledonian Road,Piccadilly,Busy,0,29,300,True,False
+1,11,47,Central_East_1,Northolt,Central,Quiet,1,38,300,False,False
+1,11,47,Central_West_1,West Acton,Central,Normal,0,91,300,False,False
+1,11,47,Central_East_2,East Acton,Central,Normal,3,52,300,False,False
+1,11,47,Central_West_2,Notting Hill Gate,Central,Busy,150,300,300,False,False
+1,11,47,Victoria_East_1,Tottenham Hale,Victoria,Quiet,0,70,300,True,False
+1,11,47,Victoria_West_1,Pimlico,Victoria,Normal,4,113,300,False,False
+1,11,47,Victoria_East_2,Warren Street,Victoria,Busy,33,300,300,False,False
+1,11,47,Victoria_West_2,King's Cross St Pancras,Victoria,Normal,7,63,300,False,False
+1,11,47,Jubilee_East_1,Bermondsey,Jubilee,Quiet,0,219,300,False,False
+1,11,47,Jubilee_West_1,Waterloo,Jubilee,Normal,1,177,300,False,False
+1,11,47,Jubilee_East_2,West Hampstead,Jubilee,Normal,0,67,300,False,False
+1,11,47,Jubilee_West_2,West Hampstead,Jubilee,Normal,0,76,300,False,False
+1,11,47,Bakerloo_East_1,Oxford Circus,Bakerloo,Normal,5,229,300,False,False
+1,11,47,Bakerloo_West_1,Kensal Green,Bakerloo,Normal,4,70,300,False,False
+1,11,47,Bakerloo_East_2,Harlesden,Bakerloo,Normal,4,35,300,False,False
+1,11,47,Bakerloo_West_2,Harlesden,Bakerloo,Normal,4,69,300,False,False
+1,12,17,Piccadilly_East_1,South Kensington,Piccadilly,Quiet,0,112,300,False,False
+1,12,17,Piccadilly_West_1,Barons Court,Piccadilly,Quiet,0,248,300,True,False
+1,12,17,Piccadilly_East_2,Russell Square,Piccadilly,Busy,156,300,300,True,False
+1,12,17,Piccadilly_West_2,Caledonian Road,Piccadilly,Busy,12,29,300,True,True
+1,12,17,Central_East_1,Greenford,Central,Quiet,0,33,300,False,False
+1,12,17,Central_West_1,North Acton,Central,Normal,0,75,300,False,False
+1,12,17,Central_East_2,East Acton,Central,Normal,3,52,300,False,False
+1,12,17,Central_West_2,Queensway,Central,Busy,115,300,300,False,False
+1,12,17,Victoria_East_1,Tottenham Hale,Victoria,Quiet,2,70,300,False,False
+1,12,17,Victoria_West_1,Vauxhall,Victoria,Quiet,0,111,300,False,False
+1,12,17,Victoria_East_2,Warren Street,Victoria,Busy,55,300,300,False,False
+1,12,17,Victoria_West_2,King's Cross St Pancras,Victoria,Normal,7,63,300,False,False
+1,12,17,Jubilee_East_1,Bermondsey,Jubilee,Quiet,0,219,300,False,False
+1,12,17,Jubilee_West_1,Southwark,Jubilee,Normal,0,160,300,True,False
+1,12,17,Jubilee_East_2,West Hampstead,Jubilee,Normal,0,67,300,False,False
+1,12,17,Jubilee_West_2,West Hampstead,Jubilee,Normal,0,76,300,False,False
+1,12,17,Bakerloo_East_1,Oxford Circus,Bakerloo,Normal,5,229,300,False,False
+1,12,17,Bakerloo_West_1,Kensal Green,Bakerloo,Normal,4,70,300,False,False
+1,12,17,Bakerloo_East_2,Willesden Junction,Bakerloo,Normal,0,31,300,False,False
+1,12,17,Bakerloo_West_2,Harlesden,Bakerloo,Normal,10,69,300,False,False
+1,12,47,Piccadilly_East_1,South Kensington,Piccadilly,Quiet,0,112,300,False,False
+1,12,47,Piccadilly_West_1,Barons Court,Piccadilly,Quiet,0,248,300,False,False
+1,12,47,Piccadilly_East_2,Russell Square,Piccadilly,Busy,156,300,300,False,False
+1,12,47,Piccadilly_West_2,Caledonian Road,Piccadilly,Busy,12,29,300,True,False
+1,12,47,Central_East_1,Perivale,Central,Quiet,0,31,300,True,False
+1,12,47,Central_West_1,North Acton,Central,Normal,0,75,300,False,False
+1,12,47,Central_East_2,East Acton,Central,Normal,3,52,300,False,False
+1,12,47,Central_West_2,Lancaster Gate,Central,Normal,0,291,300,True,False
+1,12,47,Victoria_East_1,Seven Sisters,Victoria,Quiet,0,61,300,False,False
+1,12,47,Victoria_West_1,Stockwell,Victoria,Quiet,0,105,300,True,False
+1,12,47,Victoria_East_2,Warren Street,Victoria,Busy,55,300,300,False,False
+1,12,47,Victoria_West_2,King's Cross St Pancras,Victoria,Normal,7,63,300,False,False
+1,12,47,Jubilee_East_1,Canada Water,Jubilee,Quiet,0,221,300,False,False
+1,12,47,Jubilee_West_1,Southwark,Jubilee,Normal,0,160,300,False,False
+1,12,47,Jubilee_East_2,Finchley Road,Jubilee,Busy,0,217,300,False,False
+1,12,47,Jubilee_West_2,West Hampstead,Jubilee,Normal,0,76,300,False,False
+1,12,47,Bakerloo_East_1,Oxford Circus,Bakerloo,Normal,5,229,300,False,False
+1,12,47,Bakerloo_West_1,Kensal Green,Bakerloo,Normal,4,70,300,False,False
+1,12,47,Bakerloo_East_2,Willesden Junction,Bakerloo,Normal,0,31,300,False,False
+1,12,47,Bakerloo_West_2,Harlesden,Bakerloo,Normal,10,69,300,False,False
+1,13,18,Piccadilly_East_1,Gloucester Road,Piccadilly,Quiet,0,81,300,True,False
+1,13,18,Piccadilly_West_1,Barons Court,Piccadilly,Quiet,2,248,300,False,False
+1,13,18,Piccadilly_East_2,Holborn,Piccadilly,Busy,150,300,300,True,False
+1,13,18,Piccadilly_West_2,Caledonian Road,Piccadilly,Busy,26,29,300,True,False
+1,13,18,Central_East_1,Perivale,Central,Quiet,0,31,300,False,False
+1,13,18,Central_West_1,East Acton,Central,Normal,0,79,300,False,False
+1,13,18,Central_East_2,East Acton,Central,Normal,0,52,300,False,False
+1,13,18,Central_West_2,Lancaster Gate,Central,Normal,4,291,300,False,False
+1,13,18,Victoria_East_1,Seven Sisters,Victoria,Quiet,0,61,300,False,False
+1,13,18,Victoria_West_1,Stockwell,Victoria,Quiet,2,105,300,False,False
+1,13,18,Victoria_East_2,Warren Street,Victoria,Busy,83,300,300,False,False
+1,13,18,Victoria_West_2,King's Cross St Pancras,Victoria,Normal,11,63,300,False,False
+1,13,18,Jubilee_East_1,Canary Wharf,Jubilee,Quiet,0,164,300,True,False
+1,13,18,Jubilee_West_1,London Bridge,Jubilee,Normal,0,147,300,True,False
+1,13,18,Jubilee_East_2,Finchley Road,Jubilee,Busy,16,217,300,False,False
+1,13,18,Jubilee_West_2,West Hampstead,Jubilee,Normal,6,76,300,False,False
+1,13,18,Bakerloo_East_1,Oxford Circus,Bakerloo,Normal,5,229,300,False,False
+1,13,18,Bakerloo_West_1,Queen's Park,Bakerloo,Normal,0,102,300,False,False
+1,13,18,Bakerloo_East_2,Kensal Green,Bakerloo,Normal,0,31,300,True,False
+1,13,18,Bakerloo_West_2,Willesden Junction,Bakerloo,Normal,0,59,300,False,False
+1,13,48,Piccadilly_East_1,Gloucester Road,Piccadilly,Quiet,2,81,300,False,False
+1,13,48,Piccadilly_West_1,Cockfosters,Piccadilly,Quiet,6,242,300,False,False
+1,13,48,Piccadilly_East_2,Holborn,Piccadilly,Busy,176,300,300,False,False
+1,13,48,Piccadilly_West_2,Caledonian Road,Piccadilly,Busy,38,29,300,True,False
+1,13,48,Central_East_1,Hanger Lane,Central,Normal,2,42,300,False,False
+1,13,48,Central_West_1,White City,Central,Busy,0,210,300,True,False
+1,13,48,Central_East_2,White City,Central,Busy,0,40,300,True,False
+1,13,48,Central_West_2,Marble Arch,Central,Normal,3,300,300,False,False
+1,13,48,Victoria_East_1,Seven Sisters,Victoria,Quiet,2,61,300,False,False
+1,13,48,Victoria_West_1,Walthamstow Central,Victoria,Quiet,11,81,300,False,False
+1,13,48,Victoria_East_2,Warren Street,Victoria,Busy,105,300,300,False,False
+1,13,48,Victoria_West_2,King's Cross St Pancras,Victoria,Normal,11,63,300,False,False
+1,13,48,Jubilee_East_1,Canary Wharf,Jubilee,Quiet,2,164,300,False,False
+1,13,48,Jubilee_West_1,London Bridge,Jubilee,Normal,8,147,300,False,False
+1,13,48,Jubilee_East_2,Swiss Cottage,Jubilee,Busy,46,300,300,True,False
+1,13,48,Jubilee_West_2,West Hampstead,Jubilee,Normal,12,76,300,False,False
+1,13,48,Bakerloo_East_1,Oxford Circus,Bakerloo,Normal,11,229,300,False,False
+1,13,48,Bakerloo_West_1,Queen's Park,Bakerloo,Normal,6,102,300,False,False
+1,13,48,Bakerloo_East_2,Kensal Green,Bakerloo,Normal,0,31,300,False,False
+1,13,48,Bakerloo_West_2,Kensal Green,Bakerloo,Normal,0,57,300,True,False
+1,14,18,Piccadilly_East_1,Earl's Court,Piccadilly,Quiet,0,79,300,True,False
+1,14,18,Piccadilly_West_1,Cockfosters,Piccadilly,Quiet,6,242,300,False,False
+1,14,18,Piccadilly_East_2,Holborn,Piccadilly,Busy,176,300,300,False,False
+1,14,18,Piccadilly_West_2,Caledonian Road,Piccadilly,Busy,38,29,300,True,False
+1,14,18,Central_East_1,Hanger Lane,Central,Normal,2,42,300,False,False
+1,14,18,Central_West_1,White City,Central,Busy,0,210,300,False,False
+1,14,18,Central_East_2,White City,Central,Busy,0,40,300,False,False
+1,14,18,Central_West_2,Marble Arch,Central,Normal,3,300,300,False,False
+1,14,18,Victoria_East_1,Seven Sisters,Victoria,Quiet,2,61,300,False,False
+1,14,18,Victoria_West_1,Walthamstow Central,Victoria,Quiet,11,81,300,False,False
+1,14,18,Victoria_East_2,Warren Street,Victoria,Busy,105,300,300,False,False
+1,14,18,Victoria_West_2,King's Cross St Pancras,Victoria,Normal,11,63,300,False,False
+1,14,18,Jubilee_East_1,Stanmore,Jubilee,Quiet,13,146,300,False,False
+1,14,18,Jubilee_West_1,London Bridge,Jubilee,Normal,8,147,300,False,False
+1,14,18,Jubilee_East_2,Swiss Cottage,Jubilee,Busy,46,300,300,False,False
+1,14,18,Jubilee_West_2,West Hampstead,Jubilee,Normal,12,76,300,False,False
+1,14,18,Bakerloo_East_1,Piccadilly Circus,Bakerloo,Normal,0,238,300,False,False
+1,14,18,Bakerloo_West_1,Kilburn Park,Bakerloo,Busy,16,300,300,False,False
+1,14,18,Bakerloo_East_2,Kensal Green,Bakerloo,Normal,0,31,300,False,False
+1,14,18,Bakerloo_West_2,Kensal Green,Bakerloo,Normal,0,57,300,False,False
+1,14,48,Piccadilly_East_1,Earl's Court,Piccadilly,Quiet,0,79,300,False,False
+1,14,48,Piccadilly_West_1,Oakwood,Piccadilly,Quiet,0,228,300,False,False
+1,14,48,Piccadilly_East_2,Covent Garden,Piccadilly,Busy,105,300,300,True,True
+1,14,48,Piccadilly_West_2,Caledonian Road,Piccadilly,Busy,47,29,300,True,False
+1,14,48,Central_East_1,Ealing Broadway,Central,Normal,4,50,300,False,False
+1,14,48,Central_West_1,Shepherd's Bush,Central,Busy,66,300,300,False,False
+1,14,48,Central_East_2,White City,Central,Busy,6,40,300,False,False
+1,14,48,Central_West_2,Bond Street,Central,Normal,27,300,300,False,False
+1,14,48,Victoria_East_1,Seven Sisters,Victoria,Quiet,3,61,300,False,False
+1,14,48,Victoria_West_1,Blackhorse Road,Victoria,Quiet,1,69,300,False,False
+1,14,48,Victoria_East_2,Warren Street,Victoria,Busy,114,300,300,False,False
+1,14,48,Victoria_West_2,Euston,Victoria,Busy,0,127,300,False,False
+1,14,48,Jubilee_East_1,Stanmore,Jubilee,Quiet,14,146,300,False,False
+1,14,48,Jubilee_West_1,Bermondsey,Jubilee,Quiet,0,132,300,False,False
+1,14,48,Jubilee_East_2,St John's Wood,Jubilee,Busy,196,300,300,True,False
+1,14,48,Jubilee_West_2,Finchley Road,Jubilee,Busy,6,120,300,True,True
+1,14,48,Bakerloo_East_1,Charing Cross,Bakerloo,Normal,0,253,300,True,False
+1,14,48,Bakerloo_West_1,Kilburn Park,Bakerloo,Busy,29,300,300,False,False
+1,14,48,Bakerloo_East_2,Queen's Park,Bakerloo,Normal,4,36,300,False,False
+1,14,48,Bakerloo_West_2,Kensal Green,Bakerloo,Normal,3,57,300,False,False
+1,15,18,Piccadilly_East_1,Earl's Court,Piccadilly,Quiet,0,79,300,False,False
+1,15,18,Piccadilly_West_1,Oakwood,Piccadilly,Quiet,0,228,300,False,False
+1,15,18,Piccadilly_East_2,Covent Garden,Piccadilly,Busy,105,300,300,True,True
+1,15,18,Piccadilly_West_2,Caledonian Road,Piccadilly,Busy,47,29,300,True,False
+1,15,18,Central_East_1,West Acton,Central,Normal,0,66,300,True,False
+1,15,18,Central_West_1,Shepherd's Bush,Central,Busy,66,300,300,False,False
+1,15,18,Central_East_2,White City,Central,Busy,6,40,300,False,False
+1,15,18,Central_West_2,Oxford Circus,Central,Normal,0,276,300,False,False
+1,15,18,Victoria_East_1,Seven Sisters,Victoria,Quiet,3,61,300,False,False
+1,15,18,Victoria_West_1,Tottenham Hale,Victoria,Quiet,0,70,300,True,False
+1,15,18,Victoria_East_2,Warren Street,Victoria,Busy,114,300,300,False,False
+1,15,18,Victoria_West_2,Euston,Victoria,Busy,0,127,300,False,False
+1,15,18,Jubilee_East_1,Canons Park,Jubilee,Quiet,0,140,300,False,False
+1,15,18,Jubilee_West_1,Bermondsey,Jubilee,Quiet,0,132,300,False,False
+1,15,18,Jubilee_East_2,St John's Wood,Jubilee,Busy,196,300,300,False,False
+1,15,18,Jubilee_West_2,Finchley Road,Jubilee,Busy,6,120,300,True,False
+1,15,18,Bakerloo_East_1,Charing Cross,Bakerloo,Normal,0,253,300,False,False
+1,15,18,Bakerloo_West_1,Maida Vale,Bakerloo,Busy,143,300,300,False,False
+1,15,18,Bakerloo_East_2,Queen's Park,Bakerloo,Normal,4,36,300,False,False
+1,15,18,Bakerloo_West_2,Kensal Green,Bakerloo,Normal,3,57,300,False,False
+1,15,48,Piccadilly_East_1,Barons Court,Piccadilly,Quiet,0,72,300,False,False
+1,15,48,Piccadilly_West_1,Southgate,Piccadilly,Quiet,0,203,300,False,False
+1,15,48,Piccadilly_East_2,Covent Garden,Piccadilly,Busy,112,300,300,True,True
+1,15,48,Piccadilly_West_2,Caledonian Road,Piccadilly,Busy,52,29,300,True,False
+1,15,48,Central_East_1,West Acton,Central,Normal,3,66,300,False,False
+1,15,48,Central_West_1,Holland Park,Central,Busy,49,300,300,True,True
+1,15,48,Central_East_2,White City,Central,Busy,11,40,300,False,False
+1,15,48,Central_West_2,Oxford Circus,Central,Normal,3,276,300,False,False
+1,15,48,Victoria_East_1,Seven Sisters,Victoria,Quiet,4,61,300,False,False
+1,15,48,Victoria_West_1,Tottenham Hale,Victoria,Quiet,1,70,300,False,False
+1,15,48,Victoria_East_2,Warren Street,Victoria,Busy,0,300,300,False,False
+1,15,48,Victoria_West_2,Warren Street,Victoria,Busy,0,218,300,False,False
+1,15,48,Jubilee_East_1,Canons Park,Jubilee,Quiet,0,140,300,False,False
+1,15,48,Jubilee_West_1,Canada Water,Jubilee,Quiet,0,100,300,False,False
+1,15,48,Jubilee_East_2,St John's Wood,Jubilee,Busy,204,300,300,False,False
+1,15,48,Jubilee_West_2,Finchley Road,Jubilee,Busy,16,120,300,True,False
+1,15,48,Bakerloo_East_1,Embankment,Bakerloo,Quiet,0,226,300,False,False
+1,15,48,Bakerloo_West_1,Maida Vale,Bakerloo,Busy,153,300,300,False,False
+1,15,48,Bakerloo_East_2,Kilburn Park,Bakerloo,Busy,0,73,300,False,False
+1,15,48,Bakerloo_West_2,Kensal Green,Bakerloo,Normal,5,57,300,False,False
+1,16,19,Piccadilly_East_1,Barons Court,Piccadilly,Quiet,0,72,300,False,False
+1,16,19,Piccadilly_West_1,Southgate,Piccadilly,Quiet,1,203,300,False,False
+1,16,19,Piccadilly_East_2,Covent Garden,Piccadilly,Busy,124,300,300,True,True
+1,16,19,Piccadilly_West_2,Caledonian Road,Piccadilly,Busy,60,29,300,True,False
+1,16,19,Central_East_1,North Acton,Central,Normal,3,65,300,False,False
+1,16,19,Central_West_1,Holland Park,Central,Busy,60,300,300,True,True
+1,16,19,Central_East_2,White City,Central,Busy,19,40,300,False,True
+1,16,19,Central_West_2,Tottenham Court Road,Central,Normal,3,251,300,False,False
+1,16,19,Victoria_East_1,Finsbury Park,Victoria,Normal,0,111,300,False,False
+1,16,19,Victoria_West_1,Seven Sisters,Victoria,Quiet,1,72,300,False,False
+1,16,19,Victoria_East_2,Oxford Circus,Victoria,Busy,0,300,300,False,False
+1,16,19,Victoria_West_2,Oxford Circus,Victoria,Busy,0,299,300,True,False
+1,16,19,Jubilee_East_1,Queensbury,Jubilee,Quiet,0,119,300,True,False
+1,16,19,Jubilee_West_1,Canada Water,Jubilee,Quiet,1,100,300,False,False
+1,16,19,Jubilee_East_2,Baker Street,Jubilee,Busy,143,300,300,False,False
+1,16,19,Jubilee_West_2,Finchley Road,Jubilee,Busy,23,120,300,True,False
+1,16,19,Bakerloo_East_1,Embankment,Bakerloo,Quiet,1,226,300,False,False
+1,16,19,Bakerloo_West_1,Warwick Avenue,Bakerloo,Busy,203,300,300,True,False
+1,16,19,Bakerloo_East_2,Kilburn Park,Bakerloo,Busy,6,73,300,False,True
+1,16,19,Bakerloo_West_2,Queen's Park,Bakerloo,Normal,0,61,300,True,False
+1,16,49,Piccadilly_East_1,Cockfosters,Piccadilly,Quiet,8,57,300,False,False
+1,16,49,Piccadilly_West_1,Arnos Grove,Piccadilly,Quiet,0,179,300,True,False
+1,16,49,Piccadilly_East_2,Covent Garden,Piccadilly,Busy,124,300,300,True,True
+1,16,49,Piccadilly_West_2,Caledonian Road,Piccadilly,Busy,60,29,300,True,False
+1,16,49,Central_East_1,North Acton,Central,Normal,3,65,300,False,True
+1,16,49,Central_West_1,Holland Park,Central,Busy,60,300,300,True,True
+1,16,49,Central_East_2,White City,Central,Busy,19,40,300,False,False
+1,16,49,Central_West_2,Holborn,Central,Quiet,0,212,300,True,False
+1,16,49,Victoria_East_1,Finsbury Park,Victoria,Normal,0,111,300,False,False
+1,16,49,Victoria_West_1,Seven Sisters,Victoria,Quiet,1,72,300,False,False
+1,16,49,Victoria_East_2,Oxford Circus,Victoria,Busy,0,300,300,False,False
+1,16,49,Victoria_West_2,Oxford Circus,Victoria,Busy,0,299,300,False,False
+1,16,49,Jubilee_East_1,Queensbury,Jubilee,Quiet,0,119,300,False,False
+1,16,49,Jubilee_West_1,Canary Wharf,Jubilee,Quiet,0,88,300,False,False
+1,16,49,Jubilee_East_2,Baker Street,Jubilee,Busy,143,300,300,False,False
+1,16,49,Jubilee_West_2,Finchley Road,Jubilee,Busy,23,120,300,True,False
+1,16,49,Bakerloo_East_1,Waterloo,Bakerloo,Quiet,0,198,300,False,False
+1,16,49,Bakerloo_West_1,Warwick Avenue,Bakerloo,Busy,203,300,300,False,False
+1,16,49,Bakerloo_East_2,Kilburn Park,Bakerloo,Busy,6,73,300,False,True
+1,16,49,Bakerloo_West_2,Queen's Park,Bakerloo,Normal,0,61,300,False,False
+1,17,19,Piccadilly_East_1,Cockfosters,Piccadilly,Quiet,11,57,300,False,False
+1,17,19,Piccadilly_West_1,Arnos Grove,Piccadilly,Quiet,3,179,300,False,False
+1,17,19,Piccadilly_East_2,Covent Garden,Piccadilly,Busy,157,300,300,True,True
+1,17,19,Piccadilly_West_2,Caledonian Road,Piccadilly,Busy,99,29,300,True,False
+1,17,19,Central_East_1,North Acton,Central,Normal,6,65,300,False,True
+1,17,19,Central_West_1,Holland Park,Central,Busy,99,300,300,True,True
+1,17,19,Central_East_2,White City,Central,Busy,43,40,300,False,False
+1,17,19,Central_West_2,Holborn,Central,Quiet,3,212,300,False,False
+1,17,19,Victoria_East_1,Highbury & Islington,Victoria,Normal,3,126,300,False,False
+1,17,19,Victoria_West_1,Finsbury Park,Victoria,Normal,6,52,300,False,False
+1,17,19,Victoria_East_2,Oxford Circus,Victoria,Busy,36,300,300,False,False
+1,17,19,Victoria_West_2,Oxford Circus,Victoria,Busy,36,299,300,False,False
+1,17,19,Jubilee_East_1,Queensbury,Jubilee,Quiet,3,119,300,False,False
+1,17,19,Jubilee_West_1,Canary Wharf,Jubilee,Quiet,3,88,300,False,False
+1,17,19,Jubilee_East_2,Baker Street,Jubilee,Busy,164,300,300,False,False
+1,17,19,Jubilee_West_2,Finchley Road,Jubilee,Busy,41,120,300,True,False
+1,17,19,Bakerloo_East_1,Waterloo,Bakerloo,Quiet,0,198,300,False,False
+1,17,19,Bakerloo_West_1,Paddington,Bakerloo,Busy,289,300,300,True,False
+1,17,19,Bakerloo_East_2,Kilburn Park,Bakerloo,Busy,33,73,300,False,False
+1,17,19,Bakerloo_West_2,Queen's Park,Bakerloo,Normal,9,61,300,False,False
+1,17,49,Piccadilly_East_1,Oakwood,Piccadilly,Quiet,0,56,300,False,False
+1,17,49,Piccadilly_West_1,Bounds Green,Piccadilly,Quiet,0,148,300,True,False
+1,17,49,Piccadilly_East_2,Covent Garden,Piccadilly,Busy,157,300,300,True,True
+1,17,49,Piccadilly_West_2,Caledonian Road,Piccadilly,Busy,99,29,300,True,True
+1,17,49,Central_East_1,North Acton,Central,Normal,6,65,300,False,False
+1,17,49,Central_West_1,Holland Park,Central,Busy,99,300,300,True,True
+1,17,49,Central_East_2,White City,Central,Busy,43,40,300,False,False
+1,17,49,Central_West_2,Chancery Lane,Central,Quiet,0,166,300,False,False
+1,17,49,Victoria_East_1,Highbury & Islington,Victoria,Normal,3,126,300,False,False
+1,17,49,Victoria_West_1,Finsbury Park,Victoria,Normal,6,52,300,False,False
+1,17,49,Victoria_East_2,Oxford Circus,Victoria,Busy,36,300,300,False,False
+1,17,49,Victoria_West_2,Oxford Circus,Victoria,Busy,36,299,300,False,False
+1,17,49,Jubilee_East_1,Kingsbury,Jubilee,Quiet,0,102,300,False,False
+1,17,49,Jubilee_West_1,North Greenwich,Jubilee,Quiet,0,76,300,True,False
+1,17,49,Jubilee_East_2,Baker Street,Jubilee,Busy,164,300,300,False,False
+1,17,49,Jubilee_West_2,Finchley Road,Jubilee,Busy,41,120,300,False,False
+1,17,49,Bakerloo_East_1,Lambeth North,Bakerloo,Quiet,0,172,300,True,False
+1,17,49,Bakerloo_West_1,Paddington,Bakerloo,Busy,289,300,300,False,False
+1,17,49,Bakerloo_East_2,Kilburn Park,Bakerloo,Busy,0,73,300,False,False
+1,17,49,Bakerloo_West_2,Kilburn Park,Bakerloo,Busy,0,85,300,False,False
+1,18,19,Piccadilly_East_1,Oakwood,Piccadilly,Quiet,0,56,300,False,False
+1,18,19,Piccadilly_West_1,Bounds Green,Piccadilly,Quiet,0,148,300,False,False
+1,18,19,Piccadilly_East_2,Covent Garden,Piccadilly,Busy,190,300,300,True,True
+1,18,19,Piccadilly_West_2,Caledonian Road,Piccadilly,Busy,117,29,300,True,True
+1,18,19,Central_East_1,North Acton,Central,Normal,6,65,300,False,False
+1,18,19,Central_West_1,Holland Park,Central,Busy,138,300,300,True,True
+1,18,19,Central_East_2,White City,Central,Busy,76,40,300,False,False
+1,18,19,Central_West_2,Chancery Lane,Central,Quiet,0,166,300,False,False
+1,18,19,Victoria_East_1,Highbury & Islington,Victoria,Normal,0,126,300,False,False
+1,18,19,Victoria_West_1,Highbury & Islington,Victoria,Normal,0,58,300,False,False
+1,18,19,Victoria_East_2,Oxford Circus,Victoria,Busy,57,300,300,False,False
+1,18,19,Victoria_West_2,Oxford Circus,Victoria,Busy,57,299,300,False,False
+1,18,19,Jubilee_East_1,Kingsbury,Jubilee,Quiet,0,102,300,False,False
+1,18,19,Jubilee_West_1,Stanmore,Jubilee,Quiet,21,76,300,False,False
+1,18,19,Jubilee_East_2,Baker Street,Jubilee,Busy,200,300,300,False,False
+1,18,19,Jubilee_West_2,Finchley Road,Jubilee,Busy,77,120,300,False,False
+1,18,19,Bakerloo_East_1,Lambeth North,Bakerloo,Quiet,0,172,300,False,False
+1,18,19,Bakerloo_West_1,Paddington,Bakerloo,Busy,307,300,300,False,False
+1,18,19,Bakerloo_East_2,Kilburn Park,Bakerloo,Busy,27,73,300,False,False
+1,18,19,Bakerloo_West_2,Kilburn Park,Bakerloo,Busy,27,85,300,False,False
+1,18,49,Piccadilly_East_1,Southgate,Piccadilly,Quiet,0,57,300,True,False
+1,18,49,Piccadilly_West_1,Bounds Green,Piccadilly,Quiet,3,148,300,False,False
+1,18,49,Piccadilly_East_2,Covent Garden,Piccadilly,Busy,211,300,300,True,True
+1,18,49,Piccadilly_West_2,Caledonian Road,Piccadilly,Busy,135,29,300,True,False
+1,18,49,Central_East_1,North Acton,Central,Normal,9,65,300,False,False
+1,18,49,Central_West_1,Holland Park,Central,Busy,180,300,300,True,True
+1,18,49,Central_East_2,White City,Central,Busy,118,40,300,False,False
+1,18,49,Central_West_2,St Paul's,Central,Quiet,0,164,300,False,False
+1,18,49,Victoria_East_1,Highbury & Islington,Victoria,Normal,6,126,300,False,False
+1,18,49,Victoria_West_1,Highbury & Islington,Victoria,Normal,6,58,300,False,False
+1,18,49,Victoria_East_2,Oxford Circus,Victoria,Busy,81,300,300,False,False
+1,18,49,Victoria_West_2,Green Park,Victoria,Normal,29,300,300,False,False
+1,18,49,Jubilee_East_1,Wembley Park,Jubilee,Quiet,3,115,300,False,False
+1,18,49,Jubilee_West_1,Canons Park,Jubilee,Quiet,3,72,300,False,False
+1,18,49,Jubilee_East_2,Baker Street,Jubilee,Busy,218,300,300,False,False
+1,18,49,Jubilee_West_2,Swiss Cottage,Jubilee,Busy,27,221,300,False,False
+1,18,49,Bakerloo_East_1,Harrow & Wealdstone,Bakerloo,Quiet,24,176,300,False,False
+1,18,49,Bakerloo_West_1,Edgware Road,Bakerloo,Busy,352,300,300,False,False
+1,18,49,Bakerloo_East_2,Maida Vale,Bakerloo,Busy,30,67,300,False,False
+1,18,49,Bakerloo_West_2,Maida Vale,Bakerloo,Busy,30,297,300,False,False
+1,19,20,Piccadilly_East_1,Southgate,Piccadilly,Quiet,0,57,300,False,False
+1,19,20,Piccadilly_West_1,Wood Green,Piccadilly,Quiet,0,126,300,False,False
+1,19,20,Piccadilly_East_2,Covent Garden,Piccadilly,Busy,211,300,300,True,True
+1,19,20,Piccadilly_West_2,Caledonian Road,Piccadilly,Busy,135,29,300,True,False
+1,19,20,Central_East_1,North Acton,Central,Normal,9,65,300,False,False
+1,19,20,Central_West_1,Holland Park,Central,Busy,180,300,300,True,True
+1,19,20,Central_East_2,White City,Central,Busy,118,40,300,False,False
+1,19,20,Central_West_2,Bank,Central,Quiet,0,169,300,True,False
+1,19,20,Victoria_East_1,King's Cross St Pancras,Victoria,Normal,0,135,300,False,False
+1,19,20,Victoria_West_1,Highbury & Islington,Victoria,Normal,6,58,300,False,False
+1,19,20,Victoria_East_2,Oxford Circus,Victoria,Busy,81,300,300,False,False
+1,19,20,Victoria_West_2,Victoria,Victoria,Normal,43,300,300,True,False
+1,19,20,Jubilee_East_1,Wembley Park,Jubilee,Quiet,3,115,300,False,False
+1,19,20,Jubilee_West_1,Canons Park,Jubilee,Quiet,3,72,300,False,False
+1,19,20,Jubilee_East_2,Baker Street,Jubilee,Busy,218,300,300,False,False
+1,19,20,Jubilee_West_2,Swiss Cottage,Jubilee,Busy,27,221,300,False,False
+1,19,20,Bakerloo_East_1,Harrow & Wealdstone,Bakerloo,Quiet,24,176,300,False,False
+1,19,20,Bakerloo_West_1,Edgware Road,Bakerloo,Busy,352,300,300,False,False
+1,19,20,Bakerloo_East_2,Maida Vale,Bakerloo,Busy,30,67,300,False,False
+1,19,20,Bakerloo_West_2,Maida Vale,Bakerloo,Busy,30,297,300,False,False
+1,19,50,Piccadilly_East_1,Arnos Grove,Piccadilly,Quiet,0,48,300,True,False
+1,19,50,Piccadilly_West_1,Wood Green,Piccadilly,Quiet,0,126,300,False,False
+1,19,50,Piccadilly_East_2,Covent Garden,Piccadilly,Busy,222,300,300,True,True
+1,19,50,Piccadilly_West_2,Caledonian Road,Piccadilly,Busy,149,29,300,True,False
+1,19,50,Central_East_1,North Acton,Central,Normal,10,65,300,False,False
+1,19,50,Central_West_1,Holland Park,Central,Busy,187,300,300,True,True
+1,19,50,Central_East_2,White City,Central,Busy,126,40,300,False,False
+1,19,50,Central_West_2,Bank,Central,Quiet,1,169,300,False,False
+1,19,50,Victoria_East_1,King's Cross St Pancras,Victoria,Normal,1,135,300,False,True
+1,19,50,Victoria_West_1,Highbury & Islington,Victoria,Normal,10,58,300,False,False
+1,19,50,Victoria_East_2,Oxford Circus,Victoria,Busy,91,300,300,False,False
+1,19,50,Victoria_West_2,Victoria,Victoria,Normal,46,300,300,False,False
+1,19,50,Jubilee_East_1,Neasden,Jubilee,Normal,0,139,300,False,False
+1,19,50,Jubilee_West_1,Queensbury,Jubilee,Quiet,1,78,300,False,False
+1,19,50,Jubilee_East_2,Bond Street,Jubilee,Busy,227,300,300,False,False
+1,19,50,Jubilee_West_2,St John's Wood,Jubilee,Busy,162,300,300,False,False
+1,19,50,Bakerloo_East_1,Kenton,Bakerloo,Quiet,0,188,300,False,False
+1,19,50,Bakerloo_West_1,Marylebone,Bakerloo,Busy,323,300,300,False,False
+1,19,50,Bakerloo_East_2,Maida Vale,Bakerloo,Busy,38,67,300,False,False
+1,19,50,Bakerloo_West_2,Warwick Avenue,Bakerloo,Busy,272,300,300,False,False
+1,20,20,Piccadilly_East_1,Arnos Grove,Piccadilly,Quiet,0,48,300,False,False
+1,20,20,Piccadilly_West_1,Turnpike Lane,Piccadilly,Normal,0,190,300,False,False
+1,20,20,Piccadilly_East_2,Covent Garden,Piccadilly,Busy,222,300,300,True,True
+1,20,20,Piccadilly_West_2,Caledonian Road,Piccadilly,Busy,149,29,300,True,False
+1,20,20,Central_East_1,North Acton,Central,Normal,10,65,300,False,False
+1,20,20,Central_West_1,Holland Park,Central,Busy,187,300,300,True,True
+1,20,20,Central_East_2,White City,Central,Busy,126,40,300,False,False
+1,20,20,Central_West_2,West Ruislip,Central,Quiet,19,153,300,False,False
+1,20,20,Victoria_East_1,King's Cross St Pancras,Victoria,Normal,1,135,300,False,True
+1,20,20,Victoria_West_1,Highbury & Islington,Victoria,Normal,10,58,300,False,False
+1,20,20,Victoria_East_2,Oxford Circus,Victoria,Busy,91,300,300,False,False
+1,20,20,Victoria_West_2,Victoria,Victoria,Normal,46,300,300,False,False
+1,20,20,Jubilee_East_1,Neasden,Jubilee,Normal,0,139,300,False,False
+1,20,20,Jubilee_West_1,Kingsbury,Jubilee,Quiet,0,75,300,True,False
+1,20,20,Jubilee_East_2,Bond Street,Jubilee,Busy,227,300,300,False,False
+1,20,20,Jubilee_West_2,St John's Wood,Jubilee,Busy,162,300,300,False,False
+1,20,20,Bakerloo_East_1,Kenton,Bakerloo,Quiet,0,188,300,False,False
+1,20,20,Bakerloo_West_1,Marylebone,Bakerloo,Busy,323,300,300,False,False
+1,20,20,Bakerloo_East_2,Maida Vale,Bakerloo,Busy,38,67,300,False,False
+1,20,20,Bakerloo_West_2,Warwick Avenue,Bakerloo,Busy,272,300,300,False,False
+1,20,50,Piccadilly_East_1,Arnos Grove,Piccadilly,Quiet,0,48,300,False,False
+1,20,50,Piccadilly_West_1,Turnpike Lane,Piccadilly,Normal,1,190,300,False,False
+1,20,50,Piccadilly_East_2,Covent Garden,Piccadilly,Busy,235,300,300,True,True
+1,20,50,Piccadilly_West_2,Caledonian Road,Piccadilly,Busy,156,29,300,True,False
+1,20,50,Central_East_1,North Acton,Central,Normal,12,65,300,False,False
+1,20,50,Central_West_1,Holland Park,Central,Busy,192,300,300,True,True
+1,20,50,Central_East_2,White City,Central,Busy,138,40,300,False,False
+1,20,50,Central_West_2,West Ruislip,Central,Quiet,20,153,300,False,False
+1,20,50,Victoria_East_1,King's Cross St Pancras,Victoria,Normal,2,135,300,False,True
+1,20,50,Victoria_West_1,Highbury & Islington,Victoria,Normal,13,58,300,False,False
+1,20,50,Victoria_East_2,Oxford Circus,Victoria,Busy,96,300,300,False,False
+1,20,50,Victoria_West_2,Victoria,Victoria,Normal,48,300,300,False,False
+1,20,50,Jubilee_East_1,Dollis Hill,Jubilee,Normal,0,151,300,True,False
+1,20,50,Jubilee_West_1,Kingsbury,Jubilee,Quiet,1,75,300,False,False
+1,20,50,Jubilee_East_2,Bond Street,Jubilee,Busy,237,300,300,False,False
+1,20,50,Jubilee_West_2,Baker Street,Jubilee,Busy,227,300,300,True,False
+1,20,50,Bakerloo_East_1,South Kenton,Bakerloo,Quiet,0,181,300,True,False
+1,20,50,Bakerloo_West_1,Baker Street,Bakerloo,Normal,0,290,300,False,False
+1,20,50,Bakerloo_East_2,Maida Vale,Bakerloo,Busy,52,67,300,False,False
+1,20,50,Bakerloo_West_2,Paddington,Bakerloo,Busy,343,300,300,True,False
+1,21,20,Piccadilly_East_1,Bounds Green,Piccadilly,Quiet,0,38,300,False,False
+1,21,20,Piccadilly_West_1,Manor House,Piccadilly,Normal,4,213,300,False,False
+1,21,20,Piccadilly_East_2,Covent Garden,Piccadilly,Busy,244,300,300,True,True
+1,21,20,Piccadilly_West_2,Caledonian Road,Piccadilly,Busy,162,29,300,True,False
+1,21,20,Central_East_1,North Acton,Central,Normal,13,65,300,False,False
+1,21,20,Central_West_1,Holland Park,Central,Busy,203,300,300,True,True
+1,21,20,Central_East_2,White City,Central,Busy,152,40,300,False,False
+1,21,20,Central_West_2,Ruislip Gardens,Central,Quiet,1,160,300,False,False
+1,21,20,Victoria_East_1,King's Cross St Pancras,Victoria,Normal,2,135,300,False,True
+1,21,20,Victoria_West_1,Highbury & Islington,Victoria,Normal,17,58,300,False,False
+1,21,20,Victoria_East_2,Oxford Circus,Victoria,Busy,102,300,300,False,False
+1,21,20,Victoria_West_2,Victoria,Victoria,Normal,50,300,300,False,False
+1,21,20,Jubilee_East_1,Dollis Hill,Jubilee,Normal,4,151,300,False,False
+1,21,20,Jubilee_West_1,Wembley Park,Jubilee,Quiet,1,78,300,False,False
+1,21,20,Jubilee_East_2,Bond Street,Jubilee,Busy,251,300,300,False,False
+1,21,20,Jubilee_West_2,Baker Street,Jubilee,Busy,240,300,300,False,False
+1,21,20,Bakerloo_East_1,South Kenton,Bakerloo,Quiet,0,181,300,False,False
+1,21,20,Bakerloo_West_1,Baker Street,Bakerloo,Normal,1,290,300,False,False
+1,21,20,Bakerloo_East_2,Maida Vale,Bakerloo,Busy,57,67,300,False,False
+1,21,20,Bakerloo_West_2,Paddington,Bakerloo,Busy,355,300,300,False,False
+1,21,50,Piccadilly_East_1,Bounds Green,Piccadilly,Quiet,0,38,300,False,False
+1,21,50,Piccadilly_West_1,Manor House,Piccadilly,Normal,4,213,300,False,False
+1,21,50,Piccadilly_East_2,Covent Garden,Piccadilly,Busy,244,300,300,False,False
+1,21,50,Piccadilly_West_2,Caledonian Road,Piccadilly,Busy,162,29,300,True,False
+1,21,50,Central_East_1,North Acton,Central,Normal,13,65,300,False,False
+1,21,50,Central_West_1,Holland Park,Central,Busy,203,300,300,True,True
+1,21,50,Central_East_2,White City,Central,Busy,152,40,300,False,True
+1,21,50,Central_West_2,South Ruislip,Central,Quiet,0,162,300,True,False
+1,21,50,Victoria_East_1,King's Cross St Pancras,Victoria,Normal,2,135,300,False,True
+1,21,50,Victoria_West_1,Highbury & Islington,Victoria,Normal,17,58,300,False,False
+1,21,50,Victoria_East_2,Green Park,Victoria,Normal,0,254,300,False,False
+1,21,50,Victoria_West_2,Victoria,Victoria,Normal,50,300,300,False,False
+1,21,50,Jubilee_East_1,Willesden Green,Jubilee,Normal,0,189,300,True,False
+1,21,50,Jubilee_West_1,Wembley Park,Jubilee,Quiet,1,78,300,False,False
+1,21,50,Jubilee_East_2,Bond Street,Jubilee,Busy,251,300,300,False,False
+1,21,50,Jubilee_West_2,Baker Street,Jubilee,Busy,240,300,300,False,False
+1,21,50,Bakerloo_East_1,South Kenton,Bakerloo,Quiet,0,181,300,False,False
+1,21,50,Bakerloo_West_1,Regent's Park,Bakerloo,Normal,7,300,300,True,False
+1,21,50,Bakerloo_East_2,Maida Vale,Bakerloo,Busy,57,67,300,False,False
+1,21,50,Bakerloo_West_2,Edgware Road,Bakerloo,Busy,308,300,300,True,False
+1,22,21,Piccadilly_East_1,Wood Green,Piccadilly,Quiet,0,38,300,False,False
+1,22,21,Piccadilly_West_1,Finsbury Park,Piccadilly,Normal,0,211,300,True,False
+1,22,21,Piccadilly_East_2,Covent Garden,Piccadilly,Busy,258,300,300,False,False
+1,22,21,Piccadilly_West_2,Caledonian Road,Piccadilly,Busy,172,29,300,False,False
+1,22,21,Central_East_1,North Acton,Central,Normal,14,65,300,False,False
+1,22,21,Central_West_1,Holland Park,Central,Busy,215,300,300,False,False
+1,22,21,Central_East_2,White City,Central,Busy,164,40,300,False,True
+1,22,21,Central_West_2,South Ruislip,Central,Quiet,1,162,300,False,False
+1,22,21,Victoria_East_1,King's Cross St Pancras,Victoria,Normal,5,135,300,False,True
+1,22,21,Victoria_West_1,Highbury & Islington,Victoria,Normal,19,58,300,False,False
+1,22,21,Victoria_East_2,Green Park,Victoria,Normal,4,254,300,False,False
+1,22,21,Victoria_West_2,Victoria,Victoria,Normal,52,300,300,False,False
+1,22,21,Jubilee_East_1,Willesden Green,Jubilee,Normal,1,189,300,False,True
+1,22,21,Jubilee_West_1,Neasden,Jubilee,Normal,0,78,300,False,False
+1,22,21,Jubilee_East_2,Bond Street,Jubilee,Busy,216,300,300,False,False
+1,22,21,Jubilee_West_2,Bond Street,Jubilee,Busy,216,300,300,False,False
+1,22,21,Bakerloo_East_1,North Wembley,Bakerloo,Quiet,0,180,300,False,False
+1,22,21,Bakerloo_West_1,Regent's Park,Bakerloo,Normal,8,300,300,False,False
+1,22,21,Bakerloo_East_2,Maida Vale,Bakerloo,Busy,69,67,300,False,True
+1,22,21,Bakerloo_West_2,Edgware Road,Bakerloo,Busy,315,300,300,False,False
+1,22,51,Piccadilly_East_1,Wood Green,Piccadilly,Quiet,0,38,300,False,False
+1,22,51,Piccadilly_West_1,Finsbury Park,Piccadilly,Normal,0,211,300,False,False
+1,22,51,Piccadilly_East_2,Leicester Square,Piccadilly,Normal,0,270,300,False,False
+1,22,51,Piccadilly_West_2,Caledonian Road,Piccadilly,Busy,172,29,300,False,False
+1,22,51,Central_East_1,North Acton,Central,Normal,14,65,300,False,True
+1,22,51,Central_West_1,Holland Park,Central,Busy,215,300,300,False,False
+1,22,51,Central_East_2,White City,Central,Busy,164,40,300,False,False
+1,22,51,Central_West_2,Northolt,Central,Quiet,0,169,300,False,False
+1,22,51,Victoria_East_1,King's Cross St Pancras,Victoria,Normal,5,135,300,False,True
+1,22,51,Victoria_West_1,Highbury & Islington,Victoria,Normal,19,58,300,False,False
+1,22,51,Victoria_East_2,Victoria,Victoria,Normal,0,261,300,False,False
+1,22,51,Victoria_West_2,Pimlico,Victoria,Normal,34,300,300,True,False
+1,22,51,Jubilee_East_1,Willesden Green,Jubilee,Normal,1,189,300,False,True
+1,22,51,Jubilee_West_1,Dollis Hill,Jubilee,Normal,0,71,300,True,False
+1,22,51,Jubilee_East_2,Bond Street,Jubilee,Busy,216,300,300,False,False
+1,22,51,Jubilee_West_2,Bond Street,Jubilee,Busy,216,300,300,False,False
+1,22,51,Bakerloo_East_1,North Wembley,Bakerloo,Quiet,0,180,300,False,False
+1,22,51,Bakerloo_West_1,Oxford Circus,Bakerloo,Normal,0,299,300,True,False
+1,22,51,Bakerloo_East_2,Maida Vale,Bakerloo,Busy,69,67,300,False,True
+1,22,51,Bakerloo_West_2,Edgware Road,Bakerloo,Busy,315,300,300,False,False
+1,23,21,Piccadilly_East_1,Turnpike Lane,Piccadilly,Normal,0,38,300,False,False
+1,23,21,Piccadilly_West_1,Finsbury Park,Piccadilly,Normal,3,211,300,False,False
+1,23,21,Piccadilly_East_2,Leicester Square,Piccadilly,Normal,0,270,300,False,False
+1,23,21,Piccadilly_West_2,King's Cross St Pancras,Piccadilly,Busy,0,253,300,False,False
+1,23,21,Central_East_1,North Acton,Central,Normal,14,65,300,False,False
+1,23,21,Central_West_1,Notting Hill Gate,Central,Busy,309,300,300,False,False
+1,23,21,Central_East_2,White City,Central,Busy,170,40,300,False,False
+1,23,21,Central_West_2,Northolt,Central,Quiet,1,169,300,False,False
+1,23,21,Victoria_East_1,King's Cross St Pancras,Victoria,Normal,5,135,300,False,True
+1,23,21,Victoria_West_1,Highbury & Islington,Victoria,Normal,22,58,300,False,False
+1,23,21,Victoria_East_2,Victoria,Victoria,Normal,3,261,300,False,False
+1,23,21,Victoria_West_2,Pimlico,Victoria,Normal,35,300,300,False,False
+1,23,21,Jubilee_East_1,Willesden Green,Jubilee,Normal,4,189,300,False,False
+1,23,21,Jubilee_West_1,Dollis Hill,Jubilee,Normal,4,71,300,False,False
+1,23,21,Jubilee_East_2,Bond Street,Jubilee,Busy,228,300,300,False,False
+1,23,21,Jubilee_West_2,Green Park,Jubilee,Normal,40,300,300,False,False
+1,23,21,Bakerloo_East_1,Wembley Central,Bakerloo,Quiet,0,183,300,False,False
+1,23,21,Bakerloo_West_1,Oxford Circus,Bakerloo,Normal,0,299,300,False,False
+1,23,21,Bakerloo_East_2,Maida Vale,Bakerloo,Busy,77,67,300,False,False
+1,23,21,Bakerloo_West_2,Marylebone,Bakerloo,Busy,322,300,300,False,False
+1,23,51,Piccadilly_East_1,Turnpike Lane,Piccadilly,Normal,0,38,300,False,False
+1,23,51,Piccadilly_West_1,Arsenal,Piccadilly,Normal,2,218,300,False,False
+1,23,51,Piccadilly_East_2,Piccadilly Circus,Piccadilly,Normal,0,293,300,False,False
+1,23,51,Piccadilly_West_2,King's Cross St Pancras,Piccadilly,Busy,7,253,300,False,False
+1,23,51,Central_East_1,North Acton,Central,Normal,18,65,300,False,False
+1,23,51,Central_West_1,Queensway,Central,Busy,337,300,300,True,False
+1,23,51,Central_East_2,White City,Central,Busy,177,40,300,False,False
+1,23,51,Central_West_2,Greenford,Central,Quiet,0,129,300,False,False
+1,23,51,Victoria_East_1,King's Cross St Pancras,Victoria,Normal,2,135,300,False,True
+1,23,51,Victoria_West_1,King's Cross St Pancras,Victoria,Normal,2,49,300,False,False
+1,23,51,Victoria_East_2,Pimlico,Victoria,Normal,3,281,300,False,False
+1,23,51,Victoria_West_2,Vauxhall,Victoria,Quiet,4,300,300,False,False
+1,23,51,Jubilee_East_1,Kilburn,Jubilee,Normal,0,214,300,True,False
+1,23,51,Jubilee_West_1,Willesden Green,Jubilee,Normal,3,65,300,False,False
+1,23,51,Jubilee_East_2,Bond Street,Jubilee,Busy,239,300,300,False,False
+1,23,51,Jubilee_West_2,Green Park,Jubilee,Normal,44,300,300,False,False
+1,23,51,Bakerloo_East_1,Wembley Central,Bakerloo,Quiet,1,183,300,False,False
+1,23,51,Bakerloo_West_1,Oxford Circus,Bakerloo,Normal,0,299,300,False,False
+1,23,51,Bakerloo_East_2,Warwick Avenue,Bakerloo,Busy,74,300,300,False,False
+1,23,51,Bakerloo_West_2,Marylebone,Bakerloo,Busy,331,300,300,False,False
+2,0,21,Piccadilly_East_1,Manor House,Piccadilly,Normal,0,40,300,True,False
+2,0,21,Piccadilly_West_1,Arsenal,Piccadilly,Normal,2,218,300,False,False
+2,0,21,Piccadilly_East_2,Piccadilly Circus,Piccadilly,Normal,0,293,300,False,False
+2,0,21,Piccadilly_West_2,Russell Square,Piccadilly,Busy,300,300,300,False,False
+2,0,21,Central_East_1,North Acton,Central,Normal,18,65,300,False,False
+2,0,21,Central_West_1,Queensway,Central,Busy,337,300,300,False,False
+2,0,21,Central_East_2,White City,Central,Busy,177,40,300,False,False
+2,0,21,Central_West_2,Perivale,Central,Quiet,0,111,300,True,False
+2,0,21,Victoria_East_1,Euston,Victoria,Busy,0,286,300,False,False
+2,0,21,Victoria_West_1,King's Cross St Pancras,Victoria,Normal,2,49,300,False,False
+2,0,21,Victoria_East_2,Vauxhall,Victoria,Quiet,0,216,300,True,False
+2,0,21,Victoria_West_2,Vauxhall,Victoria,Quiet,0,300,300,False,False
+2,0,21,Jubilee_East_1,Kilburn,Jubilee,Normal,0,214,300,False,False
+2,0,21,Jubilee_West_1,Willesden Green,Jubilee,Normal,3,65,300,False,False
+2,0,21,Jubilee_East_2,Bond Street,Jubilee,Busy,239,300,300,False,False
+2,0,21,Jubilee_West_2,Westminster,Jubilee,Normal,0,279,300,False,False
+2,0,21,Bakerloo_East_1,Stonebridge Park,Bakerloo,Normal,0,184,300,False,False
+2,0,21,Bakerloo_West_1,Piccadilly Circus,Bakerloo,Normal,0,248,300,False,False
+2,0,21,Bakerloo_East_2,Warwick Avenue,Bakerloo,Busy,74,300,300,False,False
+2,0,21,Bakerloo_West_2,Baker Street,Bakerloo,Normal,0,249,300,False,False
+2,0,51,Piccadilly_East_1,Manor House,Piccadilly,Normal,3,40,300,False,False
+2,0,51,Piccadilly_West_1,Holloway Road,Piccadilly,Normal,2,286,300,False,False
+2,0,51,Piccadilly_East_2,Green Park,Piccadilly,Normal,0,297,300,True,False
+2,0,51,Piccadilly_West_2,Russell Square,Piccadilly,Busy,314,300,300,False,False
+2,0,51,Central_East_1,East Acton,Central,Normal,4,98,300,False,False
+2,0,51,Central_West_1,Lancaster Gate,Central,Normal,15,300,300,False,False
+2,0,51,Central_East_2,Shepherd's Bush,Central,Busy,6,244,300,False,False
+2,0,51,Central_West_2,Perivale,Central,Quiet,0,111,300,False,False
+2,0,51,Victoria_East_1,Euston,Victoria,Busy,10,286,300,False,False
+2,0,51,Victoria_West_1,King's Cross St Pancras,Victoria,Normal,2,49,300,False,False
+2,0,51,Victoria_East_2,Vauxhall,Victoria,Quiet,0,216,300,False,False
+2,0,51,Victoria_West_2,Stockwell,Victoria,Quiet,1,264,300,False,False
+2,0,51,Jubilee_East_1,West Hampstead,Jubilee,Normal,0,197,300,True,False
+2,0,51,Jubilee_West_1,Kilburn,Jubilee,Normal,2,60,300,False,False
+2,0,51,Jubilee_East_2,Bond Street,Jubilee,Busy,251,300,300,False,False
+2,0,51,Jubilee_West_2,Westminster,Jubilee,Normal,0,279,300,False,False
+2,0,51,Bakerloo_East_1,Stonebridge Park,Bakerloo,Normal,2,184,300,False,False
+2,0,51,Bakerloo_West_1,Piccadilly Circus,Bakerloo,Normal,0,248,300,False,False
+2,0,51,Bakerloo_East_2,Paddington,Bakerloo,Busy,333,300,300,True,False
+2,0,51,Bakerloo_West_2,Baker Street,Bakerloo,Normal,3,249,300,False,False
+2,1,22,Piccadilly_East_1,Manor House,Piccadilly,Normal,3,40,300,False,False
+2,1,22,Piccadilly_West_1,Holloway Road,Piccadilly,Normal,2,286,300,False,False
+2,1,22,Piccadilly_East_2,Green Park,Piccadilly,Normal,0,297,300,False,False
+2,1,22,Piccadilly_West_2,Russell Square,Piccadilly,Busy,314,300,300,False,False
+2,1,22,Central_East_1,East Acton,Central,Normal,4,98,300,False,False
+2,1,22,Central_West_1,Lancaster Gate,Central,Normal,15,300,300,False,False
+2,1,22,Central_East_2,Shepherd's Bush,Central,Busy,6,244,300,False,False
+2,1,22,Central_West_2,Perivale,Central,Quiet,0,111,300,False,False
+2,1,22,Victoria_East_1,Warren Street,Victoria,Busy,137,300,300,False,False
+2,1,22,Victoria_West_1,King's Cross St Pancras,Victoria,Normal,2,49,300,False,False
+2,1,22,Victoria_East_2,Vauxhall,Victoria,Quiet,0,216,300,False,False
+2,1,22,Victoria_West_2,Stockwell,Victoria,Quiet,1,264,300,False,False
+2,1,22,Jubilee_East_1,West Hampstead,Jubilee,Normal,0,197,300,False,False
+2,1,22,Jubilee_West_1,Kilburn,Jubilee,Normal,2,60,300,False,False
+2,1,22,Jubilee_East_2,Bond Street,Jubilee,Busy,251,300,300,False,False
+2,1,22,Jubilee_West_2,Westminster,Jubilee,Normal,0,279,300,False,False
+2,1,22,Bakerloo_East_1,Stonebridge Park,Bakerloo,Normal,2,184,300,False,False
+2,1,22,Bakerloo_West_1,Piccadilly Circus,Bakerloo,Normal,0,248,300,False,False
+2,1,22,Bakerloo_East_2,Paddington,Bakerloo,Busy,333,300,300,False,False
+2,1,22,Bakerloo_West_2,Baker Street,Bakerloo,Normal,3,249,300,False,False
+2,1,52,Piccadilly_East_1,Manor House,Piccadilly,Normal,3,40,300,False,False
+2,1,52,Piccadilly_West_1,Holloway Road,Piccadilly,Normal,2,286,300,False,False
+2,1,52,Piccadilly_East_2,Green Park,Piccadilly,Normal,0,297,300,False,False
+2,1,52,Piccadilly_West_2,Russell Square,Piccadilly,Busy,314,300,300,False,False
+2,1,52,Central_East_1,East Acton,Central,Normal,4,98,300,False,False
+2,1,52,Central_West_1,Lancaster Gate,Central,Normal,15,300,300,False,False
+2,1,52,Central_East_2,Shepherd's Bush,Central,Busy,6,244,300,False,False
+2,1,52,Central_West_2,Perivale,Central,Quiet,0,111,300,False,False
+2,1,52,Victoria_East_1,Warren Street,Victoria,Busy,137,300,300,False,False
+2,1,52,Victoria_West_1,King's Cross St Pancras,Victoria,Normal,2,49,300,False,False
+2,1,52,Victoria_East_2,Vauxhall,Victoria,Quiet,0,216,300,False,False
+2,1,52,Victoria_West_2,Stockwell,Victoria,Quiet,1,264,300,False,False
+2,1,52,Jubilee_East_1,West Hampstead,Jubilee,Normal,0,197,300,False,False
+2,1,52,Jubilee_West_1,Kilburn,Jubilee,Normal,2,60,300,False,False
+2,1,52,Jubilee_East_2,Bond Street,Jubilee,Busy,251,300,300,False,False
+2,1,52,Jubilee_West_2,Westminster,Jubilee,Normal,0,279,300,False,False
+2,1,52,Bakerloo_East_1,Stonebridge Park,Bakerloo,Normal,2,184,300,False,False
+2,1,52,Bakerloo_West_1,Piccadilly Circus,Bakerloo,Normal,0,248,300,False,False
+2,1,52,Bakerloo_East_2,Paddington,Bakerloo,Busy,333,300,300,False,False
+2,1,52,Bakerloo_West_2,Baker Street,Bakerloo,Normal,3,249,300,False,False
+2,2,22,Piccadilly_East_1,Manor House,Piccadilly,Normal,3,40,300,False,False
+2,2,22,Piccadilly_West_1,Holloway Road,Piccadilly,Normal,2,286,300,False,False
+2,2,22,Piccadilly_East_2,Green Park,Piccadilly,Normal,0,297,300,False,False
+2,2,22,Piccadilly_West_2,Russell Square,Piccadilly,Busy,314,300,300,False,False
+2,2,22,Central_East_1,East Acton,Central,Normal,4,98,300,False,False
+2,2,22,Central_West_1,Lancaster Gate,Central,Normal,15,300,300,False,False
+2,2,22,Central_East_2,Shepherd's Bush,Central,Busy,6,244,300,False,False
+2,2,22,Central_West_2,Perivale,Central,Quiet,0,111,300,False,False
+2,2,22,Victoria_East_1,Warren Street,Victoria,Busy,137,300,300,False,False
+2,2,22,Victoria_West_1,King's Cross St Pancras,Victoria,Normal,2,49,300,False,False
+2,2,22,Victoria_East_2,Vauxhall,Victoria,Quiet,0,216,300,False,False
+2,2,22,Victoria_West_2,Stockwell,Victoria,Quiet,1,264,300,False,False
+2,2,22,Jubilee_East_1,West Hampstead,Jubilee,Normal,0,197,300,False,False
+2,2,22,Jubilee_West_1,Kilburn,Jubilee,Normal,2,60,300,False,False
+2,2,22,Jubilee_East_2,Bond Street,Jubilee,Busy,251,300,300,False,False
+2,2,22,Jubilee_West_2,Westminster,Jubilee,Normal,0,279,300,False,False
+2,2,22,Bakerloo_East_1,Stonebridge Park,Bakerloo,Normal,2,184,300,False,False
+2,2,22,Bakerloo_West_1,Piccadilly Circus,Bakerloo,Normal,0,248,300,False,False
+2,2,22,Bakerloo_East_2,Paddington,Bakerloo,Busy,333,300,300,False,False
+2,2,22,Bakerloo_West_2,Baker Street,Bakerloo,Normal,3,249,300,False,False
+2,2,52,Piccadilly_East_1,Manor House,Piccadilly,Normal,3,40,300,False,False
+2,2,52,Piccadilly_West_1,Holloway Road,Piccadilly,Normal,2,286,300,False,False
+2,2,52,Piccadilly_East_2,Green Park,Piccadilly,Normal,0,297,300,False,False
+2,2,52,Piccadilly_West_2,Russell Square,Piccadilly,Busy,314,300,300,False,False
+2,2,52,Central_East_1,East Acton,Central,Normal,4,98,300,False,False
+2,2,52,Central_West_1,Lancaster Gate,Central,Normal,15,300,300,False,False
+2,2,52,Central_East_2,Shepherd's Bush,Central,Busy,6,244,300,False,False
+2,2,52,Central_West_2,Perivale,Central,Quiet,0,111,300,False,False
+2,2,52,Victoria_East_1,Warren Street,Victoria,Busy,137,300,300,False,False
+2,2,52,Victoria_West_1,King's Cross St Pancras,Victoria,Normal,2,49,300,False,False
+2,2,52,Victoria_East_2,Vauxhall,Victoria,Quiet,0,216,300,False,False
+2,2,52,Victoria_West_2,Stockwell,Victoria,Quiet,1,264,300,False,False
+2,2,52,Jubilee_East_1,West Hampstead,Jubilee,Normal,0,197,300,False,False
+2,2,52,Jubilee_West_1,Kilburn,Jubilee,Normal,2,60,300,False,False
+2,2,52,Jubilee_East_2,Bond Street,Jubilee,Busy,251,300,300,False,False
+2,2,52,Jubilee_West_2,Westminster,Jubilee,Normal,0,279,300,False,False
+2,2,52,Bakerloo_East_1,Stonebridge Park,Bakerloo,Normal,2,184,300,False,False
+2,2,52,Bakerloo_West_1,Piccadilly Circus,Bakerloo,Normal,0,248,300,False,False
+2,2,52,Bakerloo_East_2,Paddington,Bakerloo,Busy,333,300,300,False,False
+2,2,52,Bakerloo_West_2,Baker Street,Bakerloo,Normal,3,249,300,False,False
+2,3,22,Piccadilly_East_1,Manor House,Piccadilly,Normal,3,40,300,False,False
+2,3,22,Piccadilly_West_1,Holloway Road,Piccadilly,Normal,2,286,300,False,False
+2,3,22,Piccadilly_East_2,Green Park,Piccadilly,Normal,0,297,300,False,False
+2,3,22,Piccadilly_West_2,Russell Square,Piccadilly,Busy,314,300,300,False,False
+2,3,22,Central_East_1,East Acton,Central,Normal,4,98,300,False,False
+2,3,22,Central_West_1,Lancaster Gate,Central,Normal,15,300,300,False,False
+2,3,22,Central_East_2,Shepherd's Bush,Central,Busy,6,244,300,False,False
+2,3,22,Central_West_2,Perivale,Central,Quiet,0,111,300,False,False
+2,3,22,Victoria_East_1,Warren Street,Victoria,Busy,137,300,300,False,False
+2,3,22,Victoria_West_1,King's Cross St Pancras,Victoria,Normal,2,49,300,False,False
+2,3,22,Victoria_East_2,Vauxhall,Victoria,Quiet,0,216,300,False,False
+2,3,22,Victoria_West_2,Stockwell,Victoria,Quiet,1,264,300,False,False
+2,3,22,Jubilee_East_1,West Hampstead,Jubilee,Normal,0,197,300,False,False
+2,3,22,Jubilee_West_1,Kilburn,Jubilee,Normal,2,60,300,False,False
+2,3,22,Jubilee_East_2,Bond Street,Jubilee,Busy,251,300,300,False,False
+2,3,22,Jubilee_West_2,Westminster,Jubilee,Normal,0,279,300,False,False
+2,3,22,Bakerloo_East_1,Stonebridge Park,Bakerloo,Normal,2,184,300,False,False
+2,3,22,Bakerloo_West_1,Piccadilly Circus,Bakerloo,Normal,0,248,300,False,False
+2,3,22,Bakerloo_East_2,Paddington,Bakerloo,Busy,333,300,300,False,False
+2,3,22,Bakerloo_West_2,Baker Street,Bakerloo,Normal,3,249,300,False,False
+2,3,52,Piccadilly_East_1,Manor House,Piccadilly,Normal,3,40,300,False,False
+2,3,52,Piccadilly_West_1,Holloway Road,Piccadilly,Normal,2,286,300,False,False
+2,3,52,Piccadilly_East_2,Green Park,Piccadilly,Normal,0,297,300,False,False
+2,3,52,Piccadilly_West_2,Russell Square,Piccadilly,Busy,314,300,300,False,False
+2,3,52,Central_East_1,East Acton,Central,Normal,4,98,300,False,False
+2,3,52,Central_West_1,Lancaster Gate,Central,Normal,15,300,300,False,False
+2,3,52,Central_East_2,Shepherd's Bush,Central,Busy,6,244,300,False,False
+2,3,52,Central_West_2,Perivale,Central,Quiet,0,111,300,False,False
+2,3,52,Victoria_East_1,Warren Street,Victoria,Busy,137,300,300,False,False
+2,3,52,Victoria_West_1,King's Cross St Pancras,Victoria,Normal,2,49,300,False,False
+2,3,52,Victoria_East_2,Vauxhall,Victoria,Quiet,0,216,300,False,False
+2,3,52,Victoria_West_2,Stockwell,Victoria,Quiet,1,264,300,False,False
+2,3,52,Jubilee_East_1,West Hampstead,Jubilee,Normal,0,197,300,False,False
+2,3,52,Jubilee_West_1,Kilburn,Jubilee,Normal,2,60,300,False,False
+2,3,52,Jubilee_East_2,Bond Street,Jubilee,Busy,251,300,300,False,False
+2,3,52,Jubilee_West_2,Westminster,Jubilee,Normal,0,279,300,False,False
+2,3,52,Bakerloo_East_1,Stonebridge Park,Bakerloo,Normal,2,184,300,False,False
+2,3,52,Bakerloo_West_1,Piccadilly Circus,Bakerloo,Normal,0,248,300,False,False
+2,3,52,Bakerloo_East_2,Paddington,Bakerloo,Busy,333,300,300,False,False
+2,3,52,Bakerloo_West_2,Baker Street,Bakerloo,Normal,3,249,300,False,False
+2,4,23,Piccadilly_East_1,Manor House,Piccadilly,Normal,3,40,300,False,False
+2,4,23,Piccadilly_West_1,Holloway Road,Piccadilly,Normal,2,286,300,False,False
+2,4,23,Piccadilly_East_2,Green Park,Piccadilly,Normal,0,297,300,False,False
+2,4,23,Piccadilly_West_2,Russell Square,Piccadilly,Busy,314,300,300,False,False
+2,4,23,Central_East_1,East Acton,Central,Normal,4,98,300,False,False
+2,4,23,Central_West_1,Lancaster Gate,Central,Normal,15,300,300,False,False
+2,4,23,Central_East_2,Shepherd's Bush,Central,Busy,6,244,300,False,False
+2,4,23,Central_West_2,Perivale,Central,Quiet,0,111,300,False,False
+2,4,23,Victoria_East_1,Warren Street,Victoria,Busy,137,300,300,False,False
+2,4,23,Victoria_West_1,King's Cross St Pancras,Victoria,Normal,2,49,300,False,False
+2,4,23,Victoria_East_2,Vauxhall,Victoria,Quiet,0,216,300,False,False
+2,4,23,Victoria_West_2,Stockwell,Victoria,Quiet,1,264,300,False,False
+2,4,23,Jubilee_East_1,West Hampstead,Jubilee,Normal,0,197,300,False,False
+2,4,23,Jubilee_West_1,Kilburn,Jubilee,Normal,2,60,300,False,True
+2,4,23,Jubilee_East_2,Bond Street,Jubilee,Busy,251,300,300,False,False
+2,4,23,Jubilee_West_2,Westminster,Jubilee,Normal,0,279,300,False,False
+2,4,23,Bakerloo_East_1,Stonebridge Park,Bakerloo,Normal,2,184,300,False,False
+2,4,23,Bakerloo_West_1,Piccadilly Circus,Bakerloo,Normal,0,248,300,False,False
+2,4,23,Bakerloo_East_2,Paddington,Bakerloo,Busy,333,300,300,False,False
+2,4,23,Bakerloo_West_2,Baker Street,Bakerloo,Normal,3,249,300,False,False
+2,4,53,Piccadilly_East_1,Manor House,Piccadilly,Normal,3,40,300,False,False
+2,4,53,Piccadilly_West_1,Holloway Road,Piccadilly,Normal,2,286,300,False,False
+2,4,53,Piccadilly_East_2,Green Park,Piccadilly,Normal,0,297,300,False,False
+2,4,53,Piccadilly_West_2,Russell Square,Piccadilly,Busy,314,300,300,False,False
+2,4,53,Central_East_1,East Acton,Central,Normal,4,98,300,False,False
+2,4,53,Central_West_1,Lancaster Gate,Central,Normal,15,300,300,False,False
+2,4,53,Central_East_2,Shepherd's Bush,Central,Busy,6,244,300,False,False
+2,4,53,Central_West_2,Perivale,Central,Quiet,0,111,300,False,False
+2,4,53,Victoria_East_1,Warren Street,Victoria,Busy,137,300,300,False,False
+2,4,53,Victoria_West_1,King's Cross St Pancras,Victoria,Normal,2,49,300,False,False
+2,4,53,Victoria_East_2,Vauxhall,Victoria,Quiet,0,216,300,False,False
+2,4,53,Victoria_West_2,Stockwell,Victoria,Quiet,1,264,300,False,False
+2,4,53,Jubilee_East_1,West Hampstead,Jubilee,Normal,0,197,300,False,False
+2,4,53,Jubilee_West_1,Kilburn,Jubilee,Normal,2,60,300,False,True
+2,4,53,Jubilee_East_2,Bond Street,Jubilee,Busy,251,300,300,False,False
+2,4,53,Jubilee_West_2,Westminster,Jubilee,Normal,0,279,300,False,False
+2,4,53,Bakerloo_East_1,Stonebridge Park,Bakerloo,Normal,2,184,300,False,False
+2,4,53,Bakerloo_West_1,Piccadilly Circus,Bakerloo,Normal,0,248,300,False,False
+2,4,53,Bakerloo_East_2,Paddington,Bakerloo,Busy,333,300,300,False,False
+2,4,53,Bakerloo_West_2,Baker Street,Bakerloo,Normal,3,249,300,False,False
+2,5,23,Piccadilly_East_1,Finsbury Park,Piccadilly,Normal,0,43,300,True,False
+2,5,23,Piccadilly_West_1,Holloway Road,Piccadilly,Normal,2,286,300,False,False
+2,5,23,Piccadilly_East_2,Green Park,Piccadilly,Normal,0,297,300,False,False
+2,5,23,Piccadilly_West_2,Holborn,Piccadilly,Busy,256,300,300,False,False
+2,5,23,Central_East_1,White City,Central,Busy,0,252,300,True,False
+2,5,23,Central_West_1,Lancaster Gate,Central,Normal,15,300,300,False,False
+2,5,23,Central_East_2,Holland Park,Central,Busy,151,300,300,True,False
+2,5,23,Central_West_2,Hanger Lane,Central,Normal,0,152,300,False,False
+2,5,23,Victoria_East_1,Warren Street,Victoria,Busy,137,300,300,False,False
+2,5,23,Victoria_West_1,King's Cross St Pancras,Victoria,Normal,2,49,300,False,False
+2,5,23,Victoria_East_2,Stockwell,Victoria,Quiet,0,184,300,False,False
+2,5,23,Victoria_West_2,Brixton,Victoria,Quiet,0,239,300,True,False
+2,5,23,Jubilee_East_1,West Hampstead,Jubilee,Normal,0,197,300,False,False
+2,5,23,Jubilee_West_1,Kilburn,Jubilee,Normal,2,60,300,False,True
+2,5,23,Jubilee_East_2,Green Park,Jubilee,Normal,0,288,300,False,False
+2,5,23,Jubilee_West_2,Waterloo,Jubilee,Normal,0,251,300,False,False
+2,5,23,Bakerloo_East_1,Harlesden,Bakerloo,Normal,0,204,300,False,False
+2,5,23,Bakerloo_West_1,Charing Cross,Bakerloo,Normal,0,236,300,False,False
+2,5,23,Bakerloo_East_2,Paddington,Bakerloo,Busy,333,300,300,False,False
+2,5,23,Bakerloo_West_2,Regent's Park,Bakerloo,Normal,0,238,300,False,False
