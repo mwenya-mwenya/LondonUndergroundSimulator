@@ -14,7 +14,7 @@ namespace MLInferenceEngine.Orchestration.Services
             _client = client;
         }
 
-        public async Task<int> GetRecommendedFrequencyAsync(SimulationSnapshot snapshot)
+        public async Task<int> GetRecommendedFrequencyAsync(string lineName, SimulationSnapshot snapshot)
         {
             Console.WriteLine("ADVISOR: Received snapshot, forwarding to MLInferenceEngine...");
 
@@ -33,6 +33,7 @@ namespace MLInferenceEngine.Orchestration.Services
             // Build the proto request
             var request = new SnapshotRequest
             {
+                LineName = snapshot.LineName,
                 AvgWaiting = snapshot.AvgWaiting,
                 MaxWaiting = snapshot.MaxWaiting,
                 AvgLoadFactor = snapshot.AvgLoadFactor,
@@ -61,7 +62,7 @@ namespace MLInferenceEngine.Orchestration.Services
                 ExpectedDemandMultiplier = snapshot.ExpectedDemandMultiplier
             };
 
-            var response = await _client.PredictAsync(request);
+            var response = await _client.PredictAsync(lineName, request);
 
             Console.WriteLine($"ADVISOR: MLInferenceEngine returned frequency = {response}");
 
