@@ -8,6 +8,7 @@ using static LondonUndergroundSimulator.Engine.Models.Station;
 using static System.Collections.Specialized.BitVector32;
 using LondonUndergroundSimulator.Infrastructure.Interfaces;
 using LondonUndergroundSimulator.Infrastructure.Services;
+using MLInferenceEngine.Abstractions.Models;
 
 namespace LondonUndergroundSimulator.Engine.Services
 {
@@ -22,13 +23,14 @@ namespace LondonUndergroundSimulator.Engine.Services
     {
         public readonly ITrainMovementService _movementService;
         private readonly ITrainDelayService _delayService;
-        private  IFailureRuleEngine _failureEngine;
+        private IFailureRuleEngine _failureEngine;
 
         private IHeadwayService _headwayService;
 
         private ITerminalLoopService _terminalLoopService;
 
         private ISimulationSnapshotProvider _snapshotProvider { get; set; }
+        
         private readonly IFrequencyAdvisor _frequencyAdvisor;
 
         private readonly SimulationLogStats _logStats;
@@ -54,11 +56,13 @@ namespace LondonUndergroundSimulator.Engine.Services
 
         //private readonly LogMetrics _logMetrics = new LogMetrics(new FilePathService());
         private readonly LogMetrics _logMetrics;
-        public event Action<int>? FrequencyChanged;
+        //public event Action<int>? FrequencyChanged;
+        public event Action FleetChanged;
 
         public event Action? RetrainingStatusChanged;
 
         private int _lastAppliedFrequency = -1;
+        private Dictionary<string, int> _pendingLineRecommendations;
 
         public float PassengerDemandMultiplier { get; set; } = 1.0f;
 
@@ -74,7 +78,7 @@ namespace LondonUndergroundSimulator.Engine.Services
             LogMetrics logMetrics,
             SimulationLogStats logStats,
             bool initialiseMovement = true
-            
+            //Train trainS
             )
         {
             _trains = trains;
@@ -88,12 +92,13 @@ namespace LondonUndergroundSimulator.Engine.Services
             _frequencyAdvisor = frequencyAdvisor;
             _logMetrics = logMetrics;
             _logStats = logStats;
-
+            
             if (initialiseMovement)
             {
                 foreach (var train in _trains)
                     _movementService.InitialiseTrain(train);
             }
+           
         }
 
 
@@ -103,12 +108,15 @@ namespace LondonUndergroundSimulator.Engine.Services
         /// </summary>
         public void Update(float deltaTime)
         {
-
-
             SimulationTime += deltaTime * TimeScale;
             float scaledDelta = deltaTime * TimeScale;
             Clock24.Advance(deltaTime * TimeScale);
-
+            ProcessFleetAdjustments();
+            if (!CheckLinesForServiceStatus())
+            {
+                ResetWaitingPassengers();
+                return;
+            }
             if (Clock - _lastPassengerGenTime >= TimeSpan.FromSeconds(5))
             {
                 GeneratePassengers(Clock24);
@@ -128,7 +136,7 @@ namespace LondonUndergroundSimulator.Engine.Services
                 MLConsoleData.LastTimeModelUpdated = lastTimeModelUpdated;
                 MLConsoleData.TrainingReadinessPercent = (int)Math.Min(100, (int)(logFileSize * 100.0 / minimumBytes));
 
-                if (logRowCount > 5000 && logFileSize > minimumBytes)
+                if (logRowCount > 500 && logFileSize > minimumBytes)
                 {
                     RetrainingStatusChanged?.Invoke();
                 }
@@ -140,26 +148,15 @@ namespace LondonUndergroundSimulator.Engine.Services
                 _lastLogTime = Clock;
             }
 
-           
-
-
             if (Clock - _lastLogTimeMLFrequency >= TimeSpan.FromSeconds(30))
             {
                 _lastLogTimeMLFrequency = Clock;
-                _ = UpdateFrequencyAsync(Clock24);
+                var snapshots = _snapshotProvider.CaptureSnapshots();
+                _ = UpdateFrequencyAsync(snapshots, Clock24);
             }
-
-
-
 
             foreach (var train in _trains)
             {
-                
-
-                if (train.Id == "Piccadilly_1")
-                {
-                    Debug.WriteLine($"[DEBUG] Train {train.Id} - Progress: {train.Progress}, Position: {train.Position}, Speed: {train.Speed}, CurrentStationIndex: {train.CurrentStationIndex}, IsDwelling: {train.IsDwelling}, DwellTimer: {train.DwellTimer}");
-                }
                 // 1. Handle active delay window
                 if (_delayService.IsTrainDelayed(train))
                 {
@@ -169,15 +166,12 @@ namespace LondonUndergroundSimulator.Engine.Services
                 }
 
                 // 2. Evaluate failure rules (if not delayed)
-                    var triggeredRule = _failureEngine.Evaluate(train, scaledDelta);
+                var triggeredRule = _failureEngine.Evaluate(train, scaledDelta);
                 if (triggeredRule != null)
                 {
                     _delayService.ApplyDelay(train, triggeredRule, Clock);
                     continue; // delay begins → skip movement
                 }
-
-
-                //if (availableCapacity <= 0) return;
 
                 // 3. Handle dwell logic
                 if (_delayService.UpdateDwell(train, scaledDelta, train.Line.Stations[train.CurrentStationIndex]))
@@ -186,11 +180,8 @@ namespace LondonUndergroundSimulator.Engine.Services
                 // 4. Delegate movement + geometry
                 _movementService.UpdateMovement(train, scaledDelta);
                 _movementService.UpdateGeometry(train, scaledDelta);
-
             }
-
         }
-
         private readonly Random _random = new Random();
 
         private void GeneratePassengers(SimulationClock clock)
@@ -200,10 +191,13 @@ namespace LondonUndergroundSimulator.Engine.Services
             float multiplier =
                 timeMultiplier * PassengerDemandMultiplier;
 
+            if (!CheckLinesForServiceStatus())
+            {
+                return;
+            }
+
             foreach (var line in Lines)
             {
-                if (!line.IsServiceActive)
-                    continue;
 
                 foreach (var station in line.Stations)
                 {
@@ -222,6 +216,27 @@ namespace LondonUndergroundSimulator.Engine.Services
                     };
 
                     station.WaitingPassengers += newPassengers;
+                }
+            }
+        }
+
+        public bool CheckLinesForServiceStatus()
+        {
+            foreach (var line in Lines)
+            {
+                if (line.IsServiceActive)
+                    return true;
+            }
+            return false;
+        }
+
+        public void ResetWaitingPassengers()
+        {
+            foreach (var line in Lines)
+            {
+                foreach (var station in line.Stations)
+                {
+                    station.WaitingPassengers = 0;
                 }
             }
         }
@@ -253,42 +268,40 @@ namespace LondonUndergroundSimulator.Engine.Services
             return 1f;
         }
 
-        
-        private async Task UpdateFrequencyAsync(SimulationClock clock)
+
+        private async Task UpdateFrequencyAsync(IReadOnlyList<SimulationSnapshot> snapshots, SimulationClock clock)
         {
-            var snapshot = _snapshotProvider.CaptureSnapshot();
-            var recommended = await _frequencyAdvisor.GetRecommendedFrequencyAsync(snapshot);
-          
-            // Update console snapshot
-            MLConsoleData.LatestSnapshot = snapshot;
-            MLConsoleData.LatestRecommendation = recommended;
-            _pendingMLRecommendation = recommended;
-
-            if (recommended != _lastAppliedFrequency)
+            try
             {
-                ApplyFrequencyChange(recommended);
-                FrequencyChanged?.Invoke(recommended);
+                var recommendations = new Dictionary<string, int>();
 
-                MLConsoleData.LastAppliedFrequency = recommended;
-
-                MLConsoleData.Log.Add(new MLConsoleLogEntry
+                foreach (var snapshot in snapshots)
                 {
-                    Time = clock.ToString(),
-                    Message = $"Applied new frequency: {recommended}"
-                });
+                    var lineName = snapshot.LineName;
+                    var recommended = await _frequencyAdvisor.GetRecommendedFrequencyAsync(lineName, snapshot);
+                    if (recommended > 10)
+                    {
+                        recommended = Lines.FirstOrDefault(l => l.Name == lineName)?.MaxSafeTrainCount ?? 10;
+                    }
+                    recommendations[lineName] = recommended;
 
-                _lastAppliedFrequency = recommended;
+                    MLConsoleData.LatestSnapshot = snapshot;
+                    MLConsoleData.LatestRecommendation = recommended;
+                    MLConsoleData.Log.Add(new MLConsoleLogEntry
+                    {
+                        Time = clock.ToString(),
+                        Message = $"[{snapshot.LineName}] Rec'd trains: {recommended}"
+                    });
+                }
+
+                // Hand off the per-line dictionary to the main Update() tick
+                _pendingLineRecommendations = recommendations;
             }
-            else
+            catch (Exception ex)
             {
-                MLConsoleData.Log.Add(new MLConsoleLogEntry
-                {
-                    Time = clock.ToString(),
-                    Message = $"Frequency unchanged ({recommended})"
-                });
-
-                Debug.WriteLine($"[ML] Frequency unchanged ({recommended}), skipping update");
+                Debug.WriteLine($"[ML] Frequency inference failed: {ex.Message}");
             }
+
         }
 
         public void ApplyFrequencyChange(int recommended)
@@ -305,118 +318,74 @@ namespace LondonUndergroundSimulator.Engine.Services
                 }
             }
 
-            foreach (var train in _trains)
-                ProcessFleetAdjustments(train);
-
-
             foreach (var line in Lines)
             {
-                line.TargetNumberOfTrains = Math.Clamp(recommended, 1, line.MaxSafeTrainCount);
-
-                int current = line.NumberOfTrains;
-
-                if (recommended > current)
+                if (_pendingLineRecommendations != null && _pendingLineRecommendations.TryGetValue(line.Name, out int recommendedForLine))
                 {
-                    int toAdd = recommended - current;
-
-                    // ✔ Correct call
-                    var newTrains = Trains.CreateAdditionalTrains(line, toAdd);
-                    //var newTrains = Trains.CreateSingleTrain(line, line.Eastbound);
-                    //var newTrains = Trains.CreateAdditionalTrains(line, toAdd);
-
-                    foreach (var t in newTrains)
-                    {
-                        _movementService.InitialiseTrain(t);
-                        _trains.Add(t);   // ✔ modify the private list, not the IReadOnlyList
-                    }
-
-                    line.NumberOfTrains = recommended;
-                }
-                else if (recommended < current)
-                {
-                    int toRemove = current - recommended;
-                    RemoveLastTrains(_trains, line, toRemove);
-                    line.NumberOfTrains = recommended;
+                    line.TargetNumberOfTrains = Math.Clamp(recommendedForLine, 1, line.MaxSafeTrainCount);
                 }
             }
+
         }
 
-
-        public void ProcessFleetAdjustments(Train train)
+        public void ProcessFleetAdjustments()
         {
             foreach (var line in Lines)
             {
-                int activeCount = _trains.Count(t => t.Line == line);
 
-                // ADD ONE TRAIN AT A TIME WHEN CLEAR
+                if (_pendingLineRecommendations != null && _pendingLineRecommendations.TryGetValue(line.Name, out int recommendedForLine))
+                {
+                    line.TargetNumberOfTrains = Math.Clamp(recommendedForLine, 1, line.MaxSafeTrainCount);
+                }
+                var lineTrains = _trains
+                    .Where(t => t.Line == line)
+                    .ToList();
+                int activeCount = lineTrains.Count;
+
                 if (activeCount < line.TargetNumberOfTrains)
                 {
-                    // Alternate between Eastbound and Westbound, or pick the track with fewer trains
-                    var targetTrack = _trains.Count(t => t.Track == line.Eastbound) <= _trains.Count(t => t.Track == line.Westbound)
-                        ? line.Eastbound
-                        : line.Westbound;
 
-                    // Only spawn if Station 0 is clear of other trains!
-                    if (_headwayService.CanSpawnTrain(train, minSafeDistance: 50f))
+                    var eastboundCount = lineTrains.Count(t => t.Track == line.Eastbound);
+                    var westboundCount = lineTrains.Count(t => t.Track == line.Westbound);
+
+                    var targetTrack =
+                        eastboundCount <= westboundCount
+                            ? line.Eastbound
+                            : line.Westbound;
+                    bool trainAdded = false;
+
+                    if (Trains.CanSpawnTrain(targetTrack, minSafeDistance: 50f, _trains))
                     {
                         var newTrain = Trains.CreateSingleTrain(line, targetTrack);
                         _movementService.InitialiseTrain(newTrain);
                         _trains.Add(newTrain);
-                        line.NumberOfTrains = activeCount + 1;
+                        trainAdded = true;
+
+                        if (trainAdded)
+                        {
+                            FleetChanged?.Invoke();
+                        }
+
                     }
                 }
-                // REMOVE EXCESS TRAINS SAFELY AT TERMINUS (OR BY LINE)
                 else if (activeCount > line.TargetNumberOfTrains)
                 {
-                    // Remove a train belonging to THIS specific line (ideally one at the end of a loop)
-                    var trainToRemove = _trains
-                        .Where(t => t.Line == line)
+
+                    var trainToRemove = lineTrains
                         .OrderByDescending(t => t.CurrentStationIndex)
+                        .ThenByDescending(t => t.Progress)
                         .FirstOrDefault();
 
                     if (trainToRemove != null)
                     {
                         _trains.Remove(trainToRemove);
-                        line.NumberOfTrains = activeCount - 1;
+                        FleetChanged?.Invoke();
                     }
-                }
+                } 
+
+                line.NumberOfTrains = _trains.Count(t => t.Line == line);
             }
         }
-
-
-        private void RemoveLastTrains(List<Train> trains, Line line, int toRemove)
-        {
-            //for (int i = 0; i < toRemove; i++)
-            //{
-            //    if (_trains.Count == 0)
-            //        break;
-
-            //    _trains.RemoveAt(_trains.Count - 1);
-            //}
-
-            var removed = new List<Train>();
-
-            // Prefer removing trains on this line that are closest to finishing their loop
-            var candidates = trains
-                .Where(t => t.Line == line)
-                .OrderByDescending(t => t.CurrentStationIndex)
-                .ThenByDescending(t => t.Progress)
-                .Take(toRemove)
-                .ToList();
-
-            foreach (var t in candidates)
-            {
-                trains.Remove(t);
-                removed.Add(t);
-            }
-
-            _trains.RemoveAll(t => removed.Contains(t));
-
-        }
-
-
-
-
 
         public void SetFailureEngine(IFailureRuleEngine engine)
         {

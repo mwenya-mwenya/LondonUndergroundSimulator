@@ -6,22 +6,21 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
 using System.Numerics;
+using System.Runtime.CompilerServices;
 
 public static class Trains 
 {
     public static List<Train> GetTrains(List<Line> lines)
     {
        
-        var trains = new List<Train>();
-
-        int trainNumber = 1;
+        var trains = new List<Train>();        
 
         foreach (var line in lines)
         {
-            
+            int trainNumber = line.Trains.Count + 1;
             int lastStationIndex = line.Stations.Count - 1;
-            for (int i = 0; i < line.NumberOfTrains; i++)
-            
+
+            for (int i = 0; i < line.NumberOfTrains; i++)            
             {
                 float startDist = GetStartDistance(line, i, line.NumberOfTrains);
                 float t = startDist / line.Eastbound.TotalLength;
@@ -34,30 +33,29 @@ public static class Trains
 
                 // EASTBOUND
                 trains.Add(CreateTrain(
-                    //id: $"{line.Name}_East_{i + 1}",
                     id: $"{line.Name}_{trainNumber++}",
                     line: line,
                     track: line.Eastbound,
                     stationIndex: stationIndex,
                     direction: 1,
                     progress: progress
+                    
                 ));
 
-                // WESTBOUND
                 trains.Add(CreateTrain(
-                    //id: $"{line.Name}_West_{i + 1}",
                     id: $"{line.Name}_{trainNumber++}",
                     line: line,
                     track: line.Westbound,
-                    stationIndex: westIndex,
+                    stationIndex: westIndex,                  
                     direction: 1,
                     progress: westProgress
-                ));
-                
-
+                   
+                ));                
             }
+            line.NextTrainId = trains.Where(t => t.Line.Name == line.Name).Count() + 1; // Update the line's NumberOfTrains property to match the actual count
+            Debug.WriteLine($"Number of trains for line {line.Name}: {line.NextTrainId}");
         }
-
+        
         return trains;
     }
 
@@ -108,63 +106,66 @@ public static class Trains
         return trainIndex * spacing;
     }
 
-    public static List<Train> CreateAdditionalTrains(Line line, int additionalCount)
-    {
-        var newTrains = new List<Train>();
+    //public static List<Train> CreateAdditionalTrains(Line line, int additionalCount)
+    //{
+    //    var newTrains = new List<Train>();
 
-        int existing = line.NumberOfTrains;
-        int total = existing + additionalCount;
-        int newTrainNumber = existing + 1;
+    //    int existing = line.NumberOfTrains;
+    //    int total = existing + additionalCount;
+    //    //int newTrainNumber = existing;
 
-        for (int i = existing; i < total; i++)
-        {
-            float startDist = GetStartDistance(line, i, total);
-            float tEast = startDist / line.Eastbound.TotalLength;
-            float tWest = startDist / line.Westbound.TotalLength;
+    //    for (int i = existing; i < total; i++)
+    //    {
+    //        float startDist = GetStartDistance(line, i, total);
+    //        float tEast = startDist / line.Eastbound.TotalLength;
+    //        float tWest = startDist / line.Westbound.TotalLength;
 
-            float exactIndexEast = tEast * (line.Stations.Count - 1);
-            float exactIndexWest = tWest * (line.Stations.Count - 1);
+    //        float exactIndexEast = tEast * (line.Stations.Count - 1);
+    //        float exactIndexWest = tWest * (line.Stations.Count - 1);
 
-            int stationIndexEast = (int)MathF.Floor(exactIndexEast);
-            int stationIndexWest = (int)MathF.Floor(exactIndexWest);
+    //        int stationIndexEast = (int)MathF.Floor(exactIndexEast);
+    //        int stationIndexWest = (int)MathF.Floor(exactIndexWest);
 
-            float progressEast = exactIndexEast - stationIndexEast;
-            float progressWest = exactIndexWest - stationIndexWest;
+    //        float progressEast = exactIndexEast - stationIndexEast;
+    //        float progressWest = exactIndexWest - stationIndexWest;
 
-            // For naming purposes, trains start from 1
+    //        // For naming purposes, trains start from 1
 
-            // EASTBOUND
-            newTrains.Add(CreateTrain(
-                //id: $"{line.Name}_East_{i + 1}",
-                id: $"{line.Name}_{newTrainNumber++}",
-                line: line,
-                track: line.Eastbound,
-                stationIndex: stationIndexEast,
-                direction: 1,
-                progress: progressEast
-            ));
+    //        // EASTBOUND
+    //        newTrains.Add(CreateTrain(
+    //            //id: $"{line.Name}_East_{i + 1}",
+    //            id: $"{line.Name}_{line.NextTrainId++}",
+    //            line: line,
+    //            track: line.Eastbound,
+    //            stationIndex: stationIndexEast,
+    //            direction: 1,
+    //            progress: progressEast
+    //        ));
 
-            // WESTBOUND
-            newTrains.Add(CreateTrain(
-                //id: $"{line.Name}_West_{i + 1}",
-                id: $"{line.Name}_{newTrainNumber++}",
-                line: line,
-                track: line.Westbound,
-                stationIndex: stationIndexWest,
-                direction: 1,
-                progress: progressWest
-            ));
-        }
+    //        // WESTBOUND
+    //        newTrains.Add(CreateTrain(
+    //            //id: $"{line.Name}_West_{i + 1}",
+    //            id: $"{line.Name}_{line.NextTrainId++}",
+    //            line: line,
+    //            track: line.Westbound,
+    //            stationIndex: stationIndexWest,
+    //            direction: 1,
+    //            progress: progressWest
+    //        ));
 
-        return newTrains;
-    }
+    //        line.NextTrainId += 2; // Increment the train ID counter for the line
+    //    }
+
+    //    return newTrains;
+    //}
 
     public static Train CreateSingleTrain(Line line, Track track)
     {
-        int trainNum = line.NextTrainId++; // Increment a persistent counter on Line
-
+         // Increment a persistent counter on Line
+        int trainId = line.NextTrainId++;
+        line.NextTrainId = trainId + 1; // Update the line's NextTrainId for the next train
         return CreateTrain(
-            id: $"{line.Name}_{trainNum}",
+            id: $"{line.Name}_{trainId}",
             line: line,
             track: track,
             stationIndex: 0,
@@ -173,28 +174,31 @@ public static class Trains
         );
     }
 
+    public static bool CanSpawnTrain(Track track, float minSafeDistance, IEnumerable<Train> trains)
+    {
+        if (track == null || track.Points == null || track.Points.Count == 0)
+            return false;
 
+        // Find the train closest to the start of this specific track
+        var rearMostTrain = trains
+            .Where(t => t.Track == track)
+            .OrderBy(t => t.CurrentStationIndex)
+            .ThenBy(t => t.Progress)
+            .FirstOrDefault();
 
-    //public static List<Train> RemoveLastTrains(List<Train> trains, int count)
-    //{
-    //    var removed = new List<Train>();
+        // If the track is completely empty, it is safe to spawn
+        if (rearMostTrain == null)
+            return true;
 
-    //    for (int i = 0; i < count; i++)
-    //    {
-    //        if (trains.Count == 0)
-    //            break;
+        // Block spawning if a train is still at the starting station or just leaving it
+        if (rearMostTrain.CurrentStationIndex == 0 && rearMostTrain.Progress < 0.1f)
+            return false;
 
-    //        var t = trains[^1];
-    //        removed.Add(t);
-    //        trains.RemoveAt(trains.Count - 1);
+        // Measure Euclidean distance from the track's start coordinate to the rear-most train
+        Vector2 spawnPosition = track.Points[0];
+        float distance = Vector2.Distance(spawnPosition, rearMostTrain.Position);
 
-
-    //    }
-
-    //    return removed;
-    //}
-
-
-
+        return distance >= minSafeDistance;
+    }
 
 }

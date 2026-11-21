@@ -33,25 +33,37 @@ namespace LondonUndergroundSimulator.Engine.Logging
 
         public void LogSnapshot(List<Train> trains, SimulationClock clock)
         {
-            using var writer = File.AppendText(_path);
-            
-            foreach (var train in trains)
+            try
             {
-                var station = train.Line.Stations[train.CurrentStationIndex];
+                using var writer = File.AppendText(_path);
 
-                writer.WriteLine($"{clock.DayOfWeek}," +
-                                 $"{clock.Hour},"+
-                                 $"{clock.Minute},"+
-                                 $"{train.Id}," +
-                                 $"{station.Name}," +
-                                 $"{train.Line.Name}," +
-                                 $"{station.Type}," +
-                                 $"{station.WaitingPassengers}," +
-                                 $"{train.CurrentPassengers}," +
-                                 $"{train.MaxCapacity}," +
-                                 $"{train.IsDwelling}," +
-                                 $"{train.IsDelayed}");
+                foreach (var train in trains)
+                {
+                    if (!train.Line.IsServiceActive)
+                    {
+                        continue;
+                    }
+                    var station = train.Line.Stations.DistinctBy(s => s.Name).ToList()[train.CurrentStationIndex];
+
+                    writer.WriteLine($"{clock.DayOfWeek}," +
+                                     $"{clock.Hour}," +
+                                     $"{clock.Minute}," +
+                                     $"{train.Id}," +
+                                     $"{station.Name}," +
+                                     $"{train.Line.Name}," +
+                                     $"{station.Type}," +
+                                     $"{station.WaitingPassengers}," +
+                                     $"{train.CurrentPassengers}," +
+                                     $"{train.MaxCapacity}," +
+                                     $"{train.IsDwelling}," +
+                                     $"{train.IsDelayed}");
+                }
+            }
+            catch (IOException ex)
+            {
+                Debug.WriteLine($"[LogMetrics] Skipped log write (file busy): {ex.Message}");
             }
         }
+
     }
 }

@@ -27,15 +27,18 @@ namespace LondonUndergroundSimulator.Engine.Services
         // ---------------------------------------------------------
         public void UpdateMovement(Train train, float dt)
         {
-            
 
+           
             var track = train.Track;
             var line = train.Line;
             int lastIndex = line.Stations.Count - 1;
             var checkWaitingStationPassengers = line.Stations.Aggregate(false, (acc, station) => acc || station.WaitingPassengers > 0);
+            //if (train.Id == "Central_4")
+            //    Debug.WriteLine($"Movement Update - before active check: Train {train.Id} is moving on line {train.Line.Name}, current station index: {train.CurrentStationIndex}, direction: {train.Direction}, progress: {train.Progress:F2}, dwell timer: {train.DwellTimer:F2}, waiting passengers: {checkWaitingStationPassengers}");
             if (train.Line.IsServiceActive != true)
                 return;
-
+            //if (train.Id == "Central_4")
+            //    Debug.WriteLine($"Movement Update: Train {train.Id} is moving on line {train.Line.Name}, current station index: {train.CurrentStationIndex}, direction: {train.Direction}, progress: {train.Progress:F2}, dwell timer: {train.DwellTimer:F2}, waiting passengers: {checkWaitingStationPassengers}");
             // -----------------------------
             // DWELL HANDLING
             // -----------------------------
@@ -185,6 +188,12 @@ namespace LondonUndergroundSimulator.Engine.Services
             // -----------------------------
             train.Progress = (train.Direction == 1) ? p : 1f - p;
 
+            //Check if Central_4 train is moving and log its state
+            //if (train.Id == "Central_4" || train.Id == "Central_1")
+            //{
+            //    Debug.WriteLine($"Movement Update - after update: Train {train.Id} is moving on line {train.Line.Name}, current station index: {train.CurrentStationIndex}, direction: {train.Direction}, progress: {train.Progress:F2}, dwell timer: {train.DwellTimer:F2}, waiting passengers: {checkWaitingStationPassengers}");
+            //}
+
         }
 
         // ---------------------------------------------------------
@@ -210,12 +219,16 @@ namespace LondonUndergroundSimulator.Engine.Services
             float t = headDist / track.TotalLength;
 
             train.Position = track.GetPointAt(t);
+            //compare position with t to make sure they are consistent
+            //if (train.Id == "Central_4")
+            //    Debug.WriteLine($"Geometry Update: Train {train.Id} has head position {train.Position}, t={t:F2}, headDist={headDist:F2}, startDist={startDist:F2}, endDist={endDist:F2}, progress={train.Progress:F2}");
 
 
             float tNorm = headDist / track.TotalLength;
             Vector2 tangent = track.GetTangentAt(tNorm);
             train.Rotation = MathF.Atan2(tangent.Y, tangent.X);
-
+            //if (train.Id == "Central_4")
+            //    Debug.WriteLine($"Geometry Update: Train {train.Id} has head position {train.Position}, rotation {train.Rotation:F2}, and carriage positions: {string.Join(", ", train.CarriagePositions)}");
 
             // -----------------------------
             // CARRIAGES
@@ -249,6 +262,8 @@ namespace LondonUndergroundSimulator.Engine.Services
                 train.CarriagePositions[i] = pos;
                 train.CarriageAngles[i] = angle;
             }
+          
+
         }
 
         private float Lerp(float a, float b, float t)
@@ -274,6 +289,6 @@ namespace LondonUndergroundSimulator.Engine.Services
                 train.ScheduledArrivalTime + TimeSpan.FromSeconds(train.DelayDuration);
         }
 
-
+        
     }
 }

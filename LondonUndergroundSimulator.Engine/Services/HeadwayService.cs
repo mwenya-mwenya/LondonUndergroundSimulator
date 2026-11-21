@@ -12,26 +12,7 @@ namespace LondonUndergroundSimulator.Engine.Services
     public class HeadwayService : IHeadwayService
     {
         private SimulationEngine _engine;
-
-        //public HeadwayService(SimulationEngine engine)
-        //{
-        //    _engine = engine;
-            
-        //}
         private IReadOnlyList<Train> _trains => _engine.trainsIReadonly;
-        //private List<Train> _trains => _engine._trains;
-        //public Train GetTrainAhead(Train train)
-        //{
-        //    return _trains
-        //        .Where(t => t.Line == train.Line && t.Direction == train.Direction)
-        //        .Where(t =>
-        //            t.CurrentStationIndex > train.CurrentStationIndex ||
-        //            (t.CurrentStationIndex == train.CurrentStationIndex && t.Progress > train.Progress))
-        //        .OrderBy(t => t.CurrentStationIndex)
-        //        .ThenBy(t => t.Progress)
-        //        .FirstOrDefault();
-        //}
-
         public Train GetTrainAhead(Train train)
         {
             return _trains
@@ -55,7 +36,7 @@ namespace LondonUndergroundSimulator.Engine.Services
         public Train GetTrainBehind(Train train)
         {
             return _trains
-                .Where(t => t.Line == train.Line && t.Direction == train.Direction)
+                .Where(t => t != train && t.Track == train.Track)
                 .Where(t =>
                     t.CurrentStationIndex < train.CurrentStationIndex ||
                     (t.CurrentStationIndex == train.CurrentStationIndex && t.Progress < train.Progress))
@@ -63,15 +44,6 @@ namespace LondonUndergroundSimulator.Engine.Services
                 .ThenByDescending(t => t.Progress)
                 .FirstOrDefault();
         }
-
-        public bool CanSpawnTrain(Train train, float minSafeDistance)
-        {
-            var ahead = GetTrainAhead(train);
-            if (ahead == null) return true;
-
-            return GetDistanceToTrainAhead(train) > minSafeDistance;
-        }
-
         public void setEngine(SimulationEngine engine)
         {
             _engine = engine;

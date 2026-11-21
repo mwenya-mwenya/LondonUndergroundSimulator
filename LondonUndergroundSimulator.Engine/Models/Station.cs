@@ -15,7 +15,6 @@ namespace LondonUndergroundSimulator.Engine.Models
         public enum StationType { Quiet, Normal, Busy }
         public StationType Type { get; set; }
 
-
         public int WaitingPassengers { get; set; }
 
     }

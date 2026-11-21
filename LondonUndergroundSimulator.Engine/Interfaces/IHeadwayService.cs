@@ -13,9 +13,6 @@ namespace LondonUndergroundSimulator.Engine.Interfaces
         Train GetTrainAhead(Train train);
         Train GetTrainBehind(Train train);
         float GetDistanceToTrainAhead(Train train);
-
-        bool CanSpawnTrain(Train train, float minSafeDistance);
-
         public void setEngine(SimulationEngine engine);
     }
 
