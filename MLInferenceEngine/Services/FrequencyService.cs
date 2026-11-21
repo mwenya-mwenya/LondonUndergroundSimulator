@@ -16,11 +16,12 @@ namespace MLInferenceEngine.Services
             _client = new FrequencyPredictor.FrequencyPredictorClient(channel);
         }
 
-        public async Task<double> PredictAsync(SnapshotRequest snapshot)
+        public async Task<double> PredictAsync(string LineName, SnapshotRequest snapshot)
         {
  
             var request = new SnapshotRequest
             {
+                LineName = snapshot.LineName,
                 // Operational metrics
                 AvgWaiting = snapshot.AvgWaiting,
                 MaxWaiting = snapshot.MaxWaiting,
