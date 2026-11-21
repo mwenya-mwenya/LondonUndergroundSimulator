@@ -5,7 +5,7 @@ using DataPipeLine.Readers;
 using DataPipeLine.Interfaces;
 using LondonUndergroundSimulator.Infrastructure.Services;
 using System.Reflection.Metadata;
-using DataPipeline;
+using DataPipeLine;
 using LondonUndergroundSimulator.Infrastructure.Interfaces;
 using System.Diagnostics;
 
@@ -37,7 +37,8 @@ namespace LondonUndergroundSimulator.Training.Services
             }
 
             var searchPattern = "*imulation_*.csv";
-            var targetFiles = _paths.GetUserAggregatedDataList(searchPattern).ToList();
+            var targetFiles = userInitiated ? _paths.GetUserAggregatedDataListUserInitiated(searchPattern).ToList() : _paths.GetUserAggregatedDataList(searchPattern).ToList();
+
             Debug.WriteLine($"[TrainingHost] Found {targetFiles.Count} simulation files matching pattern '{searchPattern}'.");
 
             Parallel.ForEach(targetFiles, file =>
