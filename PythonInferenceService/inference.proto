@@ -10,6 +10,7 @@ service FrequencyPredictor {
 }
 
 message SnapshotRequest {
+
   // Operational metrics
   double avg_waiting = 1;
   double max_waiting = 2;
@@ -42,10 +43,14 @@ message SnapshotRequest {
 
   // Simulator-derived demand multiplier
   double expected_demand_multiplier = 21;
+
+  // Line identifier
+  string line_name = 22;
 }
 
 message SnapshotResponse {
   double recommended_frequency = 1;
+  string line_name = 2;
 }
 
 message PingRequest {}
