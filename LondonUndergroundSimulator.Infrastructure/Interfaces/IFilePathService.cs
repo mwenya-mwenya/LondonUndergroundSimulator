@@ -33,6 +33,7 @@ namespace LondonUndergroundSimulator.Infrastructure.Interfaces
             Path.Combine(
                 GetUserDataDirectory(),
                 "simulation_log.csv");
+        public List<string> GetUserAggregatedDataListUserInitiated(string fileName);
         public string GetPythonInferenceServicePath();
     }
 

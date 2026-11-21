@@ -46,6 +46,9 @@ namespace LondonUndergroundSimulator.Infrastructure.Services
         public List<string> GetUserAggregatedDataList(string fileName) =>
                Directory.GetFiles(GetUserAggregatedDataDirectory(), fileName).ToList();
 
+        public List<string> GetUserAggregatedDataListUserInitiated(string fileName) =>
+               Directory.GetFiles(GetUserDataDirectory(), fileName).ToList();
+
 
         public string GetPythonInferenceServicePath()
         {
