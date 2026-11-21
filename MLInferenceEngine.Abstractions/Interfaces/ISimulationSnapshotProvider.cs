@@ -5,8 +5,7 @@ namespace MLInferenceEngine.Abstractions.Interfaces
 
     public interface ISimulationSnapshotProvider
     {
-        SimulationSnapshot CaptureSnapshot();
-        
+        IReadOnlyList<SimulationSnapshot> CaptureSnapshots();
 
     }
 }

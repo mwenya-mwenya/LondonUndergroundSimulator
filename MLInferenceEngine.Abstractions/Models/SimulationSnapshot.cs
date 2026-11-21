@@ -11,6 +11,7 @@ namespace MLInferenceEngine.Abstractions.Models
         // ---------------------------------------------------------
         // Operational metrics
         // ---------------------------------------------------------
+        public string LineName { get; set; }
         public double AvgWaiting { get; set; }
         public double MaxWaiting { get; set; }
         public double AvgLoadFactor { get; set; }

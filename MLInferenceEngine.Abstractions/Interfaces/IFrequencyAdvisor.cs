@@ -6,7 +6,7 @@ namespace MLInferenceEngine.Abstractions.Interfaces
 {
     public interface IFrequencyAdvisor
     {
-        Task<int> GetRecommendedFrequencyAsync(SimulationSnapshot snapshot);
+        Task<int> GetRecommendedFrequencyAsync(string lineName, SimulationSnapshot snapshot);
     }
 
 }
