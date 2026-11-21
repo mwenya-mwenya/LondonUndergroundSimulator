@@ -92,7 +92,6 @@ namespace LondonUndergroundSimulator.Views
 
             foreach (var train in ViewModel.Map.Trains)
                 _trainRenderer.Draw(ds, train.Train, _transformService.Transform);
-
             _trainRenderer.DrawTime(ds, new Vector2(100, 50), $"Time: {ViewModel.Simulation.Clock24}");
             _drawUITimetable.DrawTimetable(ds, ViewModel, (float)sender.ActualWidth, (float)sender.ActualHeight);
             _createMLConsole.DrawMLConsole(ds, ViewModel, (float)sender.ActualWidth, (float)sender.ActualHeight);

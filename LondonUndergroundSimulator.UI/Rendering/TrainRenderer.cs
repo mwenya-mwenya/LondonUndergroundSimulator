@@ -1,5 +1,6 @@
 ﻿using LondonUndergroundSimulator.Colours;
 using LondonUndergroundSimulator.Engine.Models;
+using LondonUndergroundSimulator.ViewModels;
 using Microsoft.Graphics.Canvas;
 using Microsoft.Graphics.Canvas.Text;
 using Microsoft.UI;
@@ -16,15 +17,13 @@ namespace LondonUndergroundSimulator.Rendering
 
         public void Draw(CanvasDrawingSession ds, Train train, Matrix3x2 worldToScreen)
         {
-            var line = train.Line;
+            var line = train.Line;           
 
             // Head carriage uses train.Position / train.Rotation
             var headPosScreen = Vector2.Transform(train.Position, worldToScreen);
             DrawCarriage(ds, headPosScreen, train.Rotation, line.ColorHex);
             DrawTrainTag(ds, headPosScreen, train.Id);
-            //if (train.Line.Name == "Central")
-            //Debug.WriteLine($"Train {train.Id} at position {train.Position}, Line Name: {train.Line.Name}");
-
+            
             // Other carriages: offset along the train’s forward direction
             float spacing = train.CarriageSpacing;
                 var forward = new Vector2(MathF.Cos(train.Rotation), MathF.Sin(train.Rotation));
@@ -36,7 +35,7 @@ namespace LondonUndergroundSimulator.Rendering
 
                 DrawCarriage(ds, posScreen, angle, train.Line.ColorHex);
             }
-        }
+  }
 
         private void DrawCarriage(CanvasDrawingSession ds, Vector2 posScreen, float angle, string colorHex)
         {

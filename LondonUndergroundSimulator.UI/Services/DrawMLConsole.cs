@@ -14,18 +14,6 @@ namespace LondonUndergroundSimulator.Services
 {
     public class CreateMLConsole
     {
-        //private readonly SimulationLogStats _logStats;
-
-        //public int SimulationLogRows { get; set; }
-
-        //public string SimulationLogSize { get; set; } = "";
-
-        //public CreateMLConsole(SimulationLogStats logStats)
-        //{
-        //    _logStats = logStats;
-        //    SimulationLogRows = _logStats.GetRowCount();
-        //    SimulationLogSize = _logStats.GetFileSize();
-        //}
         
 
         public void DrawMLConsole(CanvasDrawingSession ds, MainViewModel ViewModel, float canvasWidth, float canvasHeight)
@@ -91,11 +79,11 @@ namespace LondonUndergroundSimulator.Services
                 y += 30;
             }
 
-            ds.DrawText($"Recommended Frequency: {ml.LatestRecommendation}", x, y, Colors.Orange, format);
-            y += 20;
+            //ds.DrawText($"Recommended Frequency: {ml.LatestRecommendation}", x, y, Colors.Orange, format);
+            //y += 20;
 
-            ds.DrawText($"Last Applied Frequency: {ml.LastAppliedFrequency}", x, y, Colors.LightGreen, format);
-            y += 40;
+            //ds.DrawText($"Last Applied Frequency: {ml.LastAppliedFrequency}", x, y, Colors.LightGreen, format);
+            //y += 40;
 
             ds.DrawText("ML Decision Log:", x, y, Colors.Yellow, format);
             y += 20;

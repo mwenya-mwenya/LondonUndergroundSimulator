@@ -146,7 +146,7 @@ namespace LondonUndergroundSimulator.ViewModels
 
         public string IsRetrainingText =>  IsRetraining ? "Retraining...": "Retrain Model";
 
-        public bool CanRetrainModel => !IsRetraining &&  (MLConsole?.SimulationLogRows ?? 0) >= 5000;
+        public bool CanRetrainModel => !IsRetraining &&  (MLConsole?.SimulationLogRows ?? 0) >= 500;
 
         //private void OnRefreshTrainingStatus()
         //{

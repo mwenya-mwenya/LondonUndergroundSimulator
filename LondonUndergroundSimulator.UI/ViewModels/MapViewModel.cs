@@ -1,5 +1,6 @@
 ﻿using LondonUndergroundSimulator.Engine.Models;
 using LondonUndergroundSimulator.Engine.Services;
+using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Diagnostics;
@@ -21,12 +22,13 @@ namespace LondonUndergroundSimulator.ViewModels
             _engine = engine;
 
             // Subscribe to frequency change events
-            _engine.FrequencyChanged += OnFrequencyChanged;
+            //_engine.FrequencyChanged += OnFrequencyChanged;
+            _engine.FleetChanged += RefreshTrains;
 
-            
             // Initial load
             RefreshTrains();
         }
+
 
         private void RefreshTrains()
         {
@@ -36,11 +38,5 @@ namespace LondonUndergroundSimulator.ViewModels
                 Trains.Add(new TrainViewModel(train));
         }
 
-
-        private void OnFrequencyChanged(int newFrequency)
-        {
-            // Rebuild UI train list
-            RefreshTrains();
-        }
     }
 }
