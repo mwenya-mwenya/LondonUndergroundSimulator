@@ -12,6 +12,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\DataDeserialise\DataDeserialise.csproj" />
     <ProjectReference Include="..\DataPipelineRunner\DataPipelineRunner.csproj" />
     <ProjectReference Include="..\DataPipeLine\DataPipeLine.csproj" />
     <ProjectReference Include="..\LondonUndergroundSimulator.Engine\LondonUndergroundSimulator.Engine.csproj" />

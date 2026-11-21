@@ -1,6 +1,6 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
-using DataPipeline;
-using DataPipeLine;
+using DataDeserialise.Interfaces;
+using DataDeserialise.Services;
 using DataPipeLine.Aggregators;
 using DataPipeLine.Export;
 using DataPipeLine.Interfaces;
@@ -22,6 +22,7 @@ using MLInferenceEngine.Abstractions.Interfaces;
 using MLInferenceEngine.Orchestration.Services;
 using MLInferenceEngine.Services;
 using System.Diagnostics;
+using DataPipeLine;
 
 namespace LondonUndergroundSimulator.HostServices.Services
 {
